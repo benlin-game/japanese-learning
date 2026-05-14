@@ -406,7 +406,18 @@ function renderQuiz() {
 
   const typeMap = { vocabulary: '詞彙', grammar: '文法', kanji: '漢字', practice: 'JLPT練習' };
   document.getElementById('quiz-type-label').textContent = typeMap[state.category] || '';
-  document.getElementById('quiz-question').textContent = card.question || card.word || card.pattern || card.kanji;
+
+  const getKanjiReading = (c) => {
+    const kun = c.reading_kun && c.reading_kun !== '—' ? c.reading_kun.split('・')[0] : null;
+    const on = c.reading_on ? c.reading_on.split('・')[0] : null;
+    return kun || on || c.kanji;
+  };
+
+  if (state.category === 'kanji') {
+    document.getElementById('quiz-question').textContent = `「${card.kanji}」${card.meaning}`;
+  } else {
+    document.getElementById('quiz-question').textContent = card.question || card.word || card.pattern || card.kanji;
+  }
 
   let options, correct;
   if (state.category === 'practice') {
@@ -419,8 +430,9 @@ function renderQuiz() {
     options = buildOptions(card.meaning, state.cards.map(c => c.meaning), card);
     correct = options.indexOf(card.meaning);
   } else if (state.category === 'kanji') {
-    options = buildOptions(card.meaning, state.cards.map(c => c.meaning), card);
-    correct = options.indexOf(card.meaning);
+    const correctReading = getKanjiReading(card);
+    options = buildOptions(correctReading, state.cards.map(c => getKanjiReading(c)), card);
+    correct = options.indexOf(correctReading);
   }
 
   const container = document.getElementById('quiz-options');
@@ -464,12 +476,21 @@ function answerQuiz(chosen, correct, card, options, btn, container) {
 
   const fb = document.getElementById('quiz-feedback');
   fb.classList.remove('hidden', 'bg-green-50', 'bg-red-50', 'text-green-700', 'text-red-600', 'border-green-200', 'border-red-200');
+  const exampleLine = (() => {
+    if (card.explanation) return card.explanation;
+    if (card.example) {
+      const meaning = card.example_meaning ? `<br><span class="text-indigo-500">${card.example_meaning}</span>` : '';
+      return card.example + meaning;
+    }
+    return '';
+  })();
+
   if (isCorrect) {
     fb.classList.add('bg-green-50', 'text-green-700', 'border', 'border-green-200');
-    fb.innerHTML = `<b>✓ 答對了！</b><br>${card.explanation || card.example || ''}`;
+    fb.innerHTML = `<b>✓ 答對了！</b><br>${exampleLine}`;
   } else {
     fb.classList.add('bg-red-50', 'text-red-600', 'border', 'border-red-200');
-    fb.innerHTML = `<b>✗ 答錯了</b>　正確答案：<b>${options[correct]}</b><br><span class="text-gray-500">${card.explanation || card.example || ''}</span>`;
+    fb.innerHTML = `<b>✗ 答錯了</b>　正確答案：<b>${options[correct]}</b><br><span class="text-gray-500">${exampleLine}</span>`;
   }
 
   document.getElementById('quiz-next-btn').classList.remove('hidden');
