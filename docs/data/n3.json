@@ -1,53 +1,690 @@
 {
   "vocabulary": [
-    {"word": "影響", "reading": "えいきょう", "meaning": "影響", "example": "環境が人に影響を与える。", "example_reading": "かんきょうがひとにえいきょうをあたえる。", "example_meaning": "環境對人造成影響。"},
-    {"word": "確認", "reading": "かくにん", "meaning": "確認", "example": "予約を確認する。", "example_reading": "よやくをかくにんする。", "example_meaning": "確認預約。"},
-    {"word": "状況", "reading": "じょうきょう", "meaning": "狀況", "example": "状況を説明してください。", "example_reading": "じょうきょうをせつめいしてください。", "example_meaning": "請說明狀況。"},
-    {"word": "判断", "reading": "はんだん", "meaning": "判斷", "example": "自分で判断する。", "example_reading": "じぶんではんだんする。", "example_meaning": "自己判斷。"},
-    {"word": "解決", "reading": "かいけつ", "meaning": "解決", "example": "問題を解決する。", "example_reading": "もんだいをかいけつする。", "example_meaning": "解決問題。"},
-    {"word": "成功", "reading": "せいこう", "meaning": "成功", "example": "実験に成功した。", "example_reading": "じっけんにせいこうした。", "example_meaning": "實驗成功了。"},
-    {"word": "失敗", "reading": "しっぱい", "meaning": "失敗", "example": "失敗から学ぶ。", "example_reading": "しっぱいからまなぶ。", "example_meaning": "從失敗中學習。"},
-    {"word": "反対", "reading": "はんたい", "meaning": "反對；相反", "example": "その意見に反対する。", "example_reading": "そのいけんにはんたいする。", "example_meaning": "反對那個意見。"},
-    {"word": "将来", "reading": "しょうらい", "meaning": "將來", "example": "将来の夢を話す。", "example_reading": "しょうらいのゆめをはなす。", "example_meaning": "談論將來的夢想。"},
-    {"word": "責任", "reading": "せきにん", "meaning": "責任", "example": "責任を持って仕事をする。", "example_reading": "せきにんをもってしごとをする。", "example_meaning": "有責任地工作。"},
-    {"word": "意識", "reading": "いしき", "meaning": "意識；意念", "example": "環境問題を意識する。", "example_reading": "かんきょうもんだいをいしきする。", "example_meaning": "對環境問題有意識。"},
-    {"word": "関係", "reading": "かんけい", "meaning": "關係", "example": "人間関係が大切だ。", "example_reading": "にんげんかんけいがたいせつだ。", "example_meaning": "人際關係很重要。"},
-    {"word": "理解", "reading": "りかい", "meaning": "理解", "example": "相手の気持ちを理解する。", "example_reading": "あいてのきもちをりかいする。", "example_meaning": "理解對方的心情。"},
-    {"word": "複雑", "reading": "ふくざつ", "meaning": "複雜", "example": "複雑な問題だ。", "example_reading": "ふくざつなもんだいだ。", "example_meaning": "是個複雜的問題。"},
-    {"word": "重要", "reading": "じゅうよう", "meaning": "重要", "example": "重要な会議がある。", "example_reading": "じゅうようなかいぎがある。", "example_meaning": "有重要的會議。"}
+    {
+      "word": "あっ",
+      "reading": "あっ",
+      "meaning": "啊！(表示驚訝、發現等)",
+      "example": "あっ、電車が来た！",
+      "example_reading": "あっ、でんしゃがきた！",
+      "example_meaning": "啊，電車來了！"
+    },
+    {
+      "word": "愛",
+      "reading": "あい",
+      "meaning": "愛",
+      "example": "彼の歌には愛が込められている。",
+      "example_reading": "かれのうたにはあいがこめられている。",
+      "example_meaning": "他的歌裡包含了愛。"
+    },
+    {
+      "word": "挨拶",
+      "reading": "あいさつ",
+      "meaning": "問候、寒暄",
+      "example": "朝、隣の人に挨拶しました。",
+      "example_reading": "あさ、となりのひとにあいさつしました。",
+      "example_meaning": "早上我向鄰居打了招呼。"
+    },
+    {
+      "word": "愛情",
+      "reading": "あいじょう",
+      "meaning": "愛情",
+      "example": "母親の愛情は深い。",
+      "example_reading": "ははおやのあいじょうはふかい。",
+      "example_meaning": "母親的愛情是深厚的。"
+    },
+    {
+      "word": "合図",
+      "reading": "あいず",
+      "meaning": "信號、暗號",
+      "example": "彼は手で出発の合図を送った。",
+      "example_reading": "かれはてでしゅっぱつのあいずをおくった。",
+      "example_meaning": "他用手發出出發的信號。"
+    },
+    {
+      "word": "アイスクリーム",
+      "reading": "アイスクリーム",
+      "meaning": "冰淇淋",
+      "example": "夏はやっぱりアイスクリームがおいしいね。",
+      "example_reading": "なつはやっぱりアイスクリームがおいしいね。",
+      "example_meaning": "夏天果然還是冰淇淋好吃呢。"
+    },
+    {
+      "word": "愛する",
+      "reading": "あいする",
+      "meaning": "愛",
+      "example": "彼は家族を深く愛している。",
+      "example_reading": "かれはかぞくをふかくあいしている。",
+      "example_meaning": "他深深地愛著家人。"
+    },
+    {
+      "word": "相手",
+      "reading": "あいて",
+      "meaning": "對方、夥伴",
+      "example": "彼は良い話し相手だ。",
+      "example_reading": "かれはよいはなしあいてだ。",
+      "example_meaning": "他是一個很好的談話對象。"
+    },
+    {
+      "word": "あいにく",
+      "reading": "あいにく",
+      "meaning": "不巧、偏偏",
+      "example": "あいにく、今日は担当者が不在です。",
+      "example_reading": "あいにく、きょうはたんとうしゃがふざいです。",
+      "example_meaning": "不巧，今天負責人不在。"
+    },
+    {
+      "word": "アイロン",
+      "reading": "アイロン",
+      "meaning": "熨斗、熨燙",
+      "example": "洗濯が終わったら、シャツにアイロンをかけます。",
+      "example_reading": "せんたくがおわったら、シャツにアイロンをかけます。",
+      "example_meaning": "洗完衣服後，我會熨燙襯衫。"
+    },
+    {
+      "word": "アウト",
+      "reading": "アウト",
+      "meaning": "出局；局外",
+      "example": "そのボールはアウトだよ。",
+      "example_reading": "そのボールはアウトだよ。",
+      "example_meaning": "那顆球出界了喔。"
+    },
+    {
+      "word": "明かり",
+      "reading": "あかり",
+      "meaning": "光線；燈光",
+      "example": "部屋の明かりをつけてください。",
+      "example_reading": "へやのあかりをつけてください。",
+      "example_meaning": "請打開房間的燈。"
+    },
+    {
+      "word": "空き",
+      "reading": "あき",
+      "meaning": "空閒；空位；空缺",
+      "example": "今、空き時間がありますか？",
+      "example_reading": "いま、あきじかんがありますか？",
+      "example_meaning": "你現在有空閒時間嗎？"
+    },
+    {
+      "word": "明らか",
+      "reading": "あきらか",
+      "meaning": "明顯的；清楚的",
+      "example": "彼の嘘は明らかだった。",
+      "example_reading": "かれのうそはあきらかだった。",
+      "example_meaning": "他的謊言很明顯。"
+    },
+    {
+      "word": "諦める",
+      "reading": "あきらめる",
+      "meaning": "放棄",
+      "example": "夢を諦めないでください。",
+      "example_reading": "ゆめをあきらめないでください。",
+      "example_meaning": "請不要放棄夢想。"
+    },
+    {
+      "word": "飽きる",
+      "reading": "あきる",
+      "meaning": "厭倦；吃膩",
+      "example": "毎日同じ料理だと飽きちゃうね。",
+      "example_reading": "まいにちおなじりょうりだとあきちゃうね。",
+      "example_meaning": "每天都吃一樣的菜會吃膩呢。"
+    },
+    {
+      "word": "握手",
+      "reading": "あくしゅ",
+      "meaning": "握手",
+      "example": "初めて会う人とは握手をする。",
+      "example_reading": "はじめてあうひととはあくしゅをする。",
+      "example_meaning": "和初次見面的人握手。"
+    },
+    {
+      "word": "悪魔",
+      "reading": "あくま",
+      "meaning": "惡魔",
+      "example": "彼はまるで悪魔のような顔をしていた。",
+      "example_reading": "かれはまるでアクマのようなかおをしていた。",
+      "example_meaning": "他的臉簡直像惡魔一樣。"
+    },
+    {
+      "word": "明ける",
+      "reading": "あける",
+      "meaning": "天亮；結束（年、假期等）",
+      "example": "もうすぐ夜が明けるよ。",
+      "example_reading": "もうすぐよるがあけるよ。",
+      "example_meaning": "差不多要天亮了喔。"
+    },
+    {
+      "word": "あした",
+      "reading": "あした",
+      "meaning": "明天",
+      "example": "あしたまた会いましょう。",
+      "example_reading": "あしたまたあいましょう。",
+      "example_meaning": "明天再見吧。"
+    },
+    {
+      "word": "預ける",
+      "reading": "あずける",
+      "meaning": "寄放、託付",
+      "example": "旅行に行く間、犬を友達に預けた。",
+      "example_reading": "りょこうにいくあいだ、いぬをともだちにあずけた。",
+      "example_meaning": "旅行期間，我把狗寄放在朋友那裡。"
+    },
+    {
+      "word": "汗",
+      "reading": "あせ",
+      "meaning": "汗水",
+      "example": "暑すぎて、額から汗が流れ落ちた。",
+      "example_reading": "あつすぎて、ひたいからあせがながれおちた。",
+      "example_meaning": "太熱了，汗水從額頭流下來。"
+    },
+    {
+      "word": "与える",
+      "reading": "あたえる",
+      "meaning": "給予、提供",
+      "example": "子供たちに夢と希望を与えたい。",
+      "example_reading": "こどもたちにゆめときぼうをあたえたい。",
+      "example_meaning": "我想給孩子們夢想和希望。"
+    },
+    {
+      "word": "当たる",
+      "reading": "あたる",
+      "meaning": "命中、碰觸到、中獎",
+      "example": "宝くじが当たって、とても嬉しい。",
+      "example_reading": "たからくじがあたって、とてもうれしい。",
+      "example_meaning": "樂透中獎了，我非常高興。"
+    },
+    {
+      "word": "あちこち",
+      "reading": "あちこち",
+      "meaning": "到處、這裡那裡",
+      "example": "週末は家族であちこち出かけた。",
+      "example_reading": "しゅうまつはかぞくであちこちでかけた。",
+      "example_meaning": "週末我跟家人到處去玩了。"
+    },
+    {
+      "word": "扱う",
+      "reading": "あつかう",
+      "meaning": "對待、處理、操作",
+      "example": "この荷物は壊れやすいので、丁寧に扱ってください。",
+      "example_reading": "このにもつはこわれやすいので、ていねいがあつかってください。",
+      "example_meaning": "這個行李容易損壞，請小心處理。"
+    },
+    {
+      "word": "集まり",
+      "reading": "あつまり",
+      "meaning": "聚會、聚集",
+      "example": "会社の集まりで新しいプロジェクトについて話した。",
+      "example_reading": "かいしゃのあつまりであたらしいぷろじぇくとについて話した。",
+      "example_meaning": "在公司的聚會上談論了新專案。"
+    },
+    {
+      "word": "当てる",
+      "reading": "あてる",
+      "meaning": "貼上、猜中、擊中",
+      "example": "冷たいタオルを額に当てて、熱を冷ました。",
+      "example_reading": "つめたいタオルをひたいにあてて、ねつをさました。",
+      "example_meaning": "我把冷毛巾敷在額頭上，把熱退了。"
+    },
+    {
+      "word": "跡",
+      "reading": "あと",
+      "meaning": "痕跡、足跡、地點",
+      "example": "雪の上に動物の足跡があった。",
+      "example_reading": "ゆきのうえにどうぶつのあしあとがあった。",
+      "example_meaning": "雪上有動物的足跡。"
+    },
+    {
+      "word": "あと",
+      "reading": "あと",
+      "meaning": "之後、後面、剩餘",
+      "example": "ご飯を食べた後、散歩に行った。",
+      "example_reading": "ごはんをたべたあと、さんぽにいった。",
+      "example_meaning": "吃完飯後，去散步了。"
+    },
+    {
+      "word": "穴",
+      "reading": "あな",
+      "meaning": "洞、孔",
+      "example": "公園の地面に大きな穴が空いているよ。",
+      "example_reading": "こうえんのじめんにおおきなあながあいているよ。",
+      "example_meaning": "公園的地面上有個大洞喔。"
+    },
+    {
+      "word": "浴びる",
+      "reading": "あびる",
+      "meaning": "淋、沖、照（光）",
+      "example": "毎朝シャワーを浴びてから仕事に行くんだ。",
+      "example_reading": "まいあさシャワーをあびてからしごとにいくんだ。",
+      "example_meaning": "我每天早上洗完澡再去上班。"
+    },
+    {
+      "word": "油",
+      "reading": "あぶら",
+      "meaning": "油",
+      "example": "揚げ物をする時は、たくさん油を使うから大変だね。",
+      "example_reading": "あげものをするときは、たくさんあぶらをつかうからたいへんだね。",
+      "example_meaning": "炸東西的時候，要用很多油，真麻煩呢。"
+    },
+    {
+      "word": "誤り",
+      "reading": "あやまり",
+      "meaning": "錯誤、過失",
+      "example": "その計算にはいくつか誤りがあるみたいだよ。",
+      "example_reading": "そのけいさんにはいくつかあやまりがあるみたいだよ。",
+      "example_meaning": "那個計算好像有幾個錯誤。"
+    },
+    {
+      "word": "粗",
+      "reading": "あら",
+      "meaning": "缺點、粗糙",
+      "example": "この製品は値段は安いけど、ちょっと粗が多いな。",
+      "example_reading": "このせいひんはねだんはやすいけど、ちょっとあらがおおいな。",
+      "example_meaning": "這個產品雖然便宜，但缺點有點多呢。"
+    },
+    {
+      "word": "嵐",
+      "reading": "あらし",
+      "meaning": "暴風雨、風暴",
+      "example": "昨日の夜はすごい嵐で、一晩中眠れなかったよ。",
+      "example_reading": "きのうのよるはすごいあらしで、ひとばんじゅうねむれなかったよ。",
+      "example_meaning": "昨晚風暴好大，我一整晚都沒睡好。"
+    },
+    {
+      "word": "新た",
+      "reading": "あらた",
+      "meaning": "新的、重新",
+      "example": "４月から新たな気持ちで、この仕事を頑張ります。",
+      "example_reading": "しがつからあらたなきもちで、このしごとをがんばります。",
+      "example_meaning": "我會從四月起以全新的心情努力工作。"
+    },
+    {
+      "word": "あらゆる",
+      "reading": "あらゆる",
+      "meaning": "所有、一切的",
+      "example": "彼はあらゆる困難を乗り越えて、夢を叶えたんだ。",
+      "example_reading": "かれはあらゆるこんなんをのりこえて、ゆめをかなえたんだ。",
+      "example_meaning": "他克服了所有困難，實現了夢想。"
+    },
+    {
+      "word": "表す",
+      "reading": "あらわす",
+      "meaning": "表示、表現",
+      "example": "自分の気持ちを言葉で表すのは、難しい時もあるよね。",
+      "example_reading": "じぶんのきもちをことばであらわすのは、むずかしいときもあるよね。",
+      "example_meaning": "有時候用言語表達自己的心情是很困難的呢。"
+    },
+    {
+      "word": "現す",
+      "reading": "あらわす",
+      "meaning": "顯現、出現",
+      "example": "長い間隠れていた真実が、ついに姿を現した。",
+      "example_reading": "ながいあいだかくれていたしんじつが、ついにすがたをあらわした。",
+      "example_meaning": "長期以來被隱藏的真相，終於現身了。"
+    },
+    {
+      "word": "現れ",
+      "reading": "あらわれ",
+      "meaning": "出現、表現、徵兆",
+      "example": "彼の行動は、責任感の現れです。",
+      "example_reading": "かれのこうどうは、せきにんかんのあらわれです。",
+      "example_meaning": "他的行動是責任感的表現。"
+    },
+    {
+      "word": "現れる",
+      "reading": "あらわれる",
+      "meaning": "出現、顯現",
+      "example": "彼は約束の時間に現れなかった。",
+      "example_reading": "かれはやくそくのじかんにあらわれなかった。",
+      "example_meaning": "他沒有在約定時間出現。"
+    },
+    {
+      "word": "ありがとう",
+      "reading": "ありがとう",
+      "meaning": "謝謝",
+      "example": "手伝ってくれて、本当にありがとう。",
+      "example_reading": "てつだってくれて、ほんとうにありがとう。",
+      "example_meaning": "謝謝你幫忙，真的非常感謝。"
+    },
+    {
+      "word": "有る",
+      "reading": "ある",
+      "meaning": "有、存在",
+      "example": "冷蔵庫に牛乳がまだある？",
+      "example_reading": "れいぞうこにぎゅうにゅうがまだある？",
+      "example_meaning": "冰箱裡還有牛奶嗎？"
+    },
+    {
+      "word": "或",
+      "reading": "ある",
+      "meaning": "某個、某種",
+      "example": "ある朝、私は変な夢を見た。",
+      "example_reading": "あるあさ、わたしはへんなゆめをみた。",
+      "example_meaning": "某天早上，我做了一個奇怪的夢。"
+    },
+    {
+      "word": "あるいは",
+      "reading": "あるいは",
+      "meaning": "或者、或是",
+      "example": "電車で行くか、あるいはバスで行くか、まだ決めていません。",
+      "example_reading": "でんしゃでいくか、あるいはバスでいくか、まだきめていません。",
+      "example_meaning": "我還沒決定是要搭電車去，還是搭公車去。"
+    },
+    {
+      "word": "アルバム",
+      "reading": "アルバム",
+      "meaning": "相簿、專輯",
+      "example": "昔の家族写真をアルバムに整理しました。",
+      "example_reading": "むかしのかぞくしゃしんをアルバムにせいりしました。",
+      "example_meaning": "我把以前的家庭照片整理到相簿裡了。"
+    },
+    {
+      "word": "泡",
+      "reading": "あわ",
+      "meaning": "泡沫、水泡",
+      "example": "石鹸で手を洗ったら、泡がたくさん出た。",
+      "example_reading": "せっけんでてをあらったら、あわがたくさんでた。",
+      "example_meaning": "用肥皂洗手後，起了很多泡沫。"
+    },
+    {
+      "word": "合わせる",
+      "reading": "あわせる",
+      "meaning": "組合、配合、對齊",
+      "example": "みんなで力を合わせて、このプロジェクトを成功させよう。",
+      "example_reading": "みんなでちからをあわせて、このプロジェクトをせいこうさせよう。",
+      "example_meaning": "大家齊心協力，讓這個企劃成功吧。"
+    },
+    {
+      "word": "哀れ",
+      "reading": "あわれ",
+      "meaning": "可憐、悲哀",
+      "example": "雨の中、捨てられた子犬の姿が哀れだった。",
+      "example_reading": "あめのなか、すてられたこいぬのすがたがあわれだった。",
+      "example_meaning": "在雨中，被遺棄的小狗的樣子很可憐。"
+    }
   ],
   "grammar": [
-    {"pattern": "〜によって", "meaning": "依據〜；由於〜；依照〜", "example": "人によって意見が違う。", "example_meaning": "依人不同意見也不同。", "notes": "表示原因、手段、依據或不同情況"},
-    {"pattern": "〜に対して", "meaning": "對於〜；相對於〜", "example": "環境問題に対して関心を持つ。", "example_meaning": "對環境問題感興趣。", "notes": "表示動作或感情的對象"},
-    {"pattern": "〜ために", "meaning": "為了〜（目的）；因為〜（原因）", "example": "健康のために運動する。", "example_meaning": "為了健康而運動。", "notes": "目的用名詞の・動詞辞書形＋ために；原因用た形＋ために"},
-    {"pattern": "〜ようになる", "meaning": "變得能〜了；逐漸〜", "example": "日本語が話せるようになった。", "example_meaning": "變得能說日語了。", "notes": "表示能力或狀態的逐漸改變"},
-    {"pattern": "〜わけだ", "meaning": "難怪〜；所以才〜", "example": "毎日練習しているわけだ。", "example_meaning": "難怪（他）每天練習。", "notes": "表示基於某理由得出理所當然的結論"},
-    {"pattern": "〜ものの", "meaning": "雖然〜但是〜", "example": "やってみたものの、うまくいかなかった。", "example_meaning": "雖然試了看看，但沒能順利。", "notes": "前後有轉折，但語氣比けど輕"},
-    {"pattern": "〜ことにする", "meaning": "決定〜（自己決定）", "example": "毎朝走ることにした。", "example_meaning": "決定每天早上跑步。", "notes": "ことになる是外力決定，ことにする是自己決定"},
-    {"pattern": "〜に関して", "meaning": "關於〜（較正式）", "example": "この件に関して説明します。", "example_meaning": "關於這件事我來說明。", "notes": "比について更正式，常用於書面"}
+    {
+      "pattern": "〜によって",
+      "meaning": "依據〜；由於〜；依照〜",
+      "example": "人によって意見が違う。",
+      "example_meaning": "依人不同意見也不同。",
+      "notes": "表示原因、手段、依據或不同情況"
+    },
+    {
+      "pattern": "〜に対して",
+      "meaning": "對於〜；相對於〜",
+      "example": "環境問題に対して関心を持つ。",
+      "example_meaning": "對環境問題感興趣。",
+      "notes": "表示動作或感情的對象"
+    },
+    {
+      "pattern": "〜ために",
+      "meaning": "為了〜（目的）；因為〜（原因）",
+      "example": "健康のために運動する。",
+      "example_meaning": "為了健康而運動。",
+      "notes": "目的用名詞の・動詞辞書形＋ために；原因用た形＋ために"
+    },
+    {
+      "pattern": "〜ようになる",
+      "meaning": "變得能〜了；逐漸〜",
+      "example": "日本語が話せるようになった。",
+      "example_meaning": "變得能說日語了。",
+      "notes": "表示能力或狀態的逐漸改變"
+    },
+    {
+      "pattern": "〜わけだ",
+      "meaning": "難怪〜；所以才〜",
+      "example": "毎日練習しているわけだ。",
+      "example_meaning": "難怪（他）每天練習。",
+      "notes": "表示基於某理由得出理所當然的結論"
+    },
+    {
+      "pattern": "〜ものの",
+      "meaning": "雖然〜但是〜",
+      "example": "やってみたものの、うまくいかなかった。",
+      "example_meaning": "雖然試了看看，但沒能順利。",
+      "notes": "前後有轉折，但語氣比けど輕"
+    },
+    {
+      "pattern": "〜ことにする",
+      "meaning": "決定〜（自己決定）",
+      "example": "毎朝走ることにした。",
+      "example_meaning": "決定每天早上跑步。",
+      "notes": "ことになる是外力決定，ことにする是自己決定"
+    },
+    {
+      "pattern": "〜に関して",
+      "meaning": "關於〜（較正式）",
+      "example": "この件に関して説明します。",
+      "example_meaning": "關於這件事我來說明。",
+      "notes": "比について更正式，常用於書面"
+    }
   ],
   "kanji": [
-    {"kanji": "影", "reading_on": "エイ", "reading_kun": "かげ", "meaning": "影子、影響", "examples": ["影響（えいきょう）影響", "影（かげ）影子"]},
-    {"kanji": "確", "reading_on": "カク", "reading_kun": "たし", "meaning": "確實、確認", "examples": ["確認（かくにん）確認", "確かだ（たしかだ）確實"]},
-    {"kanji": "状", "reading_on": "ジョウ", "reading_kun": "—", "meaning": "狀態、形狀", "examples": ["状況（じょうきょう）狀況", "状態（じょうたい）狀態"]},
-    {"kanji": "判", "reading_on": "ハン", "reading_kun": "—", "meaning": "判斷、判決", "examples": ["判断（はんだん）判斷", "裁判（さいばん）審判"]},
-    {"kanji": "解", "reading_on": "カイ", "reading_kun": "と", "meaning": "解開、理解", "examples": ["解決（かいけつ）解決", "理解（りかい）理解", "解く（とく）解開"]},
-    {"kanji": "成", "reading_on": "セイ", "reading_kun": "な", "meaning": "成功、完成", "examples": ["成功（せいこう）成功", "完成（かんせい）完成", "成長（せいちょう）成長"]},
-    {"kanji": "失", "reading_on": "シツ", "reading_kun": "うしな", "meaning": "失去、失敗", "examples": ["失敗（しっぱい）失敗", "失う（うしなう）失去", "失礼（しつれい）失禮"]},
-    {"kanji": "責", "reading_on": "セキ", "reading_kun": "せ", "meaning": "責任、責備", "examples": ["責任（せきにん）責任", "責める（せめる）責備"]},
-    {"kanji": "関", "reading_on": "カン", "reading_kun": "かか", "meaning": "關係、關連", "examples": ["関係（かんけい）關係", "関心（かんしん）關心", "関連（かんれん）關連"]},
-    {"kanji": "複", "reading_on": "フク", "reading_kun": "—", "meaning": "複數、複雜", "examples": ["複雑（ふくざつ）複雜", "複数（ふくすう）複數"]}
+    {
+      "kanji": "影",
+      "reading_on": "エイ",
+      "reading_kun": "かげ",
+      "meaning": "影子、影響",
+      "examples": [
+        "影響（えいきょう）影響",
+        "影（かげ）影子"
+      ]
+    },
+    {
+      "kanji": "確",
+      "reading_on": "カク",
+      "reading_kun": "たし",
+      "meaning": "確實、確認",
+      "examples": [
+        "確認（かくにん）確認",
+        "確かだ（たしかだ）確實"
+      ]
+    },
+    {
+      "kanji": "状",
+      "reading_on": "ジョウ",
+      "reading_kun": "—",
+      "meaning": "狀態、形狀",
+      "examples": [
+        "状況（じょうきょう）狀況",
+        "状態（じょうたい）狀態"
+      ]
+    },
+    {
+      "kanji": "判",
+      "reading_on": "ハン",
+      "reading_kun": "—",
+      "meaning": "判斷、判決",
+      "examples": [
+        "判断（はんだん）判斷",
+        "裁判（さいばん）審判"
+      ]
+    },
+    {
+      "kanji": "解",
+      "reading_on": "カイ",
+      "reading_kun": "と",
+      "meaning": "解開、理解",
+      "examples": [
+        "解決（かいけつ）解決",
+        "理解（りかい）理解",
+        "解く（とく）解開"
+      ]
+    },
+    {
+      "kanji": "成",
+      "reading_on": "セイ",
+      "reading_kun": "な",
+      "meaning": "成功、完成",
+      "examples": [
+        "成功（せいこう）成功",
+        "完成（かんせい）完成",
+        "成長（せいちょう）成長"
+      ]
+    },
+    {
+      "kanji": "失",
+      "reading_on": "シツ",
+      "reading_kun": "うしな",
+      "meaning": "失去、失敗",
+      "examples": [
+        "失敗（しっぱい）失敗",
+        "失う（うしなう）失去",
+        "失礼（しつれい）失禮"
+      ]
+    },
+    {
+      "kanji": "責",
+      "reading_on": "セキ",
+      "reading_kun": "せ",
+      "meaning": "責任、責備",
+      "examples": [
+        "責任（せきにん）責任",
+        "責める（せめる）責備"
+      ]
+    },
+    {
+      "kanji": "関",
+      "reading_on": "カン",
+      "reading_kun": "かか",
+      "meaning": "關係、關連",
+      "examples": [
+        "関係（かんけい）關係",
+        "関心（かんしん）關心",
+        "関連（かんれん）關連"
+      ]
+    },
+    {
+      "kanji": "複",
+      "reading_on": "フク",
+      "reading_kun": "—",
+      "meaning": "複數、複雜",
+      "examples": [
+        "複雑（ふくざつ）複雜",
+        "複数（ふくすう）複數"
+      ]
+    }
   ],
   "practice": [
-    {"type": "grammar", "question": "人___意見が違います。（依據不同人）", "options": ["によって", "に対して", "のために", "として"], "answer": 0, "explanation": "「〜によって」表示「依〜不同」。人によって意見が違う。"},
-    {"type": "vocabulary", "question": "「解決」の意味はどれですか。", "options": ["解決", "判斷", "影響", "確認"], "answer": 0, "explanation": "解決（かいけつ）是「解決」的意思。"},
-    {"type": "kanji", "question": "「影響」の読み方はどれですか。", "options": ["えいきょう", "えいこう", "かげきょう", "えいきょ"], "answer": 0, "explanation": "影響的讀音是えいきょう。影（エイ）＋響（キョウ）。"},
-    {"type": "grammar", "question": "日本語が話せる___なった。（逐漸能〜了）", "options": ["ようになった", "ことになった", "ようにした", "ことにした"], "answer": 0, "explanation": "「〜ようになる」表示能力或狀態的逐漸改變，自然發生的變化。"},
-    {"type": "vocabulary", "question": "「責任」の意味はどれですか。", "options": ["責任", "關係", "意識", "理解"], "answer": 0, "explanation": "責任（せきにん）是「責任」的意思。"},
-    {"type": "grammar", "question": "この件___説明します。（關於〜）", "options": ["に関して", "によって", "に対して", "として"], "answer": 0, "explanation": "「〜に関して」是「關於〜」的正式說法，常用於書面。"},
-    {"type": "kanji", "question": "「成功」の反対語はどれですか。", "options": ["失敗", "失礼", "失う", "失念"], "answer": 0, "explanation": "成功（せいこう）的反義詞是失敗（しっぱい）。"},
-    {"type": "vocabulary", "question": "「将来」の意味はどれですか。", "options": ["將來", "現在", "過去", "未來"], "answer": 0, "explanation": "将来（しょうらい）是「將來」的意思。"},
-    {"type": "grammar", "question": "毎朝走る___にした。（自己決定）", "options": ["こと", "よう", "わけ", "もの"], "answer": 0, "explanation": "「〜ことにする」是自己做出決定，「〜ようにする」是努力讓自己養成習慣。"},
-    {"type": "kanji", "question": "「関係」の読み方はどれですか。", "options": ["かんけい", "かんかい", "かんこく", "かんじ"], "answer": 0, "explanation": "関係（かんけい）是「關係」。関（カン）＋係（ケイ）。"}
+    {
+      "type": "vocabulary",
+      "question": "「あっ」の意味はどれですか。",
+      "options": [
+        "啊！(表示驚訝、發現等)",
+        "哎呀！(表示疼痛)",
+        "嗯！(表示同意)",
+        "喂！(表示呼喚)"
+      ],
+      "answer": 0,
+      "explanation": "「あっ」是一個感嘆詞，用於表示驚訝、發現或突然意識到某事。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「挨拶」の意味はどれですか。",
+      "options": [
+        "介紹、說明",
+        "交談、聊天",
+        "感謝、道謝",
+        "問候、寒暄"
+      ],
+      "answer": 3,
+      "explanation": "「挨拶」指與人見面或分離時的問候語或行為。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「相手」の意味はどれですか。",
+      "options": [
+        "對方、夥伴",
+        "戀人、情人",
+        "朋友、友人",
+        "客人、顧客"
+      ],
+      "answer": 0,
+      "explanation": "「相手」指對手、對象或一起做某事的人。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「あいにく」の意味はどれですか。",
+      "options": [
+        "不巧、偏偏",
+        "果然、正如預期",
+        "意外、出乎意料",
+        "當然、理所當然"
+      ],
+      "answer": 0,
+      "explanation": "「あいにく」是一個副詞，表示事情不湊巧、不順利。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「明かり」の意味はどれですか。",
+      "options": [
+        "光線；燈光",
+        "影子；陰影",
+        "色彩；顏色",
+        "火焰；火光"
+      ],
+      "answer": 0,
+      "explanation": "「明かり」指照明的光源，如燈光或自然光。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「明らか」の意味はどれですか。",
+      "options": [
+        "模糊的；不清楚的",
+        "複雜的；難懂的",
+        "明顯的；清楚的",
+        "簡單的；容易的"
+      ],
+      "answer": 2,
+      "explanation": "「明らか」是一個形容動詞，表示事物清晰可見或道理顯而易見。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「諦める」の意味はどれですか。",
+      "options": [
+        "完成",
+        "放棄",
+        "開始",
+        "挑戰"
+      ],
+      "answer": 1,
+      "explanation": "「諦める」是一個動詞，表示放棄原來的想法或目標。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「飽きる」の意味はどれですか。",
+      "options": [
+        "喜歡；著迷",
+        "疲憊；勞累",
+        "厭倦；吃膩",
+        "開心；高興"
+      ],
+      "answer": 2,
+      "explanation": "「飽きる」是一個動詞，表示對某事失去興趣或因吃太多而感到膩。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「悪魔」の意味はどれですか。",
+      "options": [
+        "惡魔",
+        "神明",
+        "天使",
+        "英雄"
+      ],
+      "answer": 0,
+      "explanation": "「悪魔」指邪惡的魔鬼或妖魔。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「預ける」の意味はどれですか。",
+      "options": [
+        "保管、保存",
+        "借出、借給",
+        "寄放、託付",
+        "領取、取出"
+      ],
+      "answer": 2,
+      "explanation": "「預ける」是一個動詞，表示將物品或責任交給他人保管或處理。"
+    }
   ]
 }

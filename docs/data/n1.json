@@ -1,42 +1,570 @@
 {
   "vocabulary": [
-    {"word": "曖昧", "reading": "あいまい", "meaning": "曖昧；模糊", "example": "曖昧な表現を避ける。", "example_reading": "あいまいなひょうげんをさける。", "example_meaning": "避免模糊的表達。"},
-    {"word": "逸脱", "reading": "いつだつ", "meaning": "偏離；逸脫", "example": "規則から逸脱する。", "example_reading": "きそくからいつだつする。", "example_meaning": "偏離規則。"},
-    {"word": "醸成", "reading": "じょうせい", "meaning": "醞釀；培育（氣氛）", "example": "信頼関係を醸成する。", "example_reading": "しんらいかんけいをじょうせいする。", "example_meaning": "醞釀信任關係。"},
-    {"word": "乖離", "reading": "かいり", "meaning": "背離；乖離", "example": "理想と現実の乖離。", "example_reading": "りそうとげんじつのかいり。", "example_meaning": "理想與現實的背離。"},
-    {"word": "帰趨", "reading": "きすう", "meaning": "歸趨；走向", "example": "事態の帰趨を見守る。", "example_reading": "じたいのきすうをみまもる。", "example_meaning": "靜觀事態的走向。"},
-    {"word": "恣意", "reading": "しい", "meaning": "任意；隨意（帶負面意味）", "example": "恣意的な判断は危険だ。", "example_reading": "しいてきなはんだんはきけんだ。", "example_meaning": "任意的判斷是危險的。"},
-    {"word": "逡巡", "reading": "しゅんじゅん", "meaning": "猶豫；躊躇", "example": "逡巡することなく決断した。", "example_reading": "しゅんじゅんすることなくけつだんした。", "example_meaning": "毫不猶豫地做出決斷。"},
-    {"word": "忖度", "reading": "そんたく", "meaning": "揣度；揣摩（他人心意）", "example": "忖度なしに意見を言う。", "example_reading": "そんたくなしにいけんをいう。", "example_meaning": "不揣摩他人心意地表達意見。"},
-    {"word": "齟齬", "reading": "そごう", "meaning": "齟齬；不一致", "example": "認識の齟齬が生じた。", "example_reading": "にんしきのそごうがしょうじた。", "example_meaning": "產生了認知上的齟齬。"},
-    {"word": "蓋然性", "reading": "がいぜんせい", "meaning": "蓋然性；可能性", "example": "高い蓋然性で成功する。", "example_reading": "たかいがいぜんせいでせいこうする。", "example_meaning": "以高可能性成功。"}
+    {
+      "word": "嗚呼",
+      "reading": "ああ",
+      "meaning": "啊、唉（感嘆詞）",
+      "example": "嗚呼、美しい景色だ！",
+      "example_reading": "ああ、うつくしいけしきだ！",
+      "example_meaning": "啊，多麼美麗的景色啊！"
+    },
+    {
+      "word": "相",
+      "reading": "あい",
+      "meaning": "互相、彼此（多用於複合詞或動詞詞幹前）",
+      "example": "二人は相見て、微笑んだ。",
+      "example_reading": "ふたりはあいまみて、ほほえんだ。",
+      "example_meaning": "兩人互相看著，微笑了。"
+    },
+    {
+      "word": "相変わらず",
+      "reading": "あいかわらず",
+      "meaning": "一如往常、依然",
+      "example": "彼は相変わらず元気そうだね。",
+      "example_reading": "かれはあいかわらずげんきそうだね。",
+      "example_meaning": "他還是一如往常地精神飽滿呢。"
+    },
+    {
+      "word": "愛想",
+      "reading": "あいそ",
+      "meaning": "和藹、親切、待客態度",
+      "example": "あの店員さんは愛想がいいから好きだ。",
+      "example_reading": "あのみせいいんさんはあいそがいいからすきだ。",
+      "example_meaning": "我喜歡那位店員，因為他態度和藹。"
+    },
+    {
+      "word": "相対",
+      "reading": "あいたい",
+      "meaning": "面對面、當面",
+      "example": "彼女とは相対して話したい。",
+      "example_reading": "かのじょとはあいたいしてはなしたい。",
+      "example_meaning": "我想和她當面談話。"
+    },
+    {
+      "word": "間柄",
+      "reading": "あいだがら",
+      "meaning": "關係、交情",
+      "example": "彼とは仕事上の間柄だ。",
+      "example_reading": "かれとはしごとじょうのあいだがらだ。",
+      "example_meaning": "我和他之間是工作上的關係。"
+    },
+    {
+      "word": "愛憎",
+      "reading": "あいにく",
+      "meaning": "愛與憎恨、愛恨",
+      "example": "彼女の心の中には愛憎が渦巻いていた。",
+      "example_reading": "かのじょのこころのなかにはあいぞうがうずまいていた。",
+      "example_meaning": "她的心中愛恨交織。"
+    },
+    {
+      "word": "合間",
+      "reading": "あいま",
+      "meaning": "空檔、閒暇時間",
+      "example": "仕事の合間を縫って休憩した。",
+      "example_reading": "しごとがあいまをぬってきゅうけいした。",
+      "example_meaning": "我利用工作的空檔休息了一下。"
+    },
+    {
+      "word": "曖昧",
+      "reading": "あいまい",
+      "meaning": "曖昧、模糊不清",
+      "example": "彼の返事はいつも曖昧だ。",
+      "example_reading": "かれのへんじはいつもあいまいだ。",
+      "example_meaning": "他的回答總是很曖昧。"
+    },
+    {
+      "word": "敢えて",
+      "reading": "あえて",
+      "meaning": "敢於、特意、硬要",
+      "example": "敢えて困難な道を選んだ。",
+      "example_reading": "あえてこんなんなどちをえらんだ。",
+      "example_meaning": "我特意選擇了困難的道路。"
+    },
+    {
+      "word": "明るい",
+      "reading": "あかるい",
+      "meaning": "明亮的；開朗的；樂觀的",
+      "example": "彼女はいつも明るい笑顔で、周りの人を元気にする。",
+      "example_reading": "かのじょはいつもあかるいえがおで、まわりのひとをげんきにする。",
+      "example_meaning": "她總是帶著開朗的笑容，讓周圍的人都充滿活力。"
+    },
+    {
+      "word": "上がり",
+      "reading": "あがり",
+      "meaning": "結束；完成；結果；（薪資等的）收入",
+      "example": "このプロジェクトの上がりは、予想以上の成果だったね。",
+      "example_reading": "このぷろじぇくとのあがりは、よそういじょうのせいかだったね。",
+      "example_meaning": "這個專案的成果，比預期的還要好呢。"
+    },
+    {
+      "word": "上がる",
+      "reading": "あがる",
+      "meaning": "上升；提高；完成；緊張；結束",
+      "example": "大勢の人の前で話すのは、いつも緊張して上がってしまう。",
+      "example_reading": "おおぜいのひとのまえではなすのは、いつもきんちょうしてあがってしまう。",
+      "example_meaning": "在許多人面前說話，我總是會緊張到發抖。"
+    },
+    {
+      "word": "商人",
+      "reading": "あきうど",
+      "meaning": "商人；生意人（古語或文學用語）",
+      "example": "昔ながらの商店街には、腕のいいあきうどが多くいたものだ。",
+      "example_reading": "むかしながらのしょうてんがいには、うでのいいあきうどがおおくいたものだ。",
+      "example_meaning": "在傳統的商店街裡，曾有很多手藝精湛的商人。"
+    },
+    {
+      "word": "空間",
+      "reading": "あきま",
+      "meaning": "空房；空位；空隙；空閒",
+      "example": "次の授業まで少しあきまがあるので、お茶でもどうですか？",
+      "example_reading": "つぎのじゅぎょうまですこしあきまがあるので、おちゃでもどうですか？",
+      "example_meaning": "到下節課還有點空檔，要不要來杯茶？"
+    },
+    {
+      "word": "諦め",
+      "reading": "あきらめ",
+      "meaning": "放棄；死心",
+      "example": "どんな困難があっても、決して諦めはしないと心に決めた。",
+      "example_reading": "どんなこんなんがあっても、けっしてあきらめはしないとこころにきめた。",
+      "example_meaning": "無論遇到什麼困難，我都下定決心絕不放棄。"
+    },
+    {
+      "word": "呆れる",
+      "reading": "あきれる",
+      "meaning": "驚訝；傻眼；瞠目結舌",
+      "example": "彼のあまりにも非常識な行動には、本当に呆れてものが言えなかった。",
+      "example_reading": "かれのあまりにもひじょうしきなこうどうには、ほんとうにあきれてものがいえなかった。",
+      "example_meaning": "他那太過於常識的行為，真讓我傻眼到說不出話來。"
+    },
+    {
+      "word": "悪",
+      "reading": "あく",
+      "meaning": "惡；罪惡；壞事",
+      "example": "どんな時代にも、善と悪は常に存在するものだ。",
+      "example_reading": "どんなじだいにも、ぜんとあくはつねにそんざいするものだ。",
+      "example_meaning": "無論在哪個時代，善與惡都是永恆存在的。"
+    },
+    {
+      "word": "灰",
+      "reading": "あく",
+      "meaning": "（烹飪時浮出的）浮渣；澀味；苦味；鹼水",
+      "example": "大根を煮る前に、あく抜きをする必要がある。",
+      "example_reading": "だいこんをにるまえに、あくぬきをするひつようがある。",
+      "example_meaning": "煮白蘿蔔之前，需要先去除澀味/浮渣。"
+    },
+    {
+      "word": "あくどい",
+      "reading": "あくどい",
+      "meaning": "惡劣的；狡猾的；過於濃豔的（顏色）；（味道）太重的",
+      "example": "あの会社は、あくどい商売で儲けていると評判だ。",
+      "example_reading": "あのかいしゃは、あくどいしょうばいでもうけているとひょうばんだ。",
+      "example_meaning": "那家公司以不擇手段的生意手法賺錢，聲名狼藉。"
+    },
+    {
+      "word": "悪日",
+      "reading": "あくび",
+      "meaning": "不吉利的日子，凶日",
+      "example": "明日は悪日なので、重要な契約は見送った方がいいかもしれない。",
+      "example_reading": "あすはあくじつなので、じゅうようなけいやくはみおくったほうがいいかもしれない。",
+      "example_meaning": "明天是不吉利的日子，重要的合約或許最好延期。"
+    },
+    {
+      "word": "明くる",
+      "reading": "あくる",
+      "meaning": "次日，翌日；下一個",
+      "example": "会議は深夜まで続き、明くる日も議論が交わされた。",
+      "example_reading": "かいぎはしんやまでつづき、あくるひもぎろんがかわされた。",
+      "example_meaning": "會議持續到深夜，隔天也繼續進行了討論。"
+    },
+    {
+      "word": "憧れ",
+      "reading": "あこがれ",
+      "meaning": "憧憬，嚮往，仰慕",
+      "example": "彼女は幼い頃から、宇宙飛行士になることに強い憧れを抱いていた。",
+      "example_reading": "かのじょはおさないころから、うちゅうひこうしになることにつよいあこがれをいだいていた。",
+      "example_meaning": "她從小便對成為太空人抱有強烈的憧憬。"
+    },
+    {
+      "word": "顎",
+      "reading": "あご",
+      "meaning": "下巴，顎",
+      "example": "転んで顎を強く打ってしまい、しばらく痛みが続いた。",
+      "example_reading": "ころんであごをつよくうってしまい、しばらくいたみがつづいた。",
+      "example_meaning": "跌倒時下巴受到重擊，疼痛持續了一段時間。"
+    },
+    {
+      "word": "麻",
+      "reading": "あさ",
+      "meaning": "麻，麻布",
+      "example": "夏には、涼しい麻のシャツを着ることが多い。",
+      "example_reading": "なつには、すずしいあさのシャツをきることがおおい。",
+      "example_meaning": "夏天經常穿涼爽的麻質襯衫。"
+    },
+    {
+      "word": "明後日",
+      "reading": "あさって",
+      "meaning": "後天",
+      "example": "明後日、いとこの結婚式があるので、新幹線で実家に帰ります。",
+      "example_reading": "あさって、いとこのけっこんしきがあるので、しんかんせんでじっかにかえります。",
+      "example_meaning": "後天有我堂（表）兄妹的婚禮，所以要搭新幹線回老家。"
+    },
+    {
+      "word": "朝寝坊",
+      "reading": "あさねぼう",
+      "meaning": "睡懶覺，晚起的人",
+      "example": "昨夜遅くまでゲームをしていたせいで、今朝は朝寝坊してしまった。",
+      "example_reading": "さくやおそくまでゲームをしていたせいで、けさはあさねぼうしてしまった。",
+      "example_meaning": "因為昨晚玩遊戲到很晚，今天早上睡過頭了。"
+    },
+    {
+      "word": "浅ましい",
+      "reading": "あさましい",
+      "meaning": "卑鄙的，可恥的，可憐的",
+      "example": "人の不幸を嘲笑うとは、浅ましいにも程がある。",
+      "example_reading": "ひとのふこうをあざわらうとは、あさましいにもほどがある。",
+      "example_meaning": "嘲笑別人的不幸，真是卑鄙到極點了。"
+    },
+    {
+      "word": "字",
+      "reading": "あざ",
+      "meaning": "胎記，痣，斑點；（村鎮的）行政區劃單位",
+      "example": "彼の腕には生まれつきの大きな青い字がある。",
+      "example_reading": "かれのうでにはうまれつきのおおきいあおいあざがある。",
+      "example_meaning": "他的手臂上有個天生的巨大藍色胎記。"
+    },
+    {
+      "word": "欺く",
+      "reading": "あざむく",
+      "meaning": "欺騙，哄騙",
+      "example": "彼は甘い言葉で女性を欺き、金銭をだまし取った。",
+      "example_reading": "かれはあまいことばでじょせいをあざむき、きんせんをだましとった。",
+      "example_meaning": "他用甜言蜜語欺騙女性，詐取金錢。"
+    },
+    {
+      "word": "鮮やか",
+      "reading": "あざやか",
+      "meaning": "鮮明、鮮豔、清晰",
+      "example": "この絵は色彩が鮮やかで、見る人の目を引きます。",
+      "example_reading": "このえはしきさいがあざやかで、みるひとのめをひきます。",
+      "example_meaning": "這幅畫色彩鮮豔，很吸引人的目光。"
+    },
+    {
+      "word": "あざ笑う",
+      "reading": "あざわらう",
+      "meaning": "嘲笑、譏笑",
+      "example": "彼の失敗をあざ笑うような態度は許されるものではない。",
+      "example_reading": "かれのしっぱいをあざわらうようなたいどはゆるされるものではない。",
+      "example_meaning": "嘲笑他失敗的態度是不可被原諒的。"
+    },
+    {
+      "word": "味わい",
+      "reading": "あじわい",
+      "meaning": "滋味、風味、情趣",
+      "example": "このワインは深みのある味わいで、とても美味しいですね。",
+      "example_reading": "このわいんはふかみのあるあじわいで、とてもおいしいですね。",
+      "example_meaning": "這款葡萄酒有著深沉的風味，非常美味呢。"
+    },
+    {
+      "word": "東",
+      "reading": "あずま",
+      "meaning": "東方（多用於古語、文學）",
+      "example": "古来より、日本人は東の方角に神聖なものを感じてきた。",
+      "example_reading": "こらいより、にほんじんはあずまのほうがくにしんせいなものをかんじてきた。",
+      "example_meaning": "自古以來，日本人就對東方抱有神聖的感覺。"
+    },
+    {
+      "word": "焦る",
+      "reading": "あせる",
+      "meaning": "焦急、著急",
+      "example": "締め切りが近いからといって、焦っても良い結果は出ないよ。",
+      "example_reading": "しめきりがちかいからといって、あせってもよいけっかではでないよ。",
+      "example_meaning": "就算截稿日很近，太過焦急也不會有好結果喔。"
+    },
+    {
+      "word": "彼処",
+      "reading": "あそこ",
+      "meaning": "那裡、彼處（書面語、文學）",
+      "example": "昔、彼処には大きな森が広がっていたそうです。",
+      "example_reading": "むかし、あそこにはおおきなもりがひろがっていたそうです。",
+      "example_meaning": "聽說以前那裡曾是一片大森林。"
+    },
+    {
+      "word": "値",
+      "reading": "あたい",
+      "meaning": "價值、代價、數值",
+      "example": "その芸術作品は、計り知れないほどの値がある。",
+      "example_reading": "そのげいじゅつさくひんは、はかりしれないほどのあたいがある。",
+      "example_meaning": "那件藝術作品有著不可估量的價值。"
+    },
+    {
+      "word": "値する",
+      "reading": "あたいする",
+      "meaning": "值得、相稱",
+      "example": "彼の長年の功績は、この賞に値するものです。",
+      "example_reading": "かれのながねんのこうせきは、このしょうにあたいするものです。",
+      "example_meaning": "他多年的功績值得獲得這個獎項。"
+    },
+    {
+      "word": "私",
+      "reading": "あたし",
+      "meaning": "我（女性常用，較隨性）",
+      "example": "あたし、明日からダイエットするんだ！",
+      "example_reading": "あたし、あしたからだいえっとするんだ！",
+      "example_meaning": "我，從明天開始要減肥！"
+    },
+    {
+      "word": "当たり",
+      "reading": "あたり",
+      "meaning": "命中、中獎、成功、每一",
+      "example": "この宝くじ、大当たりが出たらしいよ！",
+      "example_reading": "このたからくじ、おおあたりがでたらしいよ！",
+      "example_meaning": "聽說這張彩券中了大獎了！"
+    }
   ],
   "grammar": [
-    {"pattern": "〜に至っては", "meaning": "說到〜（更甚至）", "example": "部長に至っては何も知らなかった。", "example_meaning": "說到部長，他什麼都不知道。", "notes": "列舉中最極端的例子，語氣帶驚訝或批評"},
-    {"pattern": "〜いかんによって", "meaning": "依〜的如何；視〜而定", "example": "結果いかんによって対応が変わる。", "example_meaning": "依結果如何而改變應對方式。", "notes": "正式書面語，表示依某條件而定"},
-    {"pattern": "〜んばかりに", "meaning": "幾乎要〜似地；彷彿〜", "example": "泣かんばかりに喜んだ。", "example_meaning": "高興得幾乎要哭了。", "notes": "接動詞ない形去い加ん（古語），表示極端程度"},
-    {"pattern": "〜ならでは", "meaning": "只有〜才有；〜所獨有的", "example": "日本ならではの文化だ。", "example_meaning": "是日本所獨有的文化。", "notes": "強調某事物是特定對象獨有的特色"},
-    {"pattern": "〜かたがた", "meaning": "順便〜；藉機〜", "example": "お礼かたがた訪問する。", "example_meaning": "順便致謝而去拜訪。", "notes": "正式書面語，同時達成兩個目的"},
-    {"pattern": "〜ものを", "meaning": "明明可以〜卻〜（後悔或遺憾）", "example": "早く言えばよかったものを。", "example_meaning": "早說的話就好了。", "notes": "帶有後悔或責怪語氣"}
+    {
+      "pattern": "〜に至っては",
+      "meaning": "說到〜（更甚至）",
+      "example": "部長に至っては何も知らなかった。",
+      "example_meaning": "說到部長，他什麼都不知道。",
+      "notes": "列舉中最極端的例子，語氣帶驚訝或批評"
+    },
+    {
+      "pattern": "〜いかんによって",
+      "meaning": "依〜的如何；視〜而定",
+      "example": "結果いかんによって対応が変わる。",
+      "example_meaning": "依結果如何而改變應對方式。",
+      "notes": "正式書面語，表示依某條件而定"
+    },
+    {
+      "pattern": "〜んばかりに",
+      "meaning": "幾乎要〜似地；彷彿〜",
+      "example": "泣かんばかりに喜んだ。",
+      "example_meaning": "高興得幾乎要哭了。",
+      "notes": "接動詞ない形去い加ん（古語），表示極端程度"
+    },
+    {
+      "pattern": "〜ならでは",
+      "meaning": "只有〜才有；〜所獨有的",
+      "example": "日本ならではの文化だ。",
+      "example_meaning": "是日本所獨有的文化。",
+      "notes": "強調某事物是特定對象獨有的特色"
+    },
+    {
+      "pattern": "〜かたがた",
+      "meaning": "順便〜；藉機〜",
+      "example": "お礼かたがた訪問する。",
+      "example_meaning": "順便致謝而去拜訪。",
+      "notes": "正式書面語，同時達成兩個目的"
+    },
+    {
+      "pattern": "〜ものを",
+      "meaning": "明明可以〜卻〜（後悔或遺憾）",
+      "example": "早く言えばよかったものを。",
+      "example_meaning": "早說的話就好了。",
+      "notes": "帶有後悔或責怪語氣"
+    }
   ],
   "kanji": [
-    {"kanji": "昧", "reading_on": "マイ", "reading_kun": "—", "meaning": "朦朧、不明", "examples": ["曖昧（あいまい）曖昧", "三昧（ざんまい）沉醉其中"]},
-    {"kanji": "逸", "reading_on": "イツ", "reading_kun": "そ・はぐ", "meaning": "逸脫、優秀", "examples": ["逸脱（いつだつ）逸脫", "逸材（いつざい）奇才", "逸れる（それる）偏離"]},
-    {"kanji": "醸", "reading_on": "ジョウ", "reading_kun": "かも", "meaning": "釀造、醞釀", "examples": ["醸成（じょうせい）醞釀", "醸す（かもす）釀造"]},
-    {"kanji": "乖", "reading_on": "カイ", "reading_kun": "—", "meaning": "背離、違逆", "examples": ["乖離（かいり）乖離"]},
-    {"kanji": "恣", "reading_on": "シ", "reading_kun": "ほしいまま", "meaning": "任意、放縱", "examples": ["恣意（しい）任意", "恣意的（しいてき）任意的"]},
-    {"kanji": "忖", "reading_on": "ソン", "reading_kun": "はか", "meaning": "揣度、考量", "examples": ["忖度（そんたく）揣摩"]},
-    {"kanji": "齟", "reading_on": "ソ", "reading_kun": "—", "meaning": "齒不合、不一致", "examples": ["齟齬（そごう）齟齬"]},
-    {"kanji": "蓋", "reading_on": "ガイ・カイ", "reading_kun": "おお・ふた", "meaning": "蓋子、大概", "examples": ["蓋然性（がいぜんせい）蓋然性", "蓋し（けだし）大概"]}
+    {
+      "kanji": "昧",
+      "reading_on": "マイ",
+      "reading_kun": "—",
+      "meaning": "朦朧、不明",
+      "examples": [
+        "曖昧（あいまい）曖昧",
+        "三昧（ざんまい）沉醉其中"
+      ]
+    },
+    {
+      "kanji": "逸",
+      "reading_on": "イツ",
+      "reading_kun": "そ・はぐ",
+      "meaning": "逸脫、優秀",
+      "examples": [
+        "逸脱（いつだつ）逸脫",
+        "逸材（いつざい）奇才",
+        "逸れる（それる）偏離"
+      ]
+    },
+    {
+      "kanji": "醸",
+      "reading_on": "ジョウ",
+      "reading_kun": "かも",
+      "meaning": "釀造、醞釀",
+      "examples": [
+        "醸成（じょうせい）醞釀",
+        "醸す（かもす）釀造"
+      ]
+    },
+    {
+      "kanji": "乖",
+      "reading_on": "カイ",
+      "reading_kun": "—",
+      "meaning": "背離、違逆",
+      "examples": [
+        "乖離（かいり）乖離"
+      ]
+    },
+    {
+      "kanji": "恣",
+      "reading_on": "シ",
+      "reading_kun": "ほしいまま",
+      "meaning": "任意、放縱",
+      "examples": [
+        "恣意（しい）任意",
+        "恣意的（しいてき）任意的"
+      ]
+    },
+    {
+      "kanji": "忖",
+      "reading_on": "ソン",
+      "reading_kun": "はか",
+      "meaning": "揣度、考量",
+      "examples": [
+        "忖度（そんたく）揣摩"
+      ]
+    },
+    {
+      "kanji": "齟",
+      "reading_on": "ソ",
+      "reading_kun": "—",
+      "meaning": "齒不合、不一致",
+      "examples": [
+        "齟齬（そごう）齟齬"
+      ]
+    },
+    {
+      "kanji": "蓋",
+      "reading_on": "ガイ・カイ",
+      "reading_kun": "おお・ふた",
+      "meaning": "蓋子、大概",
+      "examples": [
+        "蓋然性（がいぜんせい）蓋然性",
+        "蓋し（けだし）大概"
+      ]
+    }
   ],
   "practice": [
-    {"type": "grammar", "question": "部長___、何も知らなかった。（列舉最極端例子）", "options": ["に至っては", "に関しては", "に対しては", "においては"], "answer": 0, "explanation": "「〜に至っては」用於列舉最極端或令人驚訝的例子，語氣帶驚訝。"},
-    {"type": "vocabulary", "question": "「曖昧」の意味はどれですか。", "options": ["模糊、不明確", "明確、清楚", "簡單、容易", "複雜、難懂"], "answer": 0, "explanation": "曖昧（あいまい）是「曖昧、模糊、不清楚」的意思。"},
-    {"type": "kanji", "question": "「醸成」の読み方はどれですか。", "options": ["じょうせい", "かもせい", "じょうなり", "えいせい"], "answer": 0, "explanation": "醸成（じょうせい）是「醞釀、培育（氣氛）」。醸（ジョウ）＋成（セイ）。"},
-    {"type": "grammar", "question": "日本___の文化を紹介する。（只有〜才有）", "options": ["ならでは", "だから", "として", "においてのみ"], "answer": 0, "explanation": "「〜ならでは」強調某事物是特定對象所獨有的。日本ならではの文化＝日本獨有的文化。"},
-    {"type": "vocabulary", "question": "「逡巡」の意味はどれですか。", "options": ["猶豫、躊躇", "決斷、果斷", "逸脫、偏離", "醞釀、培育"], "answer": 0, "explanation": "逡巡（しゅんじゅん）是「猶豫、躊躇不前」的意思。"},
-    {"type": "grammar", "question": "結果___によって対応を変える。（視〜而定）", "options": ["いかん", "どうか", "次第", "にもよる"], "answer": 0, "explanation": "「〜いかんによって」是正式書面語，意為「視〜的如何而定」。"},
-    {"type": "kanji", "question": "「忖度」の読み方はどれですか。", "options": ["そんたく", "ずんたく", "そんど", "とんたく"], "answer": 0, "explanation": "忖度（そんたく）是「揣摩他人心意」。忖（ソン）＋度（タク）。近年常用詞。"},
-    {"type": "vocabulary", "question": "「乖離」の意味はどれですか。", "options": ["背離、偏離", "接近、靠近", "結合、合併", "確認、確定"], "answer": 0, "explanation": "乖離（かいり）是「背離、偏離、差距擴大」的意思。"}
+    {
+      "type": "vocabulary",
+      "question": "「嗚呼」の意味はどれですか。",
+      "options": [
+        "原來如此",
+        "那麼、那樣",
+        "啊、唉",
+        "哎呀、糟了"
+      ],
+      "answer": 2,
+      "explanation": "表示感嘆、驚訝、悲傷、失望等情感的詞語。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「相変わらず」の意味はどれですか。",
+      "options": [
+        "沒有變化",
+        "互相幫助",
+        "彼此理解",
+        "一如往常"
+      ],
+      "answer": 3,
+      "explanation": "指情況或狀態沒有改變，和以前一樣。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「愛想」の意味はどれですか。",
+      "options": [
+        "友好關係",
+        "愛的想法",
+        "互相商量",
+        "待客態度"
+      ],
+      "answer": 3,
+      "explanation": "指待人接物時的態度，尤指和藹、親切的一面。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「間柄」の意味はどれですか。",
+      "options": [
+        "中間距離",
+        "彼此的立場",
+        "時間間隔",
+        "關係"
+      ],
+      "answer": 3,
+      "explanation": "指人與人之間的關係或情誼。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「曖昧」の意味はどれですか。",
+      "options": [
+        "優柔寡斷",
+        "不明確",
+        "難以理解",
+        "模糊不清"
+      ],
+      "answer": 3,
+      "explanation": "指事物不清不楚、不明確、模糊的狀態。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「敢えて」の意味はどれですか。",
+      "options": [
+        "勉強地",
+        "特意",
+        "偶然地",
+        "無論如何"
+      ],
+      "answer": 1,
+      "explanation": "指鼓起勇氣或特意去做某事，即使可能困難或有風險。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「上がり」の意味はどれですか。",
+      "options": [
+        "開始",
+        "費用",
+        "下降",
+        "收入"
+      ],
+      "answer": 3,
+      "explanation": "作為名詞，可指事情的結束、完成，或指薪資、收入。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「呆れる」の意味はどれですか。",
+      "options": [
+        "感到困惑",
+        "感到疲憊",
+        "感到滿意",
+        "傻眼"
+      ],
+      "answer": 3,
+      "explanation": "指因對方言行出乎意料或過於離譜而感到驚訝、無語。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「灰」の意味はどれですか。",
+      "options": [
+        "髒污",
+        "浮渣",
+        "灰燼",
+        "木炭"
+      ],
+      "answer": 1,
+      "explanation": "在烹飪中指煮肉或蔬菜時浮出的泡沫或雜質，也指某些食物的澀味。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「憧れ」の意味はどれですか。",
+      "options": [
+        "失望",
+        "懷疑",
+        "嚮往",
+        "恐懼"
+      ],
+      "answer": 2,
+      "explanation": "指對某人、某事或某種狀態抱持著崇拜、羨慕並希望能夠實現的心情。"
+    }
   ]
 }

@@ -1,55 +1,714 @@
 {
   "vocabulary": [
-    {"word": "集まる", "reading": "あつまる", "meaning": "聚集", "example": "みんなが公園に集まる。", "example_reading": "みんながこうえんにあつまる。", "example_meaning": "大家聚集在公園。"},
-    {"word": "送る", "reading": "おくる", "meaning": "寄送；送行", "example": "メールを送る。", "example_reading": "メールをおくる。", "example_meaning": "寄電子郵件。"},
-    {"word": "変わる", "reading": "かわる", "meaning": "改變", "example": "天気が変わった。", "example_reading": "てんきがかわった。", "example_meaning": "天氣變了。"},
-    {"word": "決める", "reading": "きめる", "meaning": "決定", "example": "旅行の日を決める。", "example_reading": "りょこうのひをきめる。", "example_meaning": "決定旅行的日期。"},
-    {"word": "続ける", "reading": "つづける", "meaning": "繼續", "example": "勉強を続ける。", "example_reading": "べんきょうをつづける。", "example_meaning": "繼續讀書。"},
-    {"word": "足りる", "reading": "たりる", "meaning": "足夠", "example": "時間が足りない。", "example_reading": "じかんがたりない。", "example_meaning": "時間不夠。"},
-    {"word": "便利", "reading": "べんり", "meaning": "方便", "example": "スマホはとても便利だ。", "example_reading": "スマホはとてもべんりだ。", "example_meaning": "智慧型手機非常方便。"},
-    {"word": "丁寧", "reading": "ていねい", "meaning": "有禮貌；仔細", "example": "丁寧に説明する。", "example_reading": "ていねいにせつめいする。", "example_meaning": "仔細地說明。"},
-    {"word": "普通", "reading": "ふつう", "meaning": "普通；通常", "example": "普通の日本人は箸を使う。", "example_reading": "ふつうのにほんじんははしをつかう。", "example_meaning": "一般日本人使用筷子。"},
-    {"word": "特に", "reading": "とくに", "meaning": "特別地；尤其", "example": "特に問題はありません。", "example_reading": "とくにもんだいはありません。", "example_meaning": "特別沒有問題。"},
-    {"word": "必要", "reading": "ひつよう", "meaning": "必要", "example": "練習が必要だ。", "example_reading": "れんしゅうがひつようだ。", "example_meaning": "需要練習。"},
-    {"word": "経験", "reading": "けいけん", "meaning": "經驗", "example": "いい経験になった。", "example_reading": "いいけいけんになった。", "example_meaning": "成為了很好的經驗。"},
-    {"word": "残念", "reading": "ざんねん", "meaning": "遺憾；可惜", "example": "残念ながら行けません。", "example_reading": "ざんねんながらいけません。", "example_meaning": "很遺憾無法前往。"},
-    {"word": "安全", "reading": "あんぜん", "meaning": "安全", "example": "安全に気をつけてください。", "example_reading": "あんぜんにきをつけてください。", "example_meaning": "請注意安全。"},
-    {"word": "文化", "reading": "ぶんか", "meaning": "文化", "example": "日本の文化を学ぶ。", "example_reading": "にほんのぶんかをまなぶ。", "example_meaning": "學習日本文化。"}
+    {
+      "word": "あ",
+      "reading": "あ",
+      "meaning": "啊 (感嘆詞)",
+      "example": "あ、財布を忘れた！",
+      "example_reading": "あ、さいふをわすれた！",
+      "example_meaning": "啊，我忘記錢包了！"
+    },
+    {
+      "word": "ああ",
+      "reading": "ああ",
+      "meaning": "啊，喔 (表示理解、同意)",
+      "example": "ああ、そういうことですか。",
+      "example_reading": "ああ、そういうことですか。",
+      "example_meaning": "喔，原來是這麼一回事啊。"
+    },
+    {
+      "word": "あいさつ",
+      "reading": "あいさつ",
+      "meaning": "打招呼，問候",
+      "example": "朝、先生にあいさつをしました。",
+      "example_reading": "あさ、せんせいにあいさつをしました。",
+      "example_meaning": "早上我向老師打了招呼。"
+    },
+    {
+      "word": "合う",
+      "reading": "あう",
+      "meaning": "合適，符合",
+      "example": "この靴は足に合いますか？",
+      "example_reading": "このくつはあしにあいますか？",
+      "example_meaning": "這雙鞋合你的腳嗎？"
+    },
+    {
+      "word": "あかちゃん",
+      "reading": "あかちゃん",
+      "meaning": "嬰兒",
+      "example": "あかちゃんがベッドで寝ています。",
+      "example_reading": "あかちゃんがべっどでねています。",
+      "example_meaning": "嬰兒在床上睡覺。"
+    },
+    {
+      "word": "赤ん坊",
+      "reading": "あかんぼう",
+      "meaning": "嬰兒",
+      "example": "彼女は可愛い赤ん坊を抱いています。",
+      "example_reading": "かのじょはかわいいあかんぼうをだいています。",
+      "example_meaning": "她抱著一個可愛的嬰兒。"
+    },
+    {
+      "word": "アクセサリー",
+      "reading": "アクセサリー",
+      "meaning": "飾品，配件",
+      "example": "彼女はいつも素敵なアクセサリーをつけている。",
+      "example_reading": "かのじょはいつもすてきなアクセサリーをつけている。",
+      "example_meaning": "她總是戴著漂亮的飾品。"
+    },
+    {
+      "word": "あげる",
+      "reading": "あげる",
+      "meaning": "給予，送 (東西給別人)",
+      "example": "誕生日プレゼントを友達にあげました。",
+      "example_reading": "たんじょうびぷれぜんとをともだちにあげました。",
+      "example_meaning": "我送了生日禮物給朋友。"
+    },
+    {
+      "word": "浅い",
+      "reading": "あさい",
+      "meaning": "淺的",
+      "example": "この川は水が浅いです。",
+      "example_reading": "このかわはみずがあさいです。",
+      "example_meaning": "這條河的水很淺。"
+    },
+    {
+      "word": "味",
+      "reading": "あじ",
+      "meaning": "味道",
+      "example": "このラーメンは味が濃いです。",
+      "example_reading": "このらーめんはあじがこいです。",
+      "example_meaning": "這碗拉麵味道很濃。"
+    },
+    {
+      "word": "アジア",
+      "reading": "アジア",
+      "meaning": "亞洲",
+      "example": "アジアには色々な国があります。",
+      "example_reading": "アジアにはいろいろなくにがあります。",
+      "example_meaning": "亞洲有很多不同的國家。"
+    },
+    {
+      "word": "明日",
+      "reading": "あす",
+      "meaning": "明天",
+      "example": "明日は雨が降るそうです。",
+      "example_reading": "あすはあめがふるそうです。",
+      "example_meaning": "聽說明天會下雨。"
+    },
+    {
+      "word": "遊び",
+      "reading": "あそび",
+      "meaning": "玩耍；遊戲",
+      "example": "子供たちは公園で遊びます。",
+      "example_reading": "こどもたちはこうえんであそびます。",
+      "example_meaning": "孩子們在公園玩耍。"
+    },
+    {
+      "word": "集る",
+      "reading": "あつまる",
+      "meaning": "聚集；集合 (自動詞)",
+      "example": "みんなでここに集まりましょう。",
+      "example_reading": "みんなでここにあつまりましょう。",
+      "example_meaning": "大家一起在這裡集合吧。"
+    },
+    {
+      "word": "集める",
+      "reading": "あつめる",
+      "meaning": "收集；聚集 (他動詞)",
+      "example": "趣味で切手を集めています。",
+      "example_reading": "しゅみできってをあつめています。",
+      "example_meaning": "我以集郵為興趣。"
+    },
+    {
+      "word": "アナウンサー",
+      "reading": "アナウンサー",
+      "meaning": "播報員；廣播員",
+      "example": "彼は有名なテレビアナウンサーです。",
+      "example_reading": "かれはゆうめいなテレビアナウンサーです。",
+      "example_meaning": "他是一位有名的電視播報員。"
+    },
+    {
+      "word": "アフリカ",
+      "reading": "アフリカ",
+      "meaning": "非洲",
+      "example": "アフリカには大きな動物がたくさんいます。",
+      "example_reading": "アフリカにはおおきなどうぶつがたくさんいます。",
+      "example_meaning": "非洲有很多大型動物。"
+    },
+    {
+      "word": "アメリカ",
+      "reading": "アメリカ",
+      "meaning": "美國；美洲",
+      "example": "友達はアメリカに留学しています。",
+      "example_reading": "ともだちはアメリカにりゅうがくしています。",
+      "example_meaning": "我的朋友在美國留學。"
+    },
+    {
+      "word": "謝る",
+      "reading": "あやまる",
+      "meaning": "道歉",
+      "example": "悪いことをしたので、謝りました。",
+      "example_reading": "わるいことをしたので、あやまりました。",
+      "example_meaning": "因為做了壞事，所以我道歉了。"
+    },
+    {
+      "word": "アルコール",
+      "reading": "アルコール",
+      "meaning": "酒精",
+      "example": "この飲み物にはアルコールが入っていません。",
+      "example_reading": "こののみものにはアルコールがはいっていません。",
+      "example_meaning": "這種飲料沒有含酒精。"
+    },
+    {
+      "word": "アルバイト",
+      "reading": "アルバイト",
+      "meaning": "打工、兼職",
+      "example": "週末にカフェでアルバイトをしています。",
+      "example_reading": "しゅうまつにカフェでアルバイトをしています。",
+      "example_meaning": "我週末在咖啡廳打工。"
+    },
+    {
+      "word": "安心",
+      "reading": "あんしん",
+      "meaning": "安心、放心",
+      "example": "連絡が取れて安心しました。",
+      "example_reading": "れんらくがとれてあんしんしました。",
+      "example_meaning": "聯絡上了，我放心了。"
+    },
+    {
+      "word": "安全",
+      "reading": "あんぜん",
+      "meaning": "安全",
+      "example": "この道は子供が歩いても安全です。",
+      "example_reading": "このみちはこどもがあるいてもあんぜんです。",
+      "example_meaning": "這條路即使是小孩走也很安全。"
+    },
+    {
+      "word": "あんな",
+      "reading": "あんな",
+      "meaning": "那樣的、那種",
+      "example": "あんなに大きい家は初めて見ました。",
+      "example_reading": "あんなにおおきいいえははじめてみました。",
+      "example_meaning": "我第一次看到那麼大的房子。"
+    },
+    {
+      "word": "以下",
+      "reading": "いか",
+      "meaning": "以下、未滿",
+      "example": "10歳以下のお子様は無料です。",
+      "example_reading": "じゅっさいいかのおこさまはむりょうです。",
+      "example_meaning": "10歲以下的孩童免費。"
+    },
+    {
+      "word": "以外",
+      "reading": "いがい",
+      "meaning": "以外、除外",
+      "example": "彼女以外にこの秘密を知っている人はいません。",
+      "example_reading": "かのじょいがいにとこのひみつをしっているひとはいません。",
+      "example_meaning": "除了她以外，沒有人知道這個秘密。"
+    },
+    {
+      "word": "医学",
+      "reading": "いがく",
+      "meaning": "醫學",
+      "example": "彼は医学の道に進みました。",
+      "example_reading": "かれはいがくのみちへすすみました。",
+      "example_meaning": "他走向了醫學的道路。"
+    },
+    {
+      "word": "生きる",
+      "reading": "いきる",
+      "meaning": "活著、生存",
+      "example": "今を大切に生きていきたいです。",
+      "example_reading": "いまをたいせつにいきていきたいです。",
+      "example_meaning": "我想珍惜當下，好好地活下去。"
+    },
+    {
+      "word": "意見",
+      "reading": "いけん",
+      "meaning": "意見",
+      "example": "みんなの意見を聞いてから決めましょう。",
+      "example_reading": "みんなのいけんをきいてからきめましょう。",
+      "example_meaning": "聽取大家的意見後再決定吧。"
+    },
+    {
+      "word": "石",
+      "reading": "いし",
+      "meaning": "石頭",
+      "example": "川原で綺麗な石を見つけました。",
+      "example_reading": "かわらできれいなをみつけました。",
+      "example_meaning": "我在河邊撿到了漂亮的石頭。"
+    },
+    {
+      "word": "いじめる",
+      "reading": "いじめる",
+      "meaning": "欺負、霸凌",
+      "example": "小さい子をいじめるのはやめてください。",
+      "example_reading": "ちいさいこをいじめるのはやめてください。",
+      "example_meaning": "請不要欺負小孩子。"
+    },
+    {
+      "word": "以上",
+      "reading": "いじょう",
+      "meaning": "以上、超過",
+      "example": "20歳以上の方しかこのイベントには参加できません。",
+      "example_reading": "はたちいじょうのかたしかこのイベントにはさんかできません。",
+      "example_meaning": "只有20歲以上的人才能參加這個活動。"
+    },
+    {
+      "word": "急ぐ",
+      "reading": "いそぐ",
+      "meaning": "趕、急忙",
+      "example": "時間がないので、急いで準備しましょう。",
+      "example_reading": "じかんがないので、いそいでじゅんびしましょう。",
+      "example_meaning": "沒有時間了，趕快準備吧。"
+    },
+    {
+      "word": "致す",
+      "reading": "いたす",
+      "meaning": "辦理、做 (する的謙讓語)",
+      "example": "後ほど、私から改めてご連絡致します。",
+      "example_reading": "のちほど、わたくしからあらためてごれんらくいたします。",
+      "example_meaning": "稍後我會再次與您聯繫。"
+    },
+    {
+      "word": "いただく",
+      "reading": "いただく",
+      "meaning": "收到、得到 (もらう的謙讓語); 吃、喝 (食べる、飲む的謙讓語)",
+      "example": "先生に日本語を教えていただきました。",
+      "example_reading": "せんせいににほんごをおしえていただきました。",
+      "example_meaning": "我蒙老師教導日語。"
+    },
+    {
+      "word": "一度",
+      "reading": "いちど",
+      "meaning": "一次",
+      "example": "もう一度、説明していただけませんか。",
+      "example_reading": "もういちど、せつめいしていただけませんか。",
+      "example_meaning": "可以請您再解釋一次嗎？"
+    },
+    {
+      "word": "一生懸命",
+      "reading": "いっしょうけんめい",
+      "meaning": "努力地、拼命地",
+      "example": "彼は毎日、一生懸命日本語を勉強しています。",
+      "example_reading": "かれはまいにち、いっしょうけんめいにほんごをべんきょうしています。",
+      "example_meaning": "他每天都非常努力地學習日語。"
+    },
+    {
+      "word": "いっぱい",
+      "reading": "いっぱい",
+      "meaning": "滿、一杯、許多",
+      "example": "お腹がいっぱいで、もう何も食べられません。",
+      "example_reading": "おなかがいっぱいで、もうなにもたべられません。",
+      "example_meaning": "我肚子很飽，什麼也吃不下了。"
+    },
+    {
+      "word": "糸",
+      "reading": "いと",
+      "meaning": "線、絲線",
+      "example": "この服のボタンが取れそうだから、糸で縫わないと。",
+      "example_reading": "このふくのボタンがとれそうだから、いとでぬわないと。",
+      "example_meaning": "這件衣服的鈕扣快掉了，必須用線縫起來。"
+    },
+    {
+      "word": "以内",
+      "reading": "いない",
+      "meaning": "以內",
+      "example": "この本は3日以内に返却してください。",
+      "example_reading": "このほんはみっかいないにへんきゃくしてください。",
+      "example_meaning": "這本書請在3天內歸還。"
+    },
+    {
+      "word": "田舎",
+      "reading": "いなか",
+      "meaning": "鄉下",
+      "example": "私の田舎はとても静かで、星が綺麗に見えます。",
+      "example_reading": "わたしのいなかはとてもしずかで、ほしがきれいみえます。",
+      "example_meaning": "我的鄉下非常安靜，能看到很漂亮的星星。"
+    },
+    {
+      "word": "祈る",
+      "reading": "いのる",
+      "meaning": "祈禱、祈求",
+      "example": "家族みんなの健康を祈っています。",
+      "example_reading": "かぞくみんなのけんこうをいのっています。",
+      "example_meaning": "我祈禱全家人都能健康。"
+    },
+    {
+      "word": "いらっしゃる",
+      "reading": "いらっしゃる",
+      "meaning": "（敬語）來、去、在、是",
+      "example": "先生はもういらっしゃいましたか。",
+      "example_reading": "せんせいはもういらっしゃいましたか。",
+      "example_meaning": "老師已經來了嗎？"
+    },
+    {
+      "word": "植える",
+      "reading": "うえる",
+      "meaning": "種植",
+      "example": "庭に綺麗な花を植えました。",
+      "example_reading": "にわにきれいなはなをうえました。",
+      "example_meaning": "我在庭院裡種了漂亮的花。"
+    },
+    {
+      "word": "うかがう",
+      "reading": "うかがう",
+      "meaning": "（謙讓語）拜訪、請教、聽",
+      "example": "後ほど、社長のお宅へうかがいます。",
+      "example_reading": "のちほど、しゃちょうのおたくへうかがいます。",
+      "example_meaning": "稍後我會去拜訪社長的家。"
+    },
+    {
+      "word": "受付",
+      "reading": "うけつけ",
+      "meaning": "接待處、櫃檯",
+      "example": "受付で名前を伝えてください。",
+      "example_reading": "うけつけでなまえをつたえてください。",
+      "example_meaning": "請在接待處告知您的名字。"
+    },
+    {
+      "word": "受ける",
+      "reading": "うける",
+      "meaning": "接受、受到、參加（考試）",
+      "example": "来月、日本語の試験を受けます。",
+      "example_reading": "らいげつ、にほんごのしけんをうけます。",
+      "example_meaning": "我下個月要參加日語考試。"
+    },
+    {
+      "word": "動く",
+      "reading": "うごく",
+      "meaning": "移動、轉動、運作",
+      "example": "このおもちゃは電池で動きます。",
+      "example_reading": "このおもちゃはでんちでうごきます。",
+      "example_meaning": "這個玩具是用電池運作的。"
+    },
+    {
+      "word": "うそ",
+      "reading": "うそ",
+      "meaning": "謊言",
+      "example": "彼はよくうそをつくから、信用できない。",
+      "example_reading": "かれはよくうそをつくから、しんようできない。",
+      "example_meaning": "他經常說謊，所以不能相信他。"
+    },
+    {
+      "word": "うち",
+      "reading": "うち",
+      "meaning": "裡面、家、我家",
+      "example": "今、うちには誰もいません。",
+      "example_reading": "いま、うちにはだれもいません。",
+      "example_meaning": "現在家裡沒有人。"
+    }
   ],
   "grammar": [
-    {"pattern": "〜ている", "meaning": "正在〜（進行中）／已〜（狀態持續）", "example": "今、ご飯を食べている。", "example_meaning": "現在正在吃飯。", "notes": "表示動作進行中，或動作後的持續狀態"},
-    {"pattern": "〜てから", "meaning": "〜之後再〜", "example": "宿題をしてから遊ぶ。", "example_meaning": "做完功課之後再玩。", "notes": "強調先後順序"},
-    {"pattern": "〜たことがある", "meaning": "曾經〜過", "example": "富士山に登ったことがある。", "example_meaning": "曾經爬過富士山。", "notes": "表示人生中的經驗"},
-    {"pattern": "〜ようとする", "meaning": "試圖〜；即將〜", "example": "窓を開けようとした。", "example_meaning": "試圖打開窗戶。", "notes": "表示試圖或即將做某事"},
-    {"pattern": "〜すぎる", "meaning": "太〜了；過於〜", "example": "食べすぎた。", "example_meaning": "吃太多了。", "notes": "接動詞ます形去ます後加すぎる，或形容詞詞幹加すぎる"},
-    {"pattern": "〜ながら", "meaning": "一邊〜一邊〜（同時進行兩個動作）", "example": "音楽を聞きながら勉強する。", "example_meaning": "一邊聽音樂一邊讀書。", "notes": "主動作在後半句"},
-    {"pattern": "〜くなる／〜になる", "meaning": "變得〜", "example": "上手になった。", "example_meaning": "變得厲害了。", "notes": "い形容詞用くなる，な形容詞和名詞用になる"},
-    {"pattern": "〜てしまう", "meaning": "（遺憾地）〜了；做完了", "example": "財布を忘れてしまった。", "example_meaning": "（不小心）把錢包忘記了。", "notes": "含有遺憾或完成的語感"}
+    {
+      "pattern": "〜ている",
+      "meaning": "正在〜（進行中）／已〜（狀態持續）",
+      "example": "今、ご飯を食べている。",
+      "example_meaning": "現在正在吃飯。",
+      "notes": "表示動作進行中，或動作後的持續狀態"
+    },
+    {
+      "pattern": "〜てから",
+      "meaning": "〜之後再〜",
+      "example": "宿題をしてから遊ぶ。",
+      "example_meaning": "做完功課之後再玩。",
+      "notes": "強調先後順序"
+    },
+    {
+      "pattern": "〜たことがある",
+      "meaning": "曾經〜過",
+      "example": "富士山に登ったことがある。",
+      "example_meaning": "曾經爬過富士山。",
+      "notes": "表示人生中的經驗"
+    },
+    {
+      "pattern": "〜ようとする",
+      "meaning": "試圖〜；即將〜",
+      "example": "窓を開けようとした。",
+      "example_meaning": "試圖打開窗戶。",
+      "notes": "表示試圖或即將做某事"
+    },
+    {
+      "pattern": "〜すぎる",
+      "meaning": "太〜了；過於〜",
+      "example": "食べすぎた。",
+      "example_meaning": "吃太多了。",
+      "notes": "接動詞ます形去ます後加すぎる，或形容詞詞幹加すぎる"
+    },
+    {
+      "pattern": "〜ながら",
+      "meaning": "一邊〜一邊〜（同時進行兩個動作）",
+      "example": "音楽を聞きながら勉強する。",
+      "example_meaning": "一邊聽音樂一邊讀書。",
+      "notes": "主動作在後半句"
+    },
+    {
+      "pattern": "〜くなる／〜になる",
+      "meaning": "變得〜",
+      "example": "上手になった。",
+      "example_meaning": "變得厲害了。",
+      "notes": "い形容詞用くなる，な形容詞和名詞用になる"
+    },
+    {
+      "pattern": "〜てしまう",
+      "meaning": "（遺憾地）〜了；做完了",
+      "example": "財布を忘れてしまった。",
+      "example_meaning": "（不小心）把錢包忘記了。",
+      "notes": "含有遺憾或完成的語感"
+    }
   ],
   "kanji": [
-    {"kanji": "駅", "reading_on": "エキ", "reading_kun": "—", "meaning": "車站", "examples": ["駅（えき）車站", "東京駅（とうきょうえき）東京車站"]},
-    {"kanji": "電", "reading_on": "デン", "reading_kun": "—", "meaning": "電", "examples": ["電車（でんしゃ）電車", "電話（でんわ）電話", "電気（でんき）電力"]},
-    {"kanji": "話", "reading_on": "ワ", "reading_kun": "はな・はなし", "meaning": "說話、故事", "examples": ["電話（でんわ）電話", "話（はなし）話語", "会話（かいわ）會話"]},
-    {"kanji": "食", "reading_on": "ショク", "reading_kun": "た・く", "meaning": "食物、吃", "examples": ["食事（しょくじ）用餐", "食べる（たべる）吃", "食堂（しょくどう）食堂"]},
-    {"kanji": "時", "reading_on": "ジ", "reading_kun": "とき", "meaning": "時間", "examples": ["時間（じかん）時間", "時（とき）時候", "何時（なんじ）幾點"]},
-    {"kanji": "間", "reading_on": "カン・ケン", "reading_kun": "あいだ・ま", "meaning": "之間、空間", "examples": ["時間（じかん）時間", "間（あいだ）之間", "週間（しゅうかん）週"]},
-    {"kanji": "会", "reading_on": "カイ・エ", "reading_kun": "あ", "meaning": "見面、集會", "examples": ["会社（かいしゃ）公司", "会う（あう）見面", "会話（かいわ）會話"]},
-    {"kanji": "社", "reading_on": "シャ", "reading_kun": "やしろ", "meaning": "公司、社會", "examples": ["会社（かいしゃ）公司", "社員（しゃいん）員工", "社会（しゃかい）社會"]},
-    {"kanji": "仕", "reading_on": "シ", "reading_kun": "つか", "meaning": "工作、侍奉", "examples": ["仕事（しごと）工作", "仕方（しかた）方法"]},
-    {"kanji": "事", "reading_on": "ジ・ズ", "reading_kun": "こと", "meaning": "事情、事物", "examples": ["仕事（しごと）工作", "事故（じこ）事故", "大事（だいじ）重要"]},
-    {"kanji": "勉", "reading_on": "ベン", "reading_kun": "—", "meaning": "努力、勤勉", "examples": ["勉強（べんきょう）讀書"]},
-    {"kanji": "強", "reading_on": "キョウ・ゴウ", "reading_kun": "つよ", "meaning": "強壯、強制", "examples": ["勉強（べんきょう）讀書", "強い（つよい）強壯", "強調（きょうちょう）強調"]}
+    {
+      "kanji": "駅",
+      "reading_on": "エキ",
+      "reading_kun": "—",
+      "meaning": "車站",
+      "examples": [
+        "駅（えき）車站",
+        "東京駅（とうきょうえき）東京車站"
+      ]
+    },
+    {
+      "kanji": "電",
+      "reading_on": "デン",
+      "reading_kun": "—",
+      "meaning": "電",
+      "examples": [
+        "電車（でんしゃ）電車",
+        "電話（でんわ）電話",
+        "電気（でんき）電力"
+      ]
+    },
+    {
+      "kanji": "話",
+      "reading_on": "ワ",
+      "reading_kun": "はな・はなし",
+      "meaning": "說話、故事",
+      "examples": [
+        "電話（でんわ）電話",
+        "話（はなし）話語",
+        "会話（かいわ）會話"
+      ]
+    },
+    {
+      "kanji": "食",
+      "reading_on": "ショク",
+      "reading_kun": "た・く",
+      "meaning": "食物、吃",
+      "examples": [
+        "食事（しょくじ）用餐",
+        "食べる（たべる）吃",
+        "食堂（しょくどう）食堂"
+      ]
+    },
+    {
+      "kanji": "時",
+      "reading_on": "ジ",
+      "reading_kun": "とき",
+      "meaning": "時間",
+      "examples": [
+        "時間（じかん）時間",
+        "時（とき）時候",
+        "何時（なんじ）幾點"
+      ]
+    },
+    {
+      "kanji": "間",
+      "reading_on": "カン・ケン",
+      "reading_kun": "あいだ・ま",
+      "meaning": "之間、空間",
+      "examples": [
+        "時間（じかん）時間",
+        "間（あいだ）之間",
+        "週間（しゅうかん）週"
+      ]
+    },
+    {
+      "kanji": "会",
+      "reading_on": "カイ・エ",
+      "reading_kun": "あ",
+      "meaning": "見面、集會",
+      "examples": [
+        "会社（かいしゃ）公司",
+        "会う（あう）見面",
+        "会話（かいわ）會話"
+      ]
+    },
+    {
+      "kanji": "社",
+      "reading_on": "シャ",
+      "reading_kun": "やしろ",
+      "meaning": "公司、社會",
+      "examples": [
+        "会社（かいしゃ）公司",
+        "社員（しゃいん）員工",
+        "社会（しゃかい）社會"
+      ]
+    },
+    {
+      "kanji": "仕",
+      "reading_on": "シ",
+      "reading_kun": "つか",
+      "meaning": "工作、侍奉",
+      "examples": [
+        "仕事（しごと）工作",
+        "仕方（しかた）方法"
+      ]
+    },
+    {
+      "kanji": "事",
+      "reading_on": "ジ・ズ",
+      "reading_kun": "こと",
+      "meaning": "事情、事物",
+      "examples": [
+        "仕事（しごと）工作",
+        "事故（じこ）事故",
+        "大事（だいじ）重要"
+      ]
+    },
+    {
+      "kanji": "勉",
+      "reading_on": "ベン",
+      "reading_kun": "—",
+      "meaning": "努力、勤勉",
+      "examples": [
+        "勉強（べんきょう）讀書"
+      ]
+    },
+    {
+      "kanji": "強",
+      "reading_on": "キョウ・ゴウ",
+      "reading_kun": "つよ",
+      "meaning": "強壯、強制",
+      "examples": [
+        "勉強（べんきょう）讀書",
+        "強い（つよい）強壯",
+        "強調（きょうちょう）強調"
+      ]
+    }
   ],
   "practice": [
-    {"type": "grammar", "question": "今、電話で話し___います。（適切な助詞を選んでください）", "options": ["て", "に", "が", "を"], "answer": 0, "explanation": "「〜ている」表示進行中的動作，接続是動詞て形＋いる。"},
-    {"type": "vocabulary", "question": "「便利」の意味はどれですか。", "options": ["方便", "普通", "特別", "必要"], "answer": 0, "explanation": "便利（べんり）是「方便」的意思。"},
-    {"type": "kanji", "question": "「会社」の読み方はどれですか。", "options": ["かいしゃ", "かいしゃく", "えしゃ", "あいしゃ"], "answer": 0, "explanation": "会社（かいしゃ）是「公司」。会（カイ）＋社（シャ）。"},
-    {"type": "grammar", "question": "宿題をし___、テレビを見ます。（〜てから）", "options": ["てから", "ながら", "てしまって", "ために"], "answer": 0, "explanation": "「〜てから」表示「做完〜之後」，強調先後順序。"},
-    {"type": "vocabulary", "question": "「残念」の意味はどれですか。", "options": ["遺憾", "安全", "特別", "重要"], "answer": 0, "explanation": "残念（ざんねん）是「遺憾、可惜」的意思。"},
-    {"type": "kanji", "question": "「時間」の読み方はどれですか。", "options": ["じかん", "ときかん", "じま", "しかん"], "answer": 0, "explanation": "時間（じかん）是「時間」。時（ジ）＋間（カン）。"},
-    {"type": "grammar", "question": "音楽を聞き___勉強する。（同時進行）", "options": ["ながら", "てから", "ために", "ように"], "answer": 0, "explanation": "「〜ながら」表示「一邊〜一邊〜」，同時進行兩個動作。"},
-    {"type": "vocabulary", "question": "「続ける」の意味はどれですか。", "options": ["繼續", "開始", "停止", "結束"], "answer": 0, "explanation": "続ける（つづける）是「繼續」的意思。"},
-    {"type": "kanji", "question": "「仕事」の読み方はどれですか。", "options": ["しごと", "しじ", "しこと", "しぎょう"], "answer": 0, "explanation": "仕事（しごと）是「工作」。"},
-    {"type": "grammar", "question": "ケーキを全部食べ___しまった。（遺憾地完成）", "options": ["て", "に", "が", "を"], "answer": 0, "explanation": "「〜てしまう」表示（遺憾地）做完了某事。"}
+    {
+      "type": "vocabulary",
+      "question": "「あいさつ」の意味はどれですか。",
+      "options": [
+        "見面",
+        "說話",
+        "打招呼",
+        "約定"
+      ],
+      "answer": 2,
+      "explanation": "表示在與人見面或離別時的問候語或動作。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「合う」の意味はどれですか。",
+      "options": [
+        "碰面",
+        "適合",
+        "相遇",
+        "聯合"
+      ],
+      "answer": 1,
+      "explanation": "指事物之間搭配得宜、符合條件或標準。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「浅い」の意味はどれですか。",
+      "options": [
+        "輕的",
+        "窄的",
+        "低的",
+        "淺的"
+      ],
+      "answer": 3,
+      "explanation": "形容深度不深，與「深い」（深的）相對。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「味」の意味はどれですか。",
+      "options": [
+        "香氣",
+        "顏色",
+        "口感",
+        "味道"
+      ],
+      "answer": 3,
+      "explanation": "食物在口中產生的感覺，如酸、甜、苦、辣等。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「集る」の意味はどれですか。",
+      "options": [
+        "散步",
+        "聚集",
+        "分開",
+        "整理"
+      ],
+      "answer": 1,
+      "explanation": "人或事物自然地集合在一起，為自動詞。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「集める」の意味はどれですか。",
+      "options": [
+        "分配",
+        "收集",
+        "排列",
+        "放置"
+      ],
+      "answer": 1,
+      "explanation": "有意識地將人或事物聚攏在一起，為他動詞。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「謝る」の意味はどれですか。",
+      "options": [
+        "感謝",
+        "拒絕",
+        "邀請",
+        "道歉"
+      ],
+      "answer": 3,
+      "explanation": "為自己的過失或錯誤向他人表達歉意。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「安心」の意味はどれですか。",
+      "options": [
+        "放心",
+        "滿意",
+        "擔心",
+        "高興"
+      ],
+      "answer": 0,
+      "explanation": "心中沒有掛慮、擔憂，感覺平靜。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「安全」の意味はどれですか。",
+      "options": [
+        "危險",
+        "平穩",
+        "保護",
+        "安全"
+      ],
+      "answer": 3,
+      "explanation": "沒有危險或損害的狀態。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「以下」の意味はどれですか。",
+      "options": [
+        "之間",
+        "以上",
+        "以外",
+        "以下"
+      ],
+      "answer": 3,
+      "explanation": "指某個數量或數值及比它小的部分。"
+    }
   ]
 }

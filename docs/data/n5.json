@@ -1,70 +1,761 @@
 {
   "vocabulary": [
-    {"word": "食べる", "reading": "たべる", "meaning": "吃", "example": "朝ごはんを食べる。", "example_reading": "あさごはんをたべる。", "example_meaning": "吃早餐。"},
-    {"word": "飲む", "reading": "のむ", "meaning": "喝", "example": "水を飲む。", "example_reading": "みずをのむ。", "example_meaning": "喝水。"},
-    {"word": "行く", "reading": "いく", "meaning": "去", "example": "学校に行く。", "example_reading": "がっこうにいく。", "example_meaning": "去學校。"},
-    {"word": "来る", "reading": "くる", "meaning": "來", "example": "友達が来る。", "example_reading": "ともだちがくる。", "example_meaning": "朋友來了。"},
-    {"word": "見る", "reading": "みる", "meaning": "看", "example": "テレビを見る。", "example_reading": "テレビをみる。", "example_meaning": "看電視。"},
-    {"word": "聞く", "reading": "きく", "meaning": "聽；問", "example": "音楽を聞く。", "example_reading": "おんがくをきく。", "example_meaning": "聽音樂。"},
-    {"word": "話す", "reading": "はなす", "meaning": "說；講", "example": "日本語で話す。", "example_reading": "にほんごではなす。", "example_meaning": "用日語說話。"},
-    {"word": "読む", "reading": "よむ", "meaning": "閱讀", "example": "本を読む。", "example_reading": "ほんをよむ。", "example_meaning": "讀書。"},
-    {"word": "書く", "reading": "かく", "meaning": "寫", "example": "手紙を書く。", "example_reading": "てがみをかく。", "example_meaning": "寫信。"},
-    {"word": "買う", "reading": "かう", "meaning": "買", "example": "野菜を買う。", "example_reading": "やさいをかう。", "example_meaning": "買蔬菜。"},
-    {"word": "起きる", "reading": "おきる", "meaning": "起床", "example": "七時に起きる。", "example_reading": "しちじにおきる。", "example_meaning": "七點起床。"},
-    {"word": "寝る", "reading": "ねる", "meaning": "睡覺", "example": "早く寝る。", "example_reading": "はやくねる。", "example_meaning": "早點睡覺。"},
-    {"word": "先生", "reading": "せんせい", "meaning": "老師", "example": "先生は優しい。", "example_reading": "せんせいはやさしい。", "example_meaning": "老師很溫柔。"},
-    {"word": "学生", "reading": "がくせい", "meaning": "學生", "example": "私は学生です。", "example_reading": "わたしはがくせいです。", "example_meaning": "我是學生。"},
-    {"word": "電車", "reading": "でんしゃ", "meaning": "電車", "example": "電車で来た。", "example_reading": "でんしゃできた。", "example_meaning": "搭電車來的。"},
-    {"word": "大きい", "reading": "おおきい", "meaning": "大的", "example": "大きい犬がいる。", "example_reading": "おおきいいぬがいる。", "example_meaning": "有一隻大狗。"},
-    {"word": "小さい", "reading": "ちいさい", "meaning": "小的", "example": "小さい鳥だ。", "example_reading": "ちいさいとりだ。", "example_meaning": "是一隻小鳥。"},
-    {"word": "新しい", "reading": "あたらしい", "meaning": "新的", "example": "新しい本を買った。", "example_reading": "あたらしいほんをかった。", "example_meaning": "買了新書。"},
-    {"word": "高い", "reading": "たかい", "meaning": "貴；高", "example": "このケーキは高い。", "example_reading": "このケーキはたかい。", "example_meaning": "這個蛋糕很貴。"},
-    {"word": "安い", "reading": "やすい", "meaning": "便宜", "example": "ここは安い店だ。", "example_reading": "ここはやすいみせだ。", "example_meaning": "這裡是便宜的店。"}
+    {
+      "word": "会う",
+      "reading": "あう",
+      "meaning": "見面",
+      "example": "友達に会います。",
+      "example_reading": "ともだちにあいます。",
+      "example_meaning": "我會和朋友見面。"
+    },
+    {
+      "word": "青",
+      "reading": "あお",
+      "meaning": "藍色（名詞）",
+      "example": "空は青です。",
+      "example_reading": "そらはあおです。",
+      "example_meaning": "天空是藍色的。"
+    },
+    {
+      "word": "青い",
+      "reading": "あおい",
+      "meaning": "藍色的（形容詞）",
+      "example": "青い服を着ます。",
+      "example_reading": "あおいふくをきます。",
+      "example_meaning": "我穿藍色的衣服。"
+    },
+    {
+      "word": "赤",
+      "reading": "あか",
+      "meaning": "紅色（名詞）",
+      "example": "これは赤です。",
+      "example_reading": "これはあかです。",
+      "example_meaning": "這是紅色的。"
+    },
+    {
+      "word": "赤い",
+      "reading": "あかい",
+      "meaning": "紅色的（形容詞）",
+      "example": "赤いりんごが好きです。",
+      "example_reading": "あかいりんごがすきです。",
+      "example_meaning": "我喜歡紅蘋果。"
+    },
+    {
+      "word": "明い",
+      "reading": "あかるい",
+      "meaning": "明亮的",
+      "example": "この部屋は明るいです。",
+      "example_reading": "このへやはあかるいです。",
+      "example_meaning": "這房間很明亮。"
+    },
+    {
+      "word": "秋",
+      "reading": "あき",
+      "meaning": "秋天",
+      "example": "秋は涼しいです。",
+      "example_reading": "あきはすずしいです。",
+      "example_meaning": "秋天很涼爽。"
+    },
+    {
+      "word": "開ける",
+      "reading": "あける",
+      "meaning": "打開",
+      "example": "ドアを開けてください。",
+      "example_reading": "ドアをあけてください。",
+      "example_meaning": "請把門打開。"
+    },
+    {
+      "word": "上げる",
+      "reading": "あげる",
+      "meaning": "舉起、給予",
+      "example": "手を上げてください。",
+      "example_reading": "てをあげてください。",
+      "example_meaning": "請舉手。"
+    },
+    {
+      "word": "朝",
+      "reading": "あさ",
+      "meaning": "早上",
+      "example": "毎朝コーヒーを飲みます。",
+      "example_reading": "まいあさコーヒーをのみます。",
+      "example_meaning": "我每天早上喝咖啡。"
+    },
+    {
+      "word": "朝御飯",
+      "reading": "あさごはん",
+      "meaning": "早餐",
+      "example": "毎日朝御飯を食べます。",
+      "example_reading": "まいにちあさごはんをたべます。",
+      "example_meaning": "我每天吃早餐。"
+    },
+    {
+      "word": "あさって",
+      "reading": "あさって",
+      "meaning": "後天",
+      "example": "あさって、友達と映画を見に行きます。",
+      "example_reading": "あさって、ともだちとえいがをみにいきます。",
+      "example_meaning": "後天，我會和朋友去看電影。"
+    },
+    {
+      "word": "足",
+      "reading": "あし",
+      "meaning": "腳；腿",
+      "example": "私の足は少し長いです。",
+      "example_reading": "わたしのあしはすこしながいです。",
+      "example_meaning": "我的腿有點長。"
+    },
+    {
+      "word": "あそこ",
+      "reading": "あそこ",
+      "meaning": "那裡（較遠）",
+      "example": "あそこにコンビニがあります。",
+      "example_reading": "あそこにこんびにがあります。",
+      "example_meaning": "那裡有一家便利商店。"
+    },
+    {
+      "word": "遊ぶ",
+      "reading": "あそぶ",
+      "meaning": "玩耍；遊玩",
+      "example": "子供たちは公園で遊びます。",
+      "example_reading": "こどもたちはこうえんであそびます。",
+      "example_meaning": "孩子們在公園玩耍。"
+    },
+    {
+      "word": "暖かい",
+      "reading": "あたたかい",
+      "meaning": "溫暖的（天氣、氣氛）",
+      "example": "今日は暖かい日ですね。",
+      "example_reading": "きょうはあたたかいひですね。",
+      "example_meaning": "今天真是個溫暖的日子呢。"
+    },
+    {
+      "word": "頭",
+      "reading": "あたま",
+      "meaning": "頭",
+      "example": "彼の頭はとてもいいです。",
+      "example_reading": "かれのあたまはとてもいいです。",
+      "example_meaning": "他的頭腦很好。"
+    },
+    {
+      "word": "新しい",
+      "reading": "あたらしい",
+      "meaning": "新的",
+      "example": "これは私の新しいカバンです。",
+      "example_reading": "これはわたしのあたらしいかばんです。",
+      "example_meaning": "這是我的新包包。"
+    },
+    {
+      "word": "あちら",
+      "reading": "あちら",
+      "meaning": "那邊（禮貌說法）",
+      "example": "あちらへどうぞ。",
+      "example_reading": "あちらへどうぞ。",
+      "example_meaning": "請往那邊走。"
+    },
+    {
+      "word": "暑い",
+      "reading": "あつい",
+      "meaning": "熱的（天氣）",
+      "example": "今日はとても暑いです。",
+      "example_reading": "きょうはとてもあついです。",
+      "example_meaning": "今天非常熱。"
+    },
+    {
+      "word": "熱い",
+      "reading": "あつい",
+      "meaning": "熱的、燙的（溫度）",
+      "example": "このコーヒー、とても熱いですね。",
+      "example_reading": "このこーひー、とてもあついですね。",
+      "example_meaning": "這杯咖啡非常燙呢。"
+    },
+    {
+      "word": "厚い",
+      "reading": "あつい",
+      "meaning": "厚的",
+      "example": "この本はページが厚いです。",
+      "example_reading": "このほんはぺーじがあついです。",
+      "example_meaning": "這本書的頁數很厚。"
+    },
+    {
+      "word": "あっち",
+      "reading": "あっち",
+      "meaning": "那邊、那兒（口語）",
+      "example": "私の家はあっちです。",
+      "example_reading": "わたしのいえはあっちです。",
+      "example_meaning": "我的家在那邊。"
+    },
+    {
+      "word": "あなた",
+      "reading": "あなた",
+      "meaning": "你",
+      "example": "あなたは学生ですか？",
+      "example_reading": "あなたはがくせいですか？",
+      "example_meaning": "你是學生嗎？"
+    },
+    {
+      "word": "兄",
+      "reading": "あに",
+      "meaning": "（我的）哥哥",
+      "example": "私の兄はエンジニアです。",
+      "example_reading": "わたしのあにはえんじにあです。",
+      "example_meaning": "我的哥哥是工程師。"
+    },
+    {
+      "word": "姉",
+      "reading": "あね",
+      "meaning": "（我的）姐姐",
+      "example": "私の姉は東京に住んでいます。",
+      "example_reading": "わたしのあねはとうきょうにすんでいます。",
+      "example_meaning": "我的姐姐住在東京。"
+    },
+    {
+      "word": "あの",
+      "reading": "あの",
+      "meaning": "那個（遠方的）、喂（引起注意）",
+      "example": "あの人は誰ですか？",
+      "example_reading": "あのひとはだれですか？",
+      "example_meaning": "那個人是誰？"
+    },
+    {
+      "word": "アパート",
+      "reading": "アパート",
+      "meaning": "公寓",
+      "example": "私はアパートに住んでいます。",
+      "example_reading": "わたしはあぱーとにすんでいます。",
+      "example_meaning": "我住在公寓裡。"
+    },
+    {
+      "word": "あびる",
+      "reading": "あびる",
+      "meaning": "淋、浴",
+      "example": "毎朝シャワーを浴びます。",
+      "example_reading": "まいあさしゃわーをあびます。",
+      "example_meaning": "我每天早上沖澡。"
+    },
+    {
+      "word": "危ない",
+      "reading": "あぶない",
+      "meaning": "危險的",
+      "example": "この道は危ないですよ。",
+      "example_reading": "このみちはあぶないですよ。",
+      "example_meaning": "這條路很危險喔。"
+    },
+    {
+      "word": "あまり",
+      "reading": "あまり",
+      "meaning": "不太、不怎麼",
+      "example": "このラーメンは、あまり辛くないです。",
+      "example_reading": "このラーメンは、あまりからくないです。",
+      "example_meaning": "這個拉麵不太辣。"
+    },
+    {
+      "word": "雨",
+      "reading": "あめ",
+      "meaning": "雨",
+      "example": "今日は雨が降っていますね。",
+      "example_reading": "きょうはあめがふっていますね。",
+      "example_meaning": "今天下雨了呢。"
+    },
+    {
+      "word": "飴",
+      "reading": "あめ",
+      "meaning": "糖果、麥芽糖",
+      "example": "小さい頃、よく飴をもらいました。",
+      "example_reading": "ちいさいころ、よくあめをもらいました。",
+      "example_meaning": "小時候，我經常得到糖果。"
+    },
+    {
+      "word": "洗う",
+      "reading": "あらう",
+      "meaning": "洗",
+      "example": "食事の前に手を洗ってください。",
+      "example_reading": "しょくじのまえにてもあらってください。",
+      "example_meaning": "吃飯前請洗手。"
+    },
+    {
+      "word": "ある",
+      "reading": "ある",
+      "meaning": "有、存在（無生命物體）",
+      "example": "ここに本があります。",
+      "example_reading": "ここにほんがあります。",
+      "example_meaning": "這裡有書。"
+    },
+    {
+      "word": "歩く",
+      "reading": "あるく",
+      "meaning": "走路、步行",
+      "example": "毎日、駅まで歩きます。",
+      "example_reading": "まいにち、えきまであるきます。",
+      "example_meaning": "我每天走路去車站。"
+    },
+    {
+      "word": "あれ",
+      "reading": "あれ",
+      "meaning": "那個（遠處的、你我都非指涉的）",
+      "example": "あれは何ですか？",
+      "example_reading": "あれはなんですか？",
+      "example_meaning": "那是什麼？"
+    },
+    {
+      "word": "いいえ",
+      "reading": "いいえ",
+      "meaning": "不、不是",
+      "example": "「日本人ですか？」「いいえ、違います。」",
+      "example_reading": "「にほんじん ですか？」「いいえ、ちがいます。」",
+      "example_meaning": "「你是日本人嗎？」「不，我不是。」"
+    },
+    {
+      "word": "家",
+      "reading": "いえ",
+      "meaning": "家",
+      "example": "私の家は公園の隣です。",
+      "example_reading": "わたしのいえはこうえんのとなりです。",
+      "example_meaning": "我家在公園旁邊。"
+    },
+    {
+      "word": "いかが",
+      "reading": "いかが",
+      "meaning": "如何、怎麼樣（「どう」的禮貌說法）",
+      "example": "こちらのコーヒーはいかがですか？",
+      "example_reading": "こちらのコーヒーはいかがですか？",
+      "example_meaning": "這杯咖啡如何？ (要不要來點咖啡？)"
+    },
+    {
+      "word": "行く",
+      "reading": "いく",
+      "meaning": "去、走",
+      "example": "毎日学校に行きます。",
+      "example_reading": "まいにちがっこうにいきます。",
+      "example_meaning": "我每天去學校。"
+    },
+    {
+      "word": "いくつ",
+      "reading": "いくつ",
+      "meaning": "幾個、幾歲",
+      "example": "りんごはいくつありますか。",
+      "example_reading": "りんごはいくつありますか。",
+      "example_meaning": "有幾個蘋果？"
+    },
+    {
+      "word": "いくら",
+      "reading": "いくら",
+      "meaning": "多少錢",
+      "example": "このかばんはいくらですか。",
+      "example_reading": "このかばんはいくらですか。",
+      "example_meaning": "這個包包多少錢？"
+    },
+    {
+      "word": "池",
+      "reading": "いけ",
+      "meaning": "池塘",
+      "example": "公園に大きい池があります。",
+      "example_reading": "こうえんにおおきいいけがあります。",
+      "example_meaning": "公園裡有一個大池塘。"
+    },
+    {
+      "word": "医者",
+      "reading": "いしゃ",
+      "meaning": "醫生",
+      "example": "彼は医者になりたいです。",
+      "example_reading": "かれはいしゃになりたいです。",
+      "example_meaning": "他想成為醫生。"
+    },
+    {
+      "word": "いす",
+      "reading": "いす",
+      "meaning": "椅子",
+      "example": "いすに座ってください。",
+      "example_reading": "いすにすわってください。",
+      "example_meaning": "請坐在椅子上。"
+    },
+    {
+      "word": "忙しい",
+      "reading": "いそがしい",
+      "meaning": "忙碌的",
+      "example": "今日はとても忙しいです。",
+      "example_reading": "きょうはとてもいそがしいです。",
+      "example_meaning": "今天非常忙。"
+    },
+    {
+      "word": "痛い",
+      "reading": "いたい",
+      "meaning": "疼痛的、痛",
+      "example": "頭が痛いです。",
+      "example_reading": "あたまがいたいです。",
+      "example_meaning": "我頭很痛。"
+    },
+    {
+      "word": "一",
+      "reading": "いち",
+      "meaning": "一（數字）",
+      "example": "1月は寒いですね。",
+      "example_reading": "いちがつはさむいですね。",
+      "example_meaning": "一月很冷呢。"
+    },
+    {
+      "word": "いちばん",
+      "reading": "いちばん",
+      "meaning": "最、第一",
+      "example": "日本で富士山が一番高い山です。",
+      "example_reading": "にほんでふじさんがいちばんたかいやまです。",
+      "example_meaning": "在日本，富士山是最高的山。"
+    }
   ],
   "grammar": [
-    {"pattern": "〜は〜です", "meaning": "〜是〜（禮貌體判斷句）", "example": "私は学生です。", "example_meaning": "我是學生。", "notes": "最基礎的判斷句型，用於說明主語是什麼"},
-    {"pattern": "〜が〜ます", "meaning": "主語（用が）＋動詞（ます形）", "example": "猫がいます。", "example_meaning": "（有）貓。", "notes": "が用於強調或第一次提到的主語"},
-    {"pattern": "〜を〜ます", "meaning": "〜（受詞）〜（動詞）", "example": "水を飲みます。", "example_meaning": "喝水。", "notes": "を標示動詞的直接受詞"},
-    {"pattern": "〜に行く／来る", "meaning": "去／來〜（目的地）", "example": "学校に行きます。", "example_meaning": "去學校。", "notes": "に表示移動的目的地或方向"},
-    {"pattern": "〜で〜ます", "meaning": "用〜（手段）做〜", "example": "バスで行きます。", "example_meaning": "搭巴士去。", "notes": "で表示手段或方法"},
-    {"pattern": "〜ません", "meaning": "不〜（否定禮貌體）", "example": "肉を食べません。", "example_meaning": "不吃肉。", "notes": "ます形的否定"},
-    {"pattern": "〜ましたか", "meaning": "做了〜嗎？（過去疑問）", "example": "宿題をしましたか。", "example_meaning": "做功課了嗎？", "notes": "過去式加上か形成疑問句"},
-    {"pattern": "〜から〜まで", "meaning": "從〜到〜", "example": "月曜日から金曜日まで。", "example_meaning": "從星期一到星期五。", "notes": "表示時間或空間的範圍"},
-    {"pattern": "〜も", "meaning": "〜也", "example": "私も学生です。", "example_meaning": "我也是學生。", "notes": "表示追加，與は不同，も包含在內"},
-    {"pattern": "〜ね／〜よ", "meaning": "對吧〜（ね確認）／〜喔（よ強調）", "example": "いい天気ですね。", "example_meaning": "天氣真好呢。", "notes": "ね用於確認共識，よ用於告知對方不知道的事"}
+    {
+      "pattern": "〜は〜です",
+      "meaning": "〜是〜（禮貌體判斷句）",
+      "example": "私は学生です。",
+      "example_meaning": "我是學生。",
+      "notes": "最基礎的判斷句型，用於說明主語是什麼"
+    },
+    {
+      "pattern": "〜が〜ます",
+      "meaning": "主語（用が）＋動詞（ます形）",
+      "example": "猫がいます。",
+      "example_meaning": "（有）貓。",
+      "notes": "が用於強調或第一次提到的主語"
+    },
+    {
+      "pattern": "〜を〜ます",
+      "meaning": "〜（受詞）〜（動詞）",
+      "example": "水を飲みます。",
+      "example_meaning": "喝水。",
+      "notes": "を標示動詞的直接受詞"
+    },
+    {
+      "pattern": "〜に行く／来る",
+      "meaning": "去／來〜（目的地）",
+      "example": "学校に行きます。",
+      "example_meaning": "去學校。",
+      "notes": "に表示移動的目的地或方向"
+    },
+    {
+      "pattern": "〜で〜ます",
+      "meaning": "用〜（手段）做〜",
+      "example": "バスで行きます。",
+      "example_meaning": "搭巴士去。",
+      "notes": "で表示手段或方法"
+    },
+    {
+      "pattern": "〜ません",
+      "meaning": "不〜（否定禮貌體）",
+      "example": "肉を食べません。",
+      "example_meaning": "不吃肉。",
+      "notes": "ます形的否定"
+    },
+    {
+      "pattern": "〜ましたか",
+      "meaning": "做了〜嗎？（過去疑問）",
+      "example": "宿題をしましたか。",
+      "example_meaning": "做功課了嗎？",
+      "notes": "過去式加上か形成疑問句"
+    },
+    {
+      "pattern": "〜から〜まで",
+      "meaning": "從〜到〜",
+      "example": "月曜日から金曜日まで。",
+      "example_meaning": "從星期一到星期五。",
+      "notes": "表示時間或空間的範圍"
+    },
+    {
+      "pattern": "〜も",
+      "meaning": "〜也",
+      "example": "私も学生です。",
+      "example_meaning": "我也是學生。",
+      "notes": "表示追加，與は不同，も包含在內"
+    },
+    {
+      "pattern": "〜ね／〜よ",
+      "meaning": "對吧〜（ね確認）／〜喔（よ強調）",
+      "example": "いい天気ですね。",
+      "example_meaning": "天氣真好呢。",
+      "notes": "ね用於確認共識，よ用於告知對方不知道的事"
+    }
   ],
   "kanji": [
-    {"kanji": "日", "reading_on": "ニチ・ジツ", "reading_kun": "ひ・か", "meaning": "日、太陽、天", "examples": ["日曜日（にちようび）星期日", "毎日（まいにち）每天", "誕生日（たんじょうび）生日"]},
-    {"kanji": "月", "reading_on": "ゲツ・ガツ", "reading_kun": "つき", "meaning": "月、月份", "examples": ["月曜日（げつようび）星期一", "一月（いちがつ）一月份", "月（つき）月亮"]},
-    {"kanji": "火", "reading_on": "カ", "reading_kun": "ひ", "meaning": "火", "examples": ["火曜日（かようび）星期二", "火事（かじ）火災"]},
-    {"kanji": "水", "reading_on": "スイ", "reading_kun": "みず", "meaning": "水", "examples": ["水曜日（すいようび）星期三", "水（みず）水", "水泳（すいえい）游泳"]},
-    {"kanji": "木", "reading_on": "モク・ボク", "reading_kun": "き", "meaning": "樹木", "examples": ["木曜日（もくようび）星期四", "木（き）樹", "木村（きむら）木村（姓氏）"]},
-    {"kanji": "金", "reading_on": "キン・コン", "reading_kun": "かね・かな", "meaning": "金錢、金屬", "examples": ["金曜日（きんようび）星期五", "お金（おかね）錢", "金色（きんいろ）金色"]},
-    {"kanji": "土", "reading_on": "ド・ト", "reading_kun": "つち", "meaning": "土地", "examples": ["土曜日（どようび）星期六", "土（つち）泥土"]},
-    {"kanji": "山", "reading_on": "サン", "reading_kun": "やま", "meaning": "山", "examples": ["富士山（ふじさん）富士山", "山（やま）山", "登山（とざん）登山"]},
-    {"kanji": "川", "reading_on": "セン", "reading_kun": "かわ", "meaning": "河川", "examples": ["川（かわ）河", "川口（かわぐち）川口（地名）"]},
-    {"kanji": "人", "reading_on": "ジン・ニン", "reading_kun": "ひと", "meaning": "人", "examples": ["人（ひと）人", "日本人（にほんじん）日本人", "一人（ひとり）一個人"]},
-    {"kanji": "口", "reading_on": "コウ・ク", "reading_kun": "くち", "meaning": "口、入口", "examples": ["口（くち）嘴", "入口（いりぐち）入口", "人口（じんこう）人口"]},
-    {"kanji": "目", "reading_on": "モク・ボク", "reading_kun": "め", "meaning": "眼睛", "examples": ["目（め）眼睛", "目的（もくてき）目的", "一目（ひとめ）一眼"]},
-    {"kanji": "大", "reading_on": "ダイ・タイ", "reading_kun": "おお", "meaning": "大", "examples": ["大学（だいがく）大學", "大きい（おおきい）大的", "大切（たいせつ）重要"]},
-    {"kanji": "小", "reading_on": "ショウ", "reading_kun": "ちい・こ", "meaning": "小", "examples": ["小学校（しょうがっこう）小學", "小さい（ちいさい）小的"]},
-    {"kanji": "学", "reading_on": "ガク", "reading_kun": "まな", "meaning": "學習、學問", "examples": ["学校（がっこう）學校", "大学（だいがく）大學", "学生（がくせい）學生"]}
+    {
+      "kanji": "日",
+      "reading_on": "ニチ・ジツ",
+      "reading_kun": "ひ・か",
+      "meaning": "日、太陽、天",
+      "examples": [
+        "日曜日（にちようび）星期日",
+        "毎日（まいにち）每天",
+        "誕生日（たんじょうび）生日"
+      ]
+    },
+    {
+      "kanji": "月",
+      "reading_on": "ゲツ・ガツ",
+      "reading_kun": "つき",
+      "meaning": "月、月份",
+      "examples": [
+        "月曜日（げつようび）星期一",
+        "一月（いちがつ）一月份",
+        "月（つき）月亮"
+      ]
+    },
+    {
+      "kanji": "火",
+      "reading_on": "カ",
+      "reading_kun": "ひ",
+      "meaning": "火",
+      "examples": [
+        "火曜日（かようび）星期二",
+        "火事（かじ）火災"
+      ]
+    },
+    {
+      "kanji": "水",
+      "reading_on": "スイ",
+      "reading_kun": "みず",
+      "meaning": "水",
+      "examples": [
+        "水曜日（すいようび）星期三",
+        "水（みず）水",
+        "水泳（すいえい）游泳"
+      ]
+    },
+    {
+      "kanji": "木",
+      "reading_on": "モク・ボク",
+      "reading_kun": "き",
+      "meaning": "樹木",
+      "examples": [
+        "木曜日（もくようび）星期四",
+        "木（き）樹",
+        "木村（きむら）木村（姓氏）"
+      ]
+    },
+    {
+      "kanji": "金",
+      "reading_on": "キン・コン",
+      "reading_kun": "かね・かな",
+      "meaning": "金錢、金屬",
+      "examples": [
+        "金曜日（きんようび）星期五",
+        "お金（おかね）錢",
+        "金色（きんいろ）金色"
+      ]
+    },
+    {
+      "kanji": "土",
+      "reading_on": "ド・ト",
+      "reading_kun": "つち",
+      "meaning": "土地",
+      "examples": [
+        "土曜日（どようび）星期六",
+        "土（つち）泥土"
+      ]
+    },
+    {
+      "kanji": "山",
+      "reading_on": "サン",
+      "reading_kun": "やま",
+      "meaning": "山",
+      "examples": [
+        "富士山（ふじさん）富士山",
+        "山（やま）山",
+        "登山（とざん）登山"
+      ]
+    },
+    {
+      "kanji": "川",
+      "reading_on": "セン",
+      "reading_kun": "かわ",
+      "meaning": "河川",
+      "examples": [
+        "川（かわ）河",
+        "川口（かわぐち）川口（地名）"
+      ]
+    },
+    {
+      "kanji": "人",
+      "reading_on": "ジン・ニン",
+      "reading_kun": "ひと",
+      "meaning": "人",
+      "examples": [
+        "人（ひと）人",
+        "日本人（にほんじん）日本人",
+        "一人（ひとり）一個人"
+      ]
+    },
+    {
+      "kanji": "口",
+      "reading_on": "コウ・ク",
+      "reading_kun": "くち",
+      "meaning": "口、入口",
+      "examples": [
+        "口（くち）嘴",
+        "入口（いりぐち）入口",
+        "人口（じんこう）人口"
+      ]
+    },
+    {
+      "kanji": "目",
+      "reading_on": "モク・ボク",
+      "reading_kun": "め",
+      "meaning": "眼睛",
+      "examples": [
+        "目（め）眼睛",
+        "目的（もくてき）目的",
+        "一目（ひとめ）一眼"
+      ]
+    },
+    {
+      "kanji": "大",
+      "reading_on": "ダイ・タイ",
+      "reading_kun": "おお",
+      "meaning": "大",
+      "examples": [
+        "大学（だいがく）大學",
+        "大きい（おおきい）大的",
+        "大切（たいせつ）重要"
+      ]
+    },
+    {
+      "kanji": "小",
+      "reading_on": "ショウ",
+      "reading_kun": "ちい・こ",
+      "meaning": "小",
+      "examples": [
+        "小学校（しょうがっこう）小學",
+        "小さい（ちいさい）小的"
+      ]
+    },
+    {
+      "kanji": "学",
+      "reading_on": "ガク",
+      "reading_kun": "まな",
+      "meaning": "學習、學問",
+      "examples": [
+        "学校（がっこう）學校",
+        "大学（だいがく）大學",
+        "学生（がくせい）學生"
+      ]
+    }
   ],
   "practice": [
-    {"type": "vocabulary", "question": "「食べる」の意味はどれですか。", "options": ["吃", "喝", "睡", "走"], "answer": 0, "explanation": "食べる（たべる）的意思是「吃」。例：朝ごはんを食べる。"},
-    {"type": "vocabulary", "question": "「大きい」の読み方はどれですか。", "options": ["おおきい", "たいきい", "だいきい", "おきい"], "answer": 0, "explanation": "大きい的讀音是おおきい，意思是「大的」。"},
-    {"type": "kanji", "question": "「月曜日」の読み方はどれですか。", "options": ["げつようび", "つきようび", "がつようび", "にちようび"], "answer": 0, "explanation": "月曜日（げつようび）是星期一。"},
-    {"type": "grammar", "question": "___で学校に行きます。（交通手段を選んでください）", "options": ["電車", "電車は", "電車が", "電車を"], "answer": 0, "explanation": "表示手段時用「で」，所以是「電車で」行く。"},
-    {"type": "vocabulary", "question": "「新しい」の意味はどれですか。", "options": ["舊的", "新的", "大的", "小的"], "answer": 1, "explanation": "新しい（あたらしい）是「新的」。"},
-    {"type": "kanji", "question": "「山」の読み方として正しいのはどれですか。", "options": ["やま", "かわ", "たに", "もり"], "answer": 0, "explanation": "山（やま）是「山」。訓讀是やま，音讀是サン。"},
-    {"type": "grammar", "question": "私___学生です。（適切な助詞を選んでください）", "options": ["は", "が", "を", "に"], "answer": 0, "explanation": "判斷句「〜は〜です」中，主題以は標示。"},
-    {"type": "vocabulary", "question": "「起きる」の意味はどれですか。", "options": ["睡覺", "起床", "坐下", "站立"], "answer": 1, "explanation": "起きる（おきる）是「起床」。"},
-    {"type": "kanji", "question": "「水曜日」は何曜日ですか。", "options": ["星期三", "星期二", "星期四", "星期五"], "answer": 0, "explanation": "水曜日（すいようび）是星期三。水（スイ）對應水曜日。"},
-    {"type": "grammar", "question": "月曜日___金曜日まで授業があります。（空格填入）", "options": ["から", "まで", "に", "で"], "answer": 0, "explanation": "「から〜まで」表示「從〜到〜」，起點用から。"},
-    {"type": "vocabulary", "question": "「安い」の対義語はどれですか。", "options": ["高い", "小さい", "古い", "悪い"], "answer": 0, "explanation": "安い（やすい）的反義詞是高い（たかい）貴的。"},
-    {"type": "kanji", "question": "「日本人」の読み方はどれですか。", "options": ["にほんじん", "にほんひと", "にっぽんじん", "にほんにん"], "answer": 0, "explanation": "日本人的正確讀音是にほんじん。"},
-    {"type": "grammar", "question": "肉を食べ___。（否定形を選んでください）", "options": ["ません", "ないです", "ではない", "じゃない"], "answer": 0, "explanation": "ます形的否定是ません，用於禮貌體。"},
-    {"type": "vocabulary", "question": "「電車」の意味はどれですか。", "options": ["電車", "巴士", "計程車", "飛機"], "answer": 0, "explanation": "電車（でんしゃ）是「電車」。"},
-    {"type": "kanji", "question": "「大学」の読み方はどれですか。", "options": ["だいがく", "おおがく", "だいかく", "たいがく"], "answer": 0, "explanation": "大学（だいがく）是「大學」。大的音讀是ダイ，学的音讀是ガク。"}
+    {
+      "type": "vocabulary",
+      "question": "「会う」の意味はどれですか。",
+      "options": [
+        "走路",
+        "買",
+        "等待",
+        "見面"
+      ],
+      "answer": 3,
+      "explanation": "「会う」是動詞，表示與人「見面」。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「青い」の意味はどれですか。",
+      "options": [
+        "黃色的",
+        "白色的",
+        "紅色的",
+        "藍色的"
+      ],
+      "answer": 3,
+      "explanation": "「青い」是い形容詞，表示「藍色的」。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「開ける」の意味はどれですか。",
+      "options": [
+        "打開",
+        "關閉",
+        "開始",
+        "結束"
+      ],
+      "answer": 0,
+      "explanation": "「開ける」是動詞，表示「打開」門窗等。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「上げる」の意味はどれですか。",
+      "options": [
+        "下降",
+        "放置",
+        "拿出",
+        "舉起、給予"
+      ],
+      "answer": 3,
+      "explanation": "「上げる」是動詞，有「舉起、提高」和「給予」等意思。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「朝御飯」の意味はどれですか。",
+      "options": [
+        "點心",
+        "晚餐",
+        "早餐",
+        "午餐"
+      ],
+      "answer": 2,
+      "explanation": "「朝御飯」是名詞，指「早餐」。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「あさって」の意味はどれですか。",
+      "options": [
+        "後天",
+        "前天",
+        "明天",
+        "昨天"
+      ],
+      "answer": 0,
+      "explanation": "「あさって」是名詞，表示「後天」。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「暖かい」の意味はどれですか。",
+      "options": [
+        "熱的",
+        "寒冷的",
+        "涼爽的",
+        "溫暖的"
+      ],
+      "answer": 3,
+      "explanation": "「暖かい」是い形容詞，指「溫暖的」（多用於天氣或氣氛）。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「新しい」の意味はどれですか。",
+      "options": [
+        "新的",
+        "漂亮的",
+        "多的",
+        "舊的"
+      ],
+      "answer": 0,
+      "explanation": "「新しい」是い形容詞，表示「新的」。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「熱い」の意味はどれですか。",
+      "options": [
+        "熱的、燙的",
+        "熱的（天氣）",
+        "厚的",
+        "冰冷的"
+      ],
+      "answer": 0,
+      "explanation": "「熱い」是い形容詞，指物品「熱的、燙的」（物理溫度）。與天氣熱的「暑い」和厚度的「厚い」發音相同但意思不同。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「兄」の意味はどれですか。",
+      "options": [
+        "（我的）姊姊",
+        "（別人的）哥哥",
+        "（我的）弟弟",
+        "（我的）哥哥"
+      ],
+      "answer": 3,
+      "explanation": "「兄」是名詞，指稱「（自己的）哥哥」。"
+    }
   ]
 }
