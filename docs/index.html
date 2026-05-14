@@ -418,6 +418,8 @@ function renderQuiz() {
 
   if (state.category === 'kanji') {
     document.getElementById('quiz-question').textContent = `「${card.kanji}」${card.meaning}`;
+  } else if (state.category === 'vocabulary') {
+    document.getElementById('quiz-question').textContent = `「${card.word}」（${card.reading}）の意味はどれですか。`;
   } else {
     document.getElementById('quiz-question').textContent = card.question || card.word || card.pattern || card.kanji;
   }
