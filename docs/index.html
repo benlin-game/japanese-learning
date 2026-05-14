@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日本語學習 JLPT N5～N1</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .flip-card { perspective: 1200px; }
+    .flip-inner {
+      position: relative;
+      transition: transform 0.55s cubic-bezier(.4,0,.2,1);
+      transform-style: preserve-3d;
+    }
+    .flip-inner.flipped { transform: rotateY(180deg); }
+    .flip-face {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    .flip-back {
+      position: absolute; inset: 0;
+      transform: rotateY(180deg);
+    }
+    .progress-bar { transition: width 0.4s ease; }
+    .tab-active {
+      border-bottom: 3px solid #4f46e5;
+      color: #4f46e5;
+      font-weight: 600;
+    }
+    .level-btn-active {
+      background: #4f46e5;
+      color: white;
+    }
+    @keyframes shake {
+      0%,100%{transform:translateX(0)}
+      20%{transform:translateX(-8px)}
+      40%{transform:translateX(8px)}
+      60%{transform:translateX(-5px)}
+      80%{transform:translateX(5px)}
+    }
+    .shake { animation: shake 0.4s ease; }
+    @keyframes pop {
+      0%{transform:scale(1)}
+      50%{transform:scale(1.06)}
+      100%{transform:scale(1)}
+    }
+    .pop { animation: pop 0.25s ease; }
+  </style>
+</head>
+<body class="bg-gray-100 min-h-screen font-sans">
+
+<!-- Header -->
+<header class="bg-white shadow-sm sticky top-0 z-10">
+  <div class="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <span class="text-2xl">🇯🇵</span>
+      <span class="font-bold text-gray-800 text-lg">日本語學習</span>
+      <span class="text-gray-400 text-sm hidden sm:inline">JLPT N5～N1</span>
+    </div>
+    <div id="score-display" class="text-sm text-gray-500 hidden">
+      <span class="text-green-600 font-semibold" id="hdr-correct">0</span>
+      <span class="text-gray-400"> / </span>
+      <span id="hdr-total">0</span>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-3xl mx-auto px-4 py-5 space-y-4">
+
+  <!-- Level Selector -->
+  <div class="bg-white rounded-2xl shadow-sm p-4">
+    <p class="text-xs text-gray-500 uppercase tracking-wide mb-2 font-medium">選擇等級</p>
+    <div class="flex gap-2 flex-wrap" id="level-btns">
+      <button onclick="selectLevel('N5')" class="level-btn level-btn-active px-4 py-2 rounded-full text-sm font-semibold border border-indigo-600 transition-all" data-level="N5">N5</button>
+      <button onclick="selectLevel('N4')" class="level-btn px-4 py-2 rounded-full text-sm font-semibold border border-gray-300 text-gray-600 hover:border-indigo-400 transition-all" data-level="N4">N4</button>
+      <button onclick="selectLevel('N3')" class="level-btn px-4 py-2 rounded-full text-sm font-semibold border border-gray-300 text-gray-600 hover:border-indigo-400 transition-all" data-level="N3">N3</button>
+      <button onclick="selectLevel('N2')" class="level-btn px-4 py-2 rounded-full text-sm font-semibold border border-gray-300 text-gray-600 hover:border-indigo-400 transition-all" data-level="N2">N2</button>
+      <button onclick="selectLevel('N1')" class="level-btn px-4 py-2 rounded-full text-sm font-semibold border border-gray-300 text-gray-600 hover:border-indigo-400 transition-all" data-level="N1">N1</button>
+    </div>
+  </div>
+
+  <!-- Category & Mode -->
+  <div class="bg-white rounded-2xl shadow-sm">
+    <!-- Category Tabs -->
+    <div class="flex border-b border-gray-100 overflow-x-auto" id="cat-tabs">
+      <button onclick="selectCategory('vocabulary')" class="cat-tab tab-active whitespace-nowrap px-4 py-3 text-sm" data-cat="vocabulary">📚 單字</button>
+      <button onclick="selectCategory('grammar')" class="cat-tab whitespace-nowrap px-4 py-3 text-sm text-gray-500" data-cat="grammar">✏️ 文法</button>
+      <button onclick="selectCategory('kanji')" class="cat-tab whitespace-nowrap px-4 py-3 text-sm text-gray-500" data-cat="kanji">漢 漢字</button>
+      <button onclick="selectCategory('practice')" class="cat-tab whitespace-nowrap px-4 py-3 text-sm text-gray-500" data-cat="practice">📝 JLPT練習</button>
+    </div>
+    <!-- Mode Toggle -->
+    <div class="px-4 py-3 flex items-center gap-3">
+      <span class="text-xs text-gray-500 font-medium">模式</span>
+      <div class="flex bg-gray-100 rounded-full p-1 gap-1">
+        <button onclick="selectMode('flashcard')" id="mode-flash" class="mode-btn px-3 py-1 rounded-full text-xs font-medium bg-indigo-600 text-white transition-all">🃏 單字卡</button>
+        <button onclick="selectMode('quiz')" id="mode-quiz" class="mode-btn px-3 py-1 rounded-full text-xs font-medium text-gray-500 hover:text-gray-700 transition-all">🎯 測驗</button>
+      </div>
+      <button onclick="shuffle()" class="ml-auto text-xs text-indigo-500 hover:text-indigo-700 flex items-center gap-1">
+        🔀 <span>隨機</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Progress Bar -->
+  <div class="bg-white rounded-2xl shadow-sm px-4 py-3">
+    <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+      <span id="progress-label">第 <b id="cur-idx">1</b> / <b id="total-count">—</b> 題</span>
+      <span id="progress-pct">0%</span>
+    </div>
+    <div class="w-full bg-gray-100 rounded-full h-2">
+      <div id="progress-bar" class="progress-bar bg-indigo-500 h-2 rounded-full" style="width:0%"></div>
+    </div>
+  </div>
+
+  <!-- ==================== FLASHCARD MODE ==================== -->
+  <div id="flashcard-section">
+
+    <!-- The Card -->
+    <div class="flip-card cursor-pointer" id="flip-card" onclick="flipCard()">
+      <div class="flip-inner rounded-2xl shadow-md" id="flip-inner" style="min-height:240px;">
+        <!-- Front -->
+        <div class="flip-face bg-white rounded-2xl flex flex-col items-center justify-center p-8 text-center" style="min-height:240px;">
+          <p class="text-xs text-indigo-400 uppercase tracking-widest mb-4 font-medium" id="card-type-label">單字</p>
+          <p class="text-5xl font-bold text-gray-800 mb-3" id="card-front">—</p>
+          <p class="text-gray-400 text-sm mt-2">點擊翻牌 →</p>
+        </div>
+        <!-- Back -->
+        <div class="flip-face flip-back bg-indigo-50 rounded-2xl flex flex-col items-center justify-center p-8 text-center" style="min-height:240px;">
+          <p class="text-indigo-500 text-lg font-medium mb-1" id="card-reading">—</p>
+          <p class="text-2xl font-bold text-gray-800 mb-3" id="card-meaning">—</p>
+          <div class="bg-white rounded-xl px-4 py-2 mt-2 text-sm text-gray-600 max-w-xs" id="card-example-box">
+            <p id="card-example">—</p>
+            <p class="text-xs text-gray-400 mt-1" id="card-example-meaning">—</p>
+          </div>
+          <p class="text-xs text-indigo-300 mt-4 hidden" id="card-notes"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Know / Don't Know Buttons -->
+    <div class="flex gap-4 mt-4" id="flash-btns">
+      <button onclick="markCard(false)" class="flex-1 py-3 rounded-2xl border-2 border-red-200 text-red-500 font-semibold hover:bg-red-50 active:bg-red-100 transition-all">
+        ✗ 不知道
+      </button>
+      <button onclick="markCard(true)" class="flex-1 py-3 rounded-2xl border-2 border-green-200 text-green-600 font-semibold hover:bg-green-50 active:bg-green-100 transition-all">
+        ✓ 知道
+      </button>
+    </div>
+  </div>
+
+  <!-- ==================== QUIZ MODE ==================== -->
+  <div id="quiz-section" class="hidden">
+    <div class="bg-white rounded-2xl shadow-md p-6">
+      <p class="text-xs text-indigo-400 uppercase tracking-widest mb-2 font-medium" id="quiz-type-label">詞彙</p>
+      <p class="text-lg font-bold text-gray-800 mb-5 leading-snug" id="quiz-question">—</p>
+      <div class="grid grid-cols-2 gap-3" id="quiz-options"></div>
+      <div id="quiz-feedback" class="hidden mt-4 p-4 rounded-xl text-sm leading-relaxed"></div>
+      <button onclick="nextQuiz()" id="quiz-next-btn" class="hidden mt-4 w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition-all">下一題 →</button>
+    </div>
+  </div>
+
+  <!-- ==================== RESULT SCREEN ==================== -->
+  <div id="result-section" class="hidden">
+    <div class="bg-white rounded-2xl shadow-md p-8 text-center">
+      <p class="text-4xl mb-3" id="result-emoji">🎉</p>
+      <p class="text-xl font-bold text-gray-800 mb-1" id="result-title">完成！</p>
+      <p class="text-gray-500 text-sm mb-6" id="result-sub">—</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <div class="text-center">
+          <p class="text-3xl font-bold text-green-500" id="result-correct">0</p>
+          <p class="text-xs text-gray-400">答對</p>
+        </div>
+        <div class="text-center">
+          <p class="text-3xl font-bold text-red-400" id="result-incorrect">0</p>
+          <p class="text-xs text-gray-400">答錯</p>
+        </div>
+        <div class="text-center">
+          <p class="text-3xl font-bold text-indigo-500" id="result-pct">0%</p>
+          <p class="text-xs text-gray-400">正確率</p>
+        </div>
+      </div>
+      <button onclick="restartSession()" class="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition-all">再來一次</button>
+    </div>
+  </div>
+
+</main>
+
+<script>
+const state = {
+  level: 'N5',
+  category: 'vocabulary',
+  mode: 'flashcard',
+  data: {},
+  cards: [],
+  idx: 0,
+  flipped: false,
+  correct: 0,
+  incorrect: 0,
+  quizAnswered: false,
+};
+
+async function loadLevel(level) {
+  if (state.data[level]) return;
+  try {
+    const res = await fetch(`data/${level.toLowerCase()}.json`);
+    state.data[level] = await res.json();
+  } catch (e) {
+    console.error('Failed to load', level, e);
+    state.data[level] = { vocabulary: [], grammar: [], kanji: [], practice: [] };
+  }
+}
+
+async function init() {
+  await loadLevel(state.level);
+  startSession();
+}
+
+function getCards() {
+  return (state.data[state.level] || {})[state.category] || [];
+}
+
+function startSession() {
+  state.cards = [...getCards()];
+  state.idx = 0;
+  state.correct = 0;
+  state.incorrect = 0;
+  state.flipped = false;
+  document.getElementById('result-section').classList.add('hidden');
+  updateProgress();
+  if (state.mode === 'flashcard') {
+    document.getElementById('flashcard-section').classList.remove('hidden');
+    document.getElementById('quiz-section').classList.add('hidden');
+    renderFlashcard();
+  } else {
+    document.getElementById('quiz-section').classList.remove('hidden');
+    document.getElementById('flashcard-section').classList.add('hidden');
+    renderQuiz();
+  }
+  updateScoreDisplay();
+}
+
+// ---- LEVEL ----
+async function selectLevel(level) {
+  state.level = level;
+  document.querySelectorAll('.level-btn').forEach(b => {
+    const active = b.dataset.level === level;
+    b.classList.toggle('level-btn-active', active);
+    b.classList.toggle('border-indigo-600', active);
+    b.classList.toggle('border-gray-300', !active);
+    b.classList.toggle('text-gray-600', !active);
+  });
+  await loadLevel(level);
+  startSession();
+}
+
+// ---- CATEGORY ----
+function selectCategory(cat) {
+  state.category = cat;
+  document.querySelectorAll('.cat-tab').forEach(b => {
+    const active = b.dataset.cat === cat;
+    b.classList.toggle('tab-active', active);
+    b.classList.toggle('text-gray-500', !active);
+  });
+  startSession();
+}
+
+// ---- MODE ----
+function selectMode(mode) {
+  state.mode = mode;
+  const fBtn = document.getElementById('mode-flash');
+  const qBtn = document.getElementById('mode-quiz');
+  if (mode === 'flashcard') {
+    fBtn.classList.add('bg-indigo-600', 'text-white');
+    fBtn.classList.remove('text-gray-500');
+    qBtn.classList.remove('bg-indigo-600', 'text-white');
+    qBtn.classList.add('text-gray-500');
+  } else {
+    qBtn.classList.add('bg-indigo-600', 'text-white');
+    qBtn.classList.remove('text-gray-500');
+    fBtn.classList.remove('bg-indigo-600', 'text-white');
+    fBtn.classList.add('text-gray-500');
+  }
+  startSession();
+}
+
+function shuffle() {
+  state.cards = [...getCards()].sort(() => Math.random() - 0.5);
+  state.idx = 0;
+  state.correct = 0;
+  state.incorrect = 0;
+  state.flipped = false;
+  document.getElementById('result-section').classList.add('hidden');
+  if (state.mode === 'flashcard') {
+    document.getElementById('flashcard-section').classList.remove('hidden');
+    renderFlashcard();
+  } else {
+    document.getElementById('quiz-section').classList.remove('hidden');
+    renderQuiz();
+  }
+  updateProgress();
+  updateScoreDisplay();
+}
+
+// ---- PROGRESS ----
+function updateProgress() {
+  const total = state.cards.length;
+  const cur = Math.min(state.idx + 1, total);
+  const pct = total > 0 ? Math.round((state.idx / total) * 100) : 0;
+  document.getElementById('cur-idx').textContent = total > 0 ? cur : 0;
+  document.getElementById('total-count').textContent = total;
+  document.getElementById('progress-pct').textContent = pct + '%';
+  document.getElementById('progress-bar').style.width = pct + '%';
+}
+
+function updateScoreDisplay() {
+  const total = state.correct + state.incorrect;
+  document.getElementById('hdr-correct').textContent = state.correct;
+  document.getElementById('hdr-total').textContent = total;
+  document.getElementById('score-display').classList.toggle('hidden', total === 0);
+}
+
+// ---- FLASHCARD ----
+function cardTypeLabel(cat) {
+  return { vocabulary: '單字', grammar: '文法句型', kanji: '漢字', practice: 'JLPT練習' }[cat] || '';
+}
+
+function renderFlashcard() {
+  const card = state.cards[state.idx];
+  if (!card) return;
+  // Reset flip
+  state.flipped = false;
+  const inner = document.getElementById('flip-inner');
+  inner.classList.remove('flipped');
+  document.getElementById('card-type-label').textContent = cardTypeLabel(state.category);
+
+  if (state.category === 'vocabulary') {
+    document.getElementById('card-front').textContent = card.word;
+    document.getElementById('card-reading').textContent = card.reading;
+    document.getElementById('card-meaning').textContent = card.meaning;
+    document.getElementById('card-example').textContent = card.example || '';
+    document.getElementById('card-example-meaning').textContent = card.example_meaning || '';
+    document.getElementById('card-example-box').classList.remove('hidden');
+    document.getElementById('card-notes').classList.add('hidden');
+  } else if (state.category === 'grammar') {
+    document.getElementById('card-front').textContent = card.pattern;
+    document.getElementById('card-reading').textContent = '';
+    document.getElementById('card-meaning').textContent = card.meaning;
+    document.getElementById('card-example').textContent = card.example || '';
+    document.getElementById('card-example-meaning').textContent = card.example_meaning || '';
+    document.getElementById('card-example-box').classList.remove('hidden');
+    const notesEl = document.getElementById('card-notes');
+    if (card.notes) {
+      notesEl.textContent = '📌 ' + card.notes;
+      notesEl.classList.remove('hidden');
+    } else {
+      notesEl.classList.add('hidden');
+    }
+  } else if (state.category === 'kanji') {
+    document.getElementById('card-front').textContent = card.kanji;
+    document.getElementById('card-reading').textContent = `音：${card.reading_on} ／ 訓：${card.reading_kun}`;
+    document.getElementById('card-meaning').textContent = card.meaning;
+    const exStr = (card.examples || []).join('　');
+    document.getElementById('card-example').textContent = exStr;
+    document.getElementById('card-example-meaning').textContent = '';
+    document.getElementById('card-example-box').classList.remove('hidden');
+    document.getElementById('card-notes').classList.add('hidden');
+  } else if (state.category === 'practice') {
+    document.getElementById('card-front').textContent = card.question;
+    document.getElementById('card-reading').textContent = '答案';
+    document.getElementById('card-meaning').textContent = card.options[card.answer];
+    document.getElementById('card-example').textContent = card.explanation || '';
+    document.getElementById('card-example-meaning').textContent = '';
+    document.getElementById('card-example-box').classList.remove('hidden');
+    document.getElementById('card-notes').classList.add('hidden');
+  }
+
+  document.getElementById('flip-card').classList.remove('hidden');
+  document.getElementById('flash-btns').classList.remove('hidden');
+}
+
+function flipCard() {
+  state.flipped = !state.flipped;
+  document.getElementById('flip-inner').classList.toggle('flipped', state.flipped);
+}
+
+function markCard(known) {
+  if (known) state.correct++; else state.incorrect++;
+  updateScoreDisplay();
+  state.idx++;
+  if (state.idx >= state.cards.length) {
+    showResult();
+    return;
+  }
+  updateProgress();
+  renderFlashcard();
+}
+
+// ---- QUIZ ----
+function renderQuiz() {
+  const card = state.cards[state.idx];
+  if (!card) return;
+  state.quizAnswered = false;
+
+  document.getElementById('quiz-feedback').classList.add('hidden');
+  document.getElementById('quiz-next-btn').classList.add('hidden');
+
+  const typeMap = { vocabulary: '詞彙', grammar: '文法', kanji: '漢字', practice: 'JLPT練習' };
+  document.getElementById('quiz-type-label').textContent = typeMap[state.category] || '';
+  document.getElementById('quiz-question').textContent = card.question || card.word || card.pattern || card.kanji;
+
+  let options, correct;
+  if (state.category === 'practice') {
+    options = card.options;
+    correct = card.answer;
+  } else if (state.category === 'vocabulary') {
+    options = buildOptions(card.meaning, state.cards.map(c => c.meaning), card);
+    correct = options.indexOf(card.meaning);
+  } else if (state.category === 'grammar') {
+    options = buildOptions(card.meaning, state.cards.map(c => c.meaning), card);
+    correct = options.indexOf(card.meaning);
+  } else if (state.category === 'kanji') {
+    options = buildOptions(card.meaning, state.cards.map(c => c.meaning), card);
+    correct = options.indexOf(card.meaning);
+  }
+
+  const container = document.getElementById('quiz-options');
+  container.innerHTML = '';
+  options.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.textContent = opt;
+    btn.className = 'text-left px-4 py-3 rounded-xl border-2 border-gray-200 text-sm text-gray-700 hover:border-indigo-300 hover:bg-indigo-50 transition-all font-medium';
+    btn.onclick = () => answerQuiz(i, correct, card, options, btn, container);
+    container.appendChild(btn);
+  });
+}
+
+function buildOptions(correct, pool, card) {
+  const distractors = [...new Set(pool.filter(m => m !== correct))]
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 3);
+  const all = [correct, ...distractors].sort(() => Math.random() - 0.5);
+  return all;
+}
+
+function answerQuiz(chosen, correct, card, options, btn, container) {
+  if (state.quizAnswered) return;
+  state.quizAnswered = true;
+
+  const isCorrect = chosen === correct;
+  if (isCorrect) state.correct++; else state.incorrect++;
+  updateScoreDisplay();
+
+  const btns = container.querySelectorAll('button');
+  btns.forEach((b, i) => {
+    b.disabled = true;
+    if (i === correct) {
+      b.className = b.className.replace('border-gray-200', 'border-green-400');
+      b.classList.add('bg-green-50', 'text-green-700', 'pop');
+    } else if (i === chosen && !isCorrect) {
+      b.className = b.className.replace('border-gray-200', 'border-red-400');
+      b.classList.add('bg-red-50', 'text-red-600', 'shake');
+    }
+  });
+
+  const fb = document.getElementById('quiz-feedback');
+  fb.classList.remove('hidden', 'bg-green-50', 'bg-red-50', 'text-green-700', 'text-red-600', 'border-green-200', 'border-red-200');
+  if (isCorrect) {
+    fb.classList.add('bg-green-50', 'text-green-700', 'border', 'border-green-200');
+    fb.innerHTML = `<b>✓ 答對了！</b><br>${card.explanation || card.example || ''}`;
+  } else {
+    fb.classList.add('bg-red-50', 'text-red-600', 'border', 'border-red-200');
+    fb.innerHTML = `<b>✗ 答錯了</b>　正確答案：<b>${options[correct]}</b><br><span class="text-gray-500">${card.explanation || card.example || ''}</span>`;
+  }
+
+  document.getElementById('quiz-next-btn').classList.remove('hidden');
+}
+
+function nextQuiz() {
+  state.idx++;
+  if (state.idx >= state.cards.length) {
+    showResult();
+    return;
+  }
+  updateProgress();
+  renderQuiz();
+}
+
+// ---- RESULT ----
+function showResult() {
+  document.getElementById('flashcard-section').classList.add('hidden');
+  document.getElementById('quiz-section').classList.add('hidden');
+  document.getElementById('result-section').classList.remove('hidden');
+
+  const total = state.correct + state.incorrect;
+  const pct = total > 0 ? Math.round((state.correct / total) * 100) : 0;
+  const emoji = pct >= 80 ? '🎉' : pct >= 50 ? '💪' : '📖';
+  const title = pct >= 80 ? '太棒了！' : pct >= 50 ? '繼續加油！' : '多複習幾次吧！';
+
+  document.getElementById('result-emoji').textContent = emoji;
+  document.getElementById('result-title').textContent = title;
+  document.getElementById('result-sub').textContent = `${state.level} · ${cardTypeLabel(state.category)} · ${state.mode === 'flashcard' ? '單字卡' : '測驗'}`;
+  document.getElementById('result-correct').textContent = state.correct;
+  document.getElementById('result-incorrect').textContent = state.incorrect;
+  document.getElementById('result-pct').textContent = pct + '%';
+
+  document.getElementById('progress-bar').style.width = '100%';
+  document.getElementById('progress-pct').textContent = '100%';
+}
+
+function restartSession() {
+  startSession();
+}
+
+init();
+</script>
+</body>
+</html>

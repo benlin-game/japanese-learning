@@ -1,0 +1,53 @@
+{
+  "vocabulary": [
+    {"word": "影響", "reading": "えいきょう", "meaning": "影響", "example": "環境が人に影響を与える。", "example_reading": "かんきょうがひとにえいきょうをあたえる。", "example_meaning": "環境對人造成影響。"},
+    {"word": "確認", "reading": "かくにん", "meaning": "確認", "example": "予約を確認する。", "example_reading": "よやくをかくにんする。", "example_meaning": "確認預約。"},
+    {"word": "状況", "reading": "じょうきょう", "meaning": "狀況", "example": "状況を説明してください。", "example_reading": "じょうきょうをせつめいしてください。", "example_meaning": "請說明狀況。"},
+    {"word": "判断", "reading": "はんだん", "meaning": "判斷", "example": "自分で判断する。", "example_reading": "じぶんではんだんする。", "example_meaning": "自己判斷。"},
+    {"word": "解決", "reading": "かいけつ", "meaning": "解決", "example": "問題を解決する。", "example_reading": "もんだいをかいけつする。", "example_meaning": "解決問題。"},
+    {"word": "成功", "reading": "せいこう", "meaning": "成功", "example": "実験に成功した。", "example_reading": "じっけんにせいこうした。", "example_meaning": "實驗成功了。"},
+    {"word": "失敗", "reading": "しっぱい", "meaning": "失敗", "example": "失敗から学ぶ。", "example_reading": "しっぱいからまなぶ。", "example_meaning": "從失敗中學習。"},
+    {"word": "反対", "reading": "はんたい", "meaning": "反對；相反", "example": "その意見に反対する。", "example_reading": "そのいけんにはんたいする。", "example_meaning": "反對那個意見。"},
+    {"word": "将来", "reading": "しょうらい", "meaning": "將來", "example": "将来の夢を話す。", "example_reading": "しょうらいのゆめをはなす。", "example_meaning": "談論將來的夢想。"},
+    {"word": "責任", "reading": "せきにん", "meaning": "責任", "example": "責任を持って仕事をする。", "example_reading": "せきにんをもってしごとをする。", "example_meaning": "有責任地工作。"},
+    {"word": "意識", "reading": "いしき", "meaning": "意識；意念", "example": "環境問題を意識する。", "example_reading": "かんきょうもんだいをいしきする。", "example_meaning": "對環境問題有意識。"},
+    {"word": "関係", "reading": "かんけい", "meaning": "關係", "example": "人間関係が大切だ。", "example_reading": "にんげんかんけいがたいせつだ。", "example_meaning": "人際關係很重要。"},
+    {"word": "理解", "reading": "りかい", "meaning": "理解", "example": "相手の気持ちを理解する。", "example_reading": "あいてのきもちをりかいする。", "example_meaning": "理解對方的心情。"},
+    {"word": "複雑", "reading": "ふくざつ", "meaning": "複雜", "example": "複雑な問題だ。", "example_reading": "ふくざつなもんだいだ。", "example_meaning": "是個複雜的問題。"},
+    {"word": "重要", "reading": "じゅうよう", "meaning": "重要", "example": "重要な会議がある。", "example_reading": "じゅうようなかいぎがある。", "example_meaning": "有重要的會議。"}
+  ],
+  "grammar": [
+    {"pattern": "〜によって", "meaning": "依據〜；由於〜；依照〜", "example": "人によって意見が違う。", "example_meaning": "依人不同意見也不同。", "notes": "表示原因、手段、依據或不同情況"},
+    {"pattern": "〜に対して", "meaning": "對於〜；相對於〜", "example": "環境問題に対して関心を持つ。", "example_meaning": "對環境問題感興趣。", "notes": "表示動作或感情的對象"},
+    {"pattern": "〜ために", "meaning": "為了〜（目的）；因為〜（原因）", "example": "健康のために運動する。", "example_meaning": "為了健康而運動。", "notes": "目的用名詞の・動詞辞書形＋ために；原因用た形＋ために"},
+    {"pattern": "〜ようになる", "meaning": "變得能〜了；逐漸〜", "example": "日本語が話せるようになった。", "example_meaning": "變得能說日語了。", "notes": "表示能力或狀態的逐漸改變"},
+    {"pattern": "〜わけだ", "meaning": "難怪〜；所以才〜", "example": "毎日練習しているわけだ。", "example_meaning": "難怪（他）每天練習。", "notes": "表示基於某理由得出理所當然的結論"},
+    {"pattern": "〜ものの", "meaning": "雖然〜但是〜", "example": "やってみたものの、うまくいかなかった。", "example_meaning": "雖然試了看看，但沒能順利。", "notes": "前後有轉折，但語氣比けど輕"},
+    {"pattern": "〜ことにする", "meaning": "決定〜（自己決定）", "example": "毎朝走ることにした。", "example_meaning": "決定每天早上跑步。", "notes": "ことになる是外力決定，ことにする是自己決定"},
+    {"pattern": "〜に関して", "meaning": "關於〜（較正式）", "example": "この件に関して説明します。", "example_meaning": "關於這件事我來說明。", "notes": "比について更正式，常用於書面"}
+  ],
+  "kanji": [
+    {"kanji": "影", "reading_on": "エイ", "reading_kun": "かげ", "meaning": "影子、影響", "examples": ["影響（えいきょう）影響", "影（かげ）影子"]},
+    {"kanji": "確", "reading_on": "カク", "reading_kun": "たし", "meaning": "確實、確認", "examples": ["確認（かくにん）確認", "確かだ（たしかだ）確實"]},
+    {"kanji": "状", "reading_on": "ジョウ", "reading_kun": "—", "meaning": "狀態、形狀", "examples": ["状況（じょうきょう）狀況", "状態（じょうたい）狀態"]},
+    {"kanji": "判", "reading_on": "ハン", "reading_kun": "—", "meaning": "判斷、判決", "examples": ["判断（はんだん）判斷", "裁判（さいばん）審判"]},
+    {"kanji": "解", "reading_on": "カイ", "reading_kun": "と", "meaning": "解開、理解", "examples": ["解決（かいけつ）解決", "理解（りかい）理解", "解く（とく）解開"]},
+    {"kanji": "成", "reading_on": "セイ", "reading_kun": "な", "meaning": "成功、完成", "examples": ["成功（せいこう）成功", "完成（かんせい）完成", "成長（せいちょう）成長"]},
+    {"kanji": "失", "reading_on": "シツ", "reading_kun": "うしな", "meaning": "失去、失敗", "examples": ["失敗（しっぱい）失敗", "失う（うしなう）失去", "失礼（しつれい）失禮"]},
+    {"kanji": "責", "reading_on": "セキ", "reading_kun": "せ", "meaning": "責任、責備", "examples": ["責任（せきにん）責任", "責める（せめる）責備"]},
+    {"kanji": "関", "reading_on": "カン", "reading_kun": "かか", "meaning": "關係、關連", "examples": ["関係（かんけい）關係", "関心（かんしん）關心", "関連（かんれん）關連"]},
+    {"kanji": "複", "reading_on": "フク", "reading_kun": "—", "meaning": "複數、複雜", "examples": ["複雑（ふくざつ）複雜", "複数（ふくすう）複數"]}
+  ],
+  "practice": [
+    {"type": "grammar", "question": "人___意見が違います。（依據不同人）", "options": ["によって", "に対して", "のために", "として"], "answer": 0, "explanation": "「〜によって」表示「依〜不同」。人によって意見が違う。"},
+    {"type": "vocabulary", "question": "「解決」の意味はどれですか。", "options": ["解決", "判斷", "影響", "確認"], "answer": 0, "explanation": "解決（かいけつ）是「解決」的意思。"},
+    {"type": "kanji", "question": "「影響」の読み方はどれですか。", "options": ["えいきょう", "えいこう", "かげきょう", "えいきょ"], "answer": 0, "explanation": "影響的讀音是えいきょう。影（エイ）＋響（キョウ）。"},
+    {"type": "grammar", "question": "日本語が話せる___なった。（逐漸能〜了）", "options": ["ようになった", "ことになった", "ようにした", "ことにした"], "answer": 0, "explanation": "「〜ようになる」表示能力或狀態的逐漸改變，自然發生的變化。"},
+    {"type": "vocabulary", "question": "「責任」の意味はどれですか。", "options": ["責任", "關係", "意識", "理解"], "answer": 0, "explanation": "責任（せきにん）是「責任」的意思。"},
+    {"type": "grammar", "question": "この件___説明します。（關於〜）", "options": ["に関して", "によって", "に対して", "として"], "answer": 0, "explanation": "「〜に関して」是「關於〜」的正式說法，常用於書面。"},
+    {"type": "kanji", "question": "「成功」の反対語はどれですか。", "options": ["失敗", "失礼", "失う", "失念"], "answer": 0, "explanation": "成功（せいこう）的反義詞是失敗（しっぱい）。"},
+    {"type": "vocabulary", "question": "「将来」の意味はどれですか。", "options": ["將來", "現在", "過去", "未來"], "answer": 0, "explanation": "将来（しょうらい）是「將來」的意思。"},
+    {"type": "grammar", "question": "毎朝走る___にした。（自己決定）", "options": ["こと", "よう", "わけ", "もの"], "answer": 0, "explanation": "「〜ことにする」是自己做出決定，「〜ようにする」是努力讓自己養成習慣。"},
+    {"type": "kanji", "question": "「関係」の読み方はどれですか。", "options": ["かんけい", "かんかい", "かんこく", "かんじ"], "answer": 0, "explanation": "関係（かんけい）是「關係」。関（カン）＋係（ケイ）。"}
+  ]
+}

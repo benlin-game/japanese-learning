@@ -1,0 +1,42 @@
+{
+  "vocabulary": [
+    {"word": "曖昧", "reading": "あいまい", "meaning": "曖昧；模糊", "example": "曖昧な表現を避ける。", "example_reading": "あいまいなひょうげんをさける。", "example_meaning": "避免模糊的表達。"},
+    {"word": "逸脱", "reading": "いつだつ", "meaning": "偏離；逸脫", "example": "規則から逸脱する。", "example_reading": "きそくからいつだつする。", "example_meaning": "偏離規則。"},
+    {"word": "醸成", "reading": "じょうせい", "meaning": "醞釀；培育（氣氛）", "example": "信頼関係を醸成する。", "example_reading": "しんらいかんけいをじょうせいする。", "example_meaning": "醞釀信任關係。"},
+    {"word": "乖離", "reading": "かいり", "meaning": "背離；乖離", "example": "理想と現実の乖離。", "example_reading": "りそうとげんじつのかいり。", "example_meaning": "理想與現實的背離。"},
+    {"word": "帰趨", "reading": "きすう", "meaning": "歸趨；走向", "example": "事態の帰趨を見守る。", "example_reading": "じたいのきすうをみまもる。", "example_meaning": "靜觀事態的走向。"},
+    {"word": "恣意", "reading": "しい", "meaning": "任意；隨意（帶負面意味）", "example": "恣意的な判断は危険だ。", "example_reading": "しいてきなはんだんはきけんだ。", "example_meaning": "任意的判斷是危險的。"},
+    {"word": "逡巡", "reading": "しゅんじゅん", "meaning": "猶豫；躊躇", "example": "逡巡することなく決断した。", "example_reading": "しゅんじゅんすることなくけつだんした。", "example_meaning": "毫不猶豫地做出決斷。"},
+    {"word": "忖度", "reading": "そんたく", "meaning": "揣度；揣摩（他人心意）", "example": "忖度なしに意見を言う。", "example_reading": "そんたくなしにいけんをいう。", "example_meaning": "不揣摩他人心意地表達意見。"},
+    {"word": "齟齬", "reading": "そごう", "meaning": "齟齬；不一致", "example": "認識の齟齬が生じた。", "example_reading": "にんしきのそごうがしょうじた。", "example_meaning": "產生了認知上的齟齬。"},
+    {"word": "蓋然性", "reading": "がいぜんせい", "meaning": "蓋然性；可能性", "example": "高い蓋然性で成功する。", "example_reading": "たかいがいぜんせいでせいこうする。", "example_meaning": "以高可能性成功。"}
+  ],
+  "grammar": [
+    {"pattern": "〜に至っては", "meaning": "說到〜（更甚至）", "example": "部長に至っては何も知らなかった。", "example_meaning": "說到部長，他什麼都不知道。", "notes": "列舉中最極端的例子，語氣帶驚訝或批評"},
+    {"pattern": "〜いかんによって", "meaning": "依〜的如何；視〜而定", "example": "結果いかんによって対応が変わる。", "example_meaning": "依結果如何而改變應對方式。", "notes": "正式書面語，表示依某條件而定"},
+    {"pattern": "〜んばかりに", "meaning": "幾乎要〜似地；彷彿〜", "example": "泣かんばかりに喜んだ。", "example_meaning": "高興得幾乎要哭了。", "notes": "接動詞ない形去い加ん（古語），表示極端程度"},
+    {"pattern": "〜ならでは", "meaning": "只有〜才有；〜所獨有的", "example": "日本ならではの文化だ。", "example_meaning": "是日本所獨有的文化。", "notes": "強調某事物是特定對象獨有的特色"},
+    {"pattern": "〜かたがた", "meaning": "順便〜；藉機〜", "example": "お礼かたがた訪問する。", "example_meaning": "順便致謝而去拜訪。", "notes": "正式書面語，同時達成兩個目的"},
+    {"pattern": "〜ものを", "meaning": "明明可以〜卻〜（後悔或遺憾）", "example": "早く言えばよかったものを。", "example_meaning": "早說的話就好了。", "notes": "帶有後悔或責怪語氣"}
+  ],
+  "kanji": [
+    {"kanji": "昧", "reading_on": "マイ", "reading_kun": "—", "meaning": "朦朧、不明", "examples": ["曖昧（あいまい）曖昧", "三昧（ざんまい）沉醉其中"]},
+    {"kanji": "逸", "reading_on": "イツ", "reading_kun": "そ・はぐ", "meaning": "逸脫、優秀", "examples": ["逸脱（いつだつ）逸脫", "逸材（いつざい）奇才", "逸れる（それる）偏離"]},
+    {"kanji": "醸", "reading_on": "ジョウ", "reading_kun": "かも", "meaning": "釀造、醞釀", "examples": ["醸成（じょうせい）醞釀", "醸す（かもす）釀造"]},
+    {"kanji": "乖", "reading_on": "カイ", "reading_kun": "—", "meaning": "背離、違逆", "examples": ["乖離（かいり）乖離"]},
+    {"kanji": "恣", "reading_on": "シ", "reading_kun": "ほしいまま", "meaning": "任意、放縱", "examples": ["恣意（しい）任意", "恣意的（しいてき）任意的"]},
+    {"kanji": "忖", "reading_on": "ソン", "reading_kun": "はか", "meaning": "揣度、考量", "examples": ["忖度（そんたく）揣摩"]},
+    {"kanji": "齟", "reading_on": "ソ", "reading_kun": "—", "meaning": "齒不合、不一致", "examples": ["齟齬（そごう）齟齬"]},
+    {"kanji": "蓋", "reading_on": "ガイ・カイ", "reading_kun": "おお・ふた", "meaning": "蓋子、大概", "examples": ["蓋然性（がいぜんせい）蓋然性", "蓋し（けだし）大概"]}
+  ],
+  "practice": [
+    {"type": "grammar", "question": "部長___、何も知らなかった。（列舉最極端例子）", "options": ["に至っては", "に関しては", "に対しては", "においては"], "answer": 0, "explanation": "「〜に至っては」用於列舉最極端或令人驚訝的例子，語氣帶驚訝。"},
+    {"type": "vocabulary", "question": "「曖昧」の意味はどれですか。", "options": ["模糊、不明確", "明確、清楚", "簡單、容易", "複雜、難懂"], "answer": 0, "explanation": "曖昧（あいまい）是「曖昧、模糊、不清楚」的意思。"},
+    {"type": "kanji", "question": "「醸成」の読み方はどれですか。", "options": ["じょうせい", "かもせい", "じょうなり", "えいせい"], "answer": 0, "explanation": "醸成（じょうせい）是「醞釀、培育（氣氛）」。醸（ジョウ）＋成（セイ）。"},
+    {"type": "grammar", "question": "日本___の文化を紹介する。（只有〜才有）", "options": ["ならでは", "だから", "として", "においてのみ"], "answer": 0, "explanation": "「〜ならでは」強調某事物是特定對象所獨有的。日本ならではの文化＝日本獨有的文化。"},
+    {"type": "vocabulary", "question": "「逡巡」の意味はどれですか。", "options": ["猶豫、躊躇", "決斷、果斷", "逸脫、偏離", "醞釀、培育"], "answer": 0, "explanation": "逡巡（しゅんじゅん）是「猶豫、躊躇不前」的意思。"},
+    {"type": "grammar", "question": "結果___によって対応を変える。（視〜而定）", "options": ["いかん", "どうか", "次第", "にもよる"], "answer": 0, "explanation": "「〜いかんによって」是正式書面語，意為「視〜的如何而定」。"},
+    {"type": "kanji", "question": "「忖度」の読み方はどれですか。", "options": ["そんたく", "ずんたく", "そんど", "とんたく"], "answer": 0, "explanation": "忖度（そんたく）是「揣摩他人心意」。忖（ソン）＋度（タク）。近年常用詞。"},
+    {"type": "vocabulary", "question": "「乖離」の意味はどれですか。", "options": ["背離、偏離", "接近、靠近", "結合、合併", "確認、確定"], "answer": 0, "explanation": "乖離（かいり）是「背離、偏離、差距擴大」的意思。"}
+  ]
+}

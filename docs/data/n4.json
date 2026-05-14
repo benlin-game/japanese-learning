@@ -1,0 +1,55 @@
+{
+  "vocabulary": [
+    {"word": "集まる", "reading": "あつまる", "meaning": "聚集", "example": "みんなが公園に集まる。", "example_reading": "みんながこうえんにあつまる。", "example_meaning": "大家聚集在公園。"},
+    {"word": "送る", "reading": "おくる", "meaning": "寄送；送行", "example": "メールを送る。", "example_reading": "メールをおくる。", "example_meaning": "寄電子郵件。"},
+    {"word": "変わる", "reading": "かわる", "meaning": "改變", "example": "天気が変わった。", "example_reading": "てんきがかわった。", "example_meaning": "天氣變了。"},
+    {"word": "決める", "reading": "きめる", "meaning": "決定", "example": "旅行の日を決める。", "example_reading": "りょこうのひをきめる。", "example_meaning": "決定旅行的日期。"},
+    {"word": "続ける", "reading": "つづける", "meaning": "繼續", "example": "勉強を続ける。", "example_reading": "べんきょうをつづける。", "example_meaning": "繼續讀書。"},
+    {"word": "足りる", "reading": "たりる", "meaning": "足夠", "example": "時間が足りない。", "example_reading": "じかんがたりない。", "example_meaning": "時間不夠。"},
+    {"word": "便利", "reading": "べんり", "meaning": "方便", "example": "スマホはとても便利だ。", "example_reading": "スマホはとてもべんりだ。", "example_meaning": "智慧型手機非常方便。"},
+    {"word": "丁寧", "reading": "ていねい", "meaning": "有禮貌；仔細", "example": "丁寧に説明する。", "example_reading": "ていねいにせつめいする。", "example_meaning": "仔細地說明。"},
+    {"word": "普通", "reading": "ふつう", "meaning": "普通；通常", "example": "普通の日本人は箸を使う。", "example_reading": "ふつうのにほんじんははしをつかう。", "example_meaning": "一般日本人使用筷子。"},
+    {"word": "特に", "reading": "とくに", "meaning": "特別地；尤其", "example": "特に問題はありません。", "example_reading": "とくにもんだいはありません。", "example_meaning": "特別沒有問題。"},
+    {"word": "必要", "reading": "ひつよう", "meaning": "必要", "example": "練習が必要だ。", "example_reading": "れんしゅうがひつようだ。", "example_meaning": "需要練習。"},
+    {"word": "経験", "reading": "けいけん", "meaning": "經驗", "example": "いい経験になった。", "example_reading": "いいけいけんになった。", "example_meaning": "成為了很好的經驗。"},
+    {"word": "残念", "reading": "ざんねん", "meaning": "遺憾；可惜", "example": "残念ながら行けません。", "example_reading": "ざんねんながらいけません。", "example_meaning": "很遺憾無法前往。"},
+    {"word": "安全", "reading": "あんぜん", "meaning": "安全", "example": "安全に気をつけてください。", "example_reading": "あんぜんにきをつけてください。", "example_meaning": "請注意安全。"},
+    {"word": "文化", "reading": "ぶんか", "meaning": "文化", "example": "日本の文化を学ぶ。", "example_reading": "にほんのぶんかをまなぶ。", "example_meaning": "學習日本文化。"}
+  ],
+  "grammar": [
+    {"pattern": "〜ている", "meaning": "正在〜（進行中）／已〜（狀態持續）", "example": "今、ご飯を食べている。", "example_meaning": "現在正在吃飯。", "notes": "表示動作進行中，或動作後的持續狀態"},
+    {"pattern": "〜てから", "meaning": "〜之後再〜", "example": "宿題をしてから遊ぶ。", "example_meaning": "做完功課之後再玩。", "notes": "強調先後順序"},
+    {"pattern": "〜たことがある", "meaning": "曾經〜過", "example": "富士山に登ったことがある。", "example_meaning": "曾經爬過富士山。", "notes": "表示人生中的經驗"},
+    {"pattern": "〜ようとする", "meaning": "試圖〜；即將〜", "example": "窓を開けようとした。", "example_meaning": "試圖打開窗戶。", "notes": "表示試圖或即將做某事"},
+    {"pattern": "〜すぎる", "meaning": "太〜了；過於〜", "example": "食べすぎた。", "example_meaning": "吃太多了。", "notes": "接動詞ます形去ます後加すぎる，或形容詞詞幹加すぎる"},
+    {"pattern": "〜ながら", "meaning": "一邊〜一邊〜（同時進行兩個動作）", "example": "音楽を聞きながら勉強する。", "example_meaning": "一邊聽音樂一邊讀書。", "notes": "主動作在後半句"},
+    {"pattern": "〜くなる／〜になる", "meaning": "變得〜", "example": "上手になった。", "example_meaning": "變得厲害了。", "notes": "い形容詞用くなる，な形容詞和名詞用になる"},
+    {"pattern": "〜てしまう", "meaning": "（遺憾地）〜了；做完了", "example": "財布を忘れてしまった。", "example_meaning": "（不小心）把錢包忘記了。", "notes": "含有遺憾或完成的語感"}
+  ],
+  "kanji": [
+    {"kanji": "駅", "reading_on": "エキ", "reading_kun": "—", "meaning": "車站", "examples": ["駅（えき）車站", "東京駅（とうきょうえき）東京車站"]},
+    {"kanji": "電", "reading_on": "デン", "reading_kun": "—", "meaning": "電", "examples": ["電車（でんしゃ）電車", "電話（でんわ）電話", "電気（でんき）電力"]},
+    {"kanji": "話", "reading_on": "ワ", "reading_kun": "はな・はなし", "meaning": "說話、故事", "examples": ["電話（でんわ）電話", "話（はなし）話語", "会話（かいわ）會話"]},
+    {"kanji": "食", "reading_on": "ショク", "reading_kun": "た・く", "meaning": "食物、吃", "examples": ["食事（しょくじ）用餐", "食べる（たべる）吃", "食堂（しょくどう）食堂"]},
+    {"kanji": "時", "reading_on": "ジ", "reading_kun": "とき", "meaning": "時間", "examples": ["時間（じかん）時間", "時（とき）時候", "何時（なんじ）幾點"]},
+    {"kanji": "間", "reading_on": "カン・ケン", "reading_kun": "あいだ・ま", "meaning": "之間、空間", "examples": ["時間（じかん）時間", "間（あいだ）之間", "週間（しゅうかん）週"]},
+    {"kanji": "会", "reading_on": "カイ・エ", "reading_kun": "あ", "meaning": "見面、集會", "examples": ["会社（かいしゃ）公司", "会う（あう）見面", "会話（かいわ）會話"]},
+    {"kanji": "社", "reading_on": "シャ", "reading_kun": "やしろ", "meaning": "公司、社會", "examples": ["会社（かいしゃ）公司", "社員（しゃいん）員工", "社会（しゃかい）社會"]},
+    {"kanji": "仕", "reading_on": "シ", "reading_kun": "つか", "meaning": "工作、侍奉", "examples": ["仕事（しごと）工作", "仕方（しかた）方法"]},
+    {"kanji": "事", "reading_on": "ジ・ズ", "reading_kun": "こと", "meaning": "事情、事物", "examples": ["仕事（しごと）工作", "事故（じこ）事故", "大事（だいじ）重要"]},
+    {"kanji": "勉", "reading_on": "ベン", "reading_kun": "—", "meaning": "努力、勤勉", "examples": ["勉強（べんきょう）讀書"]},
+    {"kanji": "強", "reading_on": "キョウ・ゴウ", "reading_kun": "つよ", "meaning": "強壯、強制", "examples": ["勉強（べんきょう）讀書", "強い（つよい）強壯", "強調（きょうちょう）強調"]}
+  ],
+  "practice": [
+    {"type": "grammar", "question": "今、電話で話し___います。（適切な助詞を選んでください）", "options": ["て", "に", "が", "を"], "answer": 0, "explanation": "「〜ている」表示進行中的動作，接続是動詞て形＋いる。"},
+    {"type": "vocabulary", "question": "「便利」の意味はどれですか。", "options": ["方便", "普通", "特別", "必要"], "answer": 0, "explanation": "便利（べんり）是「方便」的意思。"},
+    {"type": "kanji", "question": "「会社」の読み方はどれですか。", "options": ["かいしゃ", "かいしゃく", "えしゃ", "あいしゃ"], "answer": 0, "explanation": "会社（かいしゃ）是「公司」。会（カイ）＋社（シャ）。"},
+    {"type": "grammar", "question": "宿題をし___、テレビを見ます。（〜てから）", "options": ["てから", "ながら", "てしまって", "ために"], "answer": 0, "explanation": "「〜てから」表示「做完〜之後」，強調先後順序。"},
+    {"type": "vocabulary", "question": "「残念」の意味はどれですか。", "options": ["遺憾", "安全", "特別", "重要"], "answer": 0, "explanation": "残念（ざんねん）是「遺憾、可惜」的意思。"},
+    {"type": "kanji", "question": "「時間」の読み方はどれですか。", "options": ["じかん", "ときかん", "じま", "しかん"], "answer": 0, "explanation": "時間（じかん）是「時間」。時（ジ）＋間（カン）。"},
+    {"type": "grammar", "question": "音楽を聞き___勉強する。（同時進行）", "options": ["ながら", "てから", "ために", "ように"], "answer": 0, "explanation": "「〜ながら」表示「一邊〜一邊〜」，同時進行兩個動作。"},
+    {"type": "vocabulary", "question": "「続ける」の意味はどれですか。", "options": ["繼續", "開始", "停止", "結束"], "answer": 0, "explanation": "続ける（つづける）是「繼續」的意思。"},
+    {"type": "kanji", "question": "「仕事」の読み方はどれですか。", "options": ["しごと", "しじ", "しこと", "しぎょう"], "answer": 0, "explanation": "仕事（しごと）是「工作」。"},
+    {"type": "grammar", "question": "ケーキを全部食べ___しまった。（遺憾地完成）", "options": ["て", "に", "が", "を"], "answer": 0, "explanation": "「〜てしまう」表示（遺憾地）做完了某事。"}
+  ]
+}
