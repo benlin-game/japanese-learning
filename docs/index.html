@@ -220,7 +220,10 @@ function getCards() {
 }
 
 function startSession() {
-  state.cards = [...getCards()];
+  const all = getCards();
+  state.cards = all.length > 50
+    ? [...all].sort(() => Math.random() - 0.5).slice(0, 50)
+    : [...all].sort(() => Math.random() - 0.5);
   state.idx = 0;
   state.correct = 0;
   state.incorrect = 0;

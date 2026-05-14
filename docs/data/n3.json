@@ -3,10 +3,10 @@
     {
       "word": "あっ",
       "reading": "あっ",
-      "meaning": "啊！(表示驚訝、發現等)",
-      "example": "あっ、電車が来た！",
-      "example_reading": "あっ、でんしゃがきた！",
-      "example_meaning": "啊，電車來了！"
+      "meaning": "啊、哎呀（表示驚訝、恍然大悟等）",
+      "example": "あっ、財布を忘れてきちゃった！",
+      "example_reading": "あっ、さいふをわすれてきちゃった！",
+      "example_meaning": "啊，我把錢包忘帶了！"
     },
     {
       "word": "愛",
@@ -14,327 +14,327 @@
       "meaning": "愛",
       "example": "彼の歌には愛が込められている。",
       "example_reading": "かれのうたにはあいがこめられている。",
-      "example_meaning": "他的歌裡包含了愛。"
+      "example_meaning": "他的歌聲中充滿了愛。"
     },
     {
       "word": "挨拶",
       "reading": "あいさつ",
-      "meaning": "問候、寒暄",
-      "example": "朝、隣の人に挨拶しました。",
-      "example_reading": "あさ、となりのひとにあいさつしました。",
-      "example_meaning": "早上我向鄰居打了招呼。"
+      "meaning": "問候、打招呼",
+      "example": "朝、先生に元気よく挨拶しました。",
+      "example_reading": "あさ、せんせいにげんきよくあいさつしました。",
+      "example_meaning": "早上我很有精神地向老師打招呼了。"
     },
     {
       "word": "愛情",
       "reading": "あいじょう",
       "meaning": "愛情",
-      "example": "母親の愛情は深い。",
-      "example_reading": "ははおやのあいじょうはふかい。",
-      "example_meaning": "母親的愛情是深厚的。"
+      "example": "親の愛情は子供にとってかけがえのないものです。",
+      "example_reading": "おやのあいじょうはこどもにとってかけがえのないものです。",
+      "example_meaning": "父母的愛情對孩子來說是無可取代的。"
     },
     {
       "word": "合図",
       "reading": "あいず",
       "meaning": "信號、暗號",
-      "example": "彼は手で出発の合図を送った。",
-      "example_reading": "かれはてでしゅっぱつのあいずをおくった。",
-      "example_meaning": "他用手發出出發的信號。"
+      "example": "彼は私に手で合図を送った。",
+      "example_reading": "かれはわたしにてであいずをおくった。",
+      "example_meaning": "他用手勢給我發了個信號。"
     },
     {
       "word": "アイスクリーム",
       "reading": "アイスクリーム",
       "meaning": "冰淇淋",
-      "example": "夏はやっぱりアイスクリームがおいしいね。",
-      "example_reading": "なつはやっぱりアイスクリームがおいしいね。",
-      "example_meaning": "夏天果然還是冰淇淋好吃呢。"
+      "example": "暑い日には冷たいアイスクリームが美味しいですね。",
+      "example_reading": "あついひにはつめたいアイスクリームがおいしいですね。",
+      "example_meaning": "熱天吃冰淇淋真好吃呢。"
     },
     {
       "word": "愛する",
       "reading": "あいする",
       "meaning": "愛",
-      "example": "彼は家族を深く愛している。",
-      "example_reading": "かれはかぞくをふかくあいしている。",
-      "example_meaning": "他深深地愛著家人。"
+      "example": "家族を心から愛しています。",
+      "example_reading": "かぞくをこころからあいしています。",
+      "example_meaning": "我發自內心地愛著我的家人。"
     },
     {
       "word": "相手",
       "reading": "あいて",
       "meaning": "對方、夥伴",
-      "example": "彼は良い話し相手だ。",
-      "example_reading": "かれはよいはなしあいてだ。",
-      "example_meaning": "他是一個很好的談話對象。"
+      "example": "彼はいつも話し相手になってくれる。",
+      "example_reading": "かれはいつもはなしあいてになってくれる。",
+      "example_meaning": "他總會成為我的聊天對象。"
     },
     {
       "word": "あいにく",
       "reading": "あいにく",
-      "meaning": "不巧、偏偏",
-      "example": "あいにく、今日は担当者が不在です。",
-      "example_reading": "あいにく、きょうはたんとうしゃがふざいです。",
-      "example_meaning": "不巧，今天負責人不在。"
+      "meaning": "不巧、可惜",
+      "example": "あいにく、明日は先約があります。",
+      "example_reading": "あいにく、あすはせんやくがあります。",
+      "example_meaning": "不巧，我明天有其他約會了。"
     },
     {
       "word": "アイロン",
       "reading": "アイロン",
-      "meaning": "熨斗、熨燙",
-      "example": "洗濯が終わったら、シャツにアイロンをかけます。",
-      "example_reading": "せんたくがおわったら、シャツにアイロンをかけます。",
-      "example_meaning": "洗完衣服後，我會熨燙襯衫。"
+      "meaning": "熨斗",
+      "example": "シャツにアイロンをかける。",
+      "example_reading": "シャツにアイロンをかける。",
+      "example_meaning": "熨襯衫。"
     },
     {
       "word": "アウト",
       "reading": "アウト",
       "meaning": "出局；局外",
-      "example": "そのボールはアウトだよ。",
-      "example_reading": "そのボールはアウトだよ。",
-      "example_meaning": "那顆球出界了喔。"
+      "example": "野球の試合で、バッターは三振でアウトになった。",
+      "example_reading": "やきゅうの しあいで、バッターは さんしんで アウトに なった。",
+      "example_meaning": "在棒球比賽中，打者因三振出局了。"
     },
     {
       "word": "明かり",
       "reading": "あかり",
       "meaning": "光線；燈光",
-      "example": "部屋の明かりをつけてください。",
-      "example_reading": "へやのあかりをつけてください。",
-      "example_meaning": "請打開房間的燈。"
+      "example": "部屋の明かりが消えて、真っ暗になった。",
+      "example_reading": "へやの あかりが きえて、まっくらに なった。",
+      "example_meaning": "房間的燈光熄滅後，變得一片漆黑。"
     },
     {
       "word": "空き",
       "reading": "あき",
-      "meaning": "空閒；空位；空缺",
-      "example": "今、空き時間がありますか？",
-      "example_reading": "いま、あきじかんがありますか？",
-      "example_meaning": "你現在有空閒時間嗎？"
+      "meaning": "空位；空閒；空房",
+      "example": "この駐車場はいつも満車で、空きがない。",
+      "example_reading": "この ちゅうしゃじょうは いつも まんしゃで、あきが ない。",
+      "example_meaning": "這個停車場總是停滿車，沒有空位。"
     },
     {
       "word": "明らか",
       "reading": "あきらか",
       "meaning": "明顯的；清楚的",
-      "example": "彼の嘘は明らかだった。",
-      "example_reading": "かれのうそはあきらかだった。",
-      "example_meaning": "他的謊言很明顯。"
+      "example": "彼の嘘は誰の目にも明らかだった。",
+      "example_reading": "かれの うそは だれの めにも あきらかだった。",
+      "example_meaning": "他的謊言在任何人眼中都顯而易見。"
     },
     {
       "word": "諦める",
       "reading": "あきらめる",
       "meaning": "放棄",
-      "example": "夢を諦めないでください。",
-      "example_reading": "ゆめをあきらめないでください。",
-      "example_meaning": "請不要放棄夢想。"
+      "example": "夢を諦めずに、最後まで頑張りたい。",
+      "example_reading": "ゆめを あきらめずに、さいごまで がんばりたい。",
+      "example_meaning": "我不想放棄夢想，希望能堅持到最後。"
     },
     {
       "word": "飽きる",
       "reading": "あきる",
       "meaning": "厭倦；吃膩",
-      "example": "毎日同じ料理だと飽きちゃうね。",
-      "example_reading": "まいにちおなじりょうりだとあきちゃうね。",
-      "example_meaning": "每天都吃一樣的菜會吃膩呢。"
+      "example": "毎日同じ料理ばかりで、もう飽きた。",
+      "example_reading": "まいにち おなじ りょうりばかりで、もう あきた。",
+      "example_meaning": "每天都吃一樣的菜，我已經吃膩了。"
     },
     {
       "word": "握手",
       "reading": "あくしゅ",
       "meaning": "握手",
-      "example": "初めて会う人とは握手をする。",
-      "example_reading": "はじめてあうひととはあくしゅをする。",
-      "example_meaning": "和初次見面的人握手。"
+      "example": "会議の最後に、全員で握手をして終わった。",
+      "example_reading": "かいぎの さいごに、ぜんいんで あくしゅを して おわった。",
+      "example_meaning": "會議結束時，大家互相握手後散會。"
     },
     {
       "word": "悪魔",
       "reading": "あくま",
       "meaning": "惡魔",
-      "example": "彼はまるで悪魔のような顔をしていた。",
-      "example_reading": "かれはまるでアクマのようなかおをしていた。",
-      "example_meaning": "他的臉簡直像惡魔一樣。"
+      "example": "その男はまるで悪魔のような冷たい目をしていた。",
+      "example_reading": "その おとこは まるで あくまのような つめたい めを していた。",
+      "example_meaning": "那個男人有著像惡魔一樣冰冷的眼神。"
     },
     {
       "word": "明ける",
       "reading": "あける",
-      "meaning": "天亮；結束（年、假期等）",
-      "example": "もうすぐ夜が明けるよ。",
-      "example_reading": "もうすぐよるがあけるよ。",
-      "example_meaning": "差不多要天亮了喔。"
+      "meaning": "天亮；結束",
+      "example": "やっと夜が明けて、朝になった。",
+      "example_reading": "やっと よるが あけて、あさに なった。",
+      "example_meaning": "夜晚終於天亮了，變成了早晨。"
     },
     {
       "word": "あした",
       "reading": "あした",
       "meaning": "明天",
-      "example": "あしたまた会いましょう。",
-      "example_reading": "あしたまたあいましょう。",
-      "example_meaning": "明天再見吧。"
+      "example": "あしたの天気予報は晴れだそうです。",
+      "example_reading": "あしたの てんきよほうは はれだ そうです。",
+      "example_meaning": "明天的天氣預報好像是晴天。"
     },
     {
       "word": "預ける",
       "reading": "あずける",
-      "meaning": "寄放、託付",
-      "example": "旅行に行く間、犬を友達に預けた。",
-      "example_reading": "りょこうにいくあいだ、いぬをともだちにあずけた。",
-      "example_meaning": "旅行期間，我把狗寄放在朋友那裡。"
+      "meaning": "託付、寄放",
+      "example": "旅行の間、ペットを友達に預けるつもりです。",
+      "example_reading": "りょこうのあいだ、ペットをともだちにあずけるつもりです。",
+      "example_meaning": "旅行期間，我打算把寵物寄放在朋友那裡。"
     },
     {
       "word": "汗",
       "reading": "あせ",
       "meaning": "汗水",
-      "example": "暑すぎて、額から汗が流れ落ちた。",
-      "example_reading": "あつすぎて、ひたいからあせがながれおちた。",
-      "example_meaning": "太熱了，汗水從額頭流下來。"
+      "example": "運動した後、汗をたくさんかいた。",
+      "example_reading": "うんどうしたあと、あせをたくさんかいた。",
+      "example_meaning": "運動後，流了很多汗。"
     },
     {
       "word": "与える",
       "reading": "あたえる",
-      "meaning": "給予、提供",
-      "example": "子供たちに夢と希望を与えたい。",
-      "example_reading": "こどもたちにゆめときぼうをあたえたい。",
-      "example_meaning": "我想給孩子們夢想和希望。"
+      "meaning": "給予、賦予",
+      "example": "先生は学生たちにアドバイスを与えた。",
+      "example_reading": "せんせいはがくせいたちにアドバイスをあたえた。",
+      "example_meaning": "老師給了學生們建議。"
     },
     {
       "word": "当たる",
       "reading": "あたる",
-      "meaning": "命中、碰觸到、中獎",
-      "example": "宝くじが当たって、とても嬉しい。",
-      "example_reading": "たからくじがあたって、とてもうれしい。",
-      "example_meaning": "樂透中獎了，我非常高興。"
+      "meaning": "中（獎）、碰上、曬到",
+      "example": "宝くじが当たって、とても嬉しいです。",
+      "example_reading": "たからくじがあたって、とてもうれしいです。",
+      "example_meaning": "樂透中獎了，非常開心。"
     },
     {
       "word": "あちこち",
       "reading": "あちこち",
       "meaning": "到處、這裡那裡",
-      "example": "週末は家族であちこち出かけた。",
-      "example_reading": "しゅうまつはかぞくであちこちでかけた。",
-      "example_meaning": "週末我跟家人到處去玩了。"
+      "example": "休日はあちこち散歩するのが好きです。",
+      "example_reading": "きゅうじつはあちこちさんぽするのがすきです。",
+      "example_meaning": "假日我喜歡到處散步。"
     },
     {
       "word": "扱う",
       "reading": "あつかう",
-      "meaning": "對待、處理、操作",
-      "example": "この荷物は壊れやすいので、丁寧に扱ってください。",
-      "example_reading": "このにもつはこわれやすいので、ていねいがあつかってください。",
-      "example_meaning": "這個行李容易損壞，請小心處理。"
+      "meaning": "處理、對待、操作",
+      "example": "この機械は丁寧に扱ってください。",
+      "example_reading": "このきかいはていねいがあつかってください。",
+      "example_meaning": "請小心操作這台機器。"
     },
     {
       "word": "集まり",
       "reading": "あつまり",
-      "meaning": "聚會、聚集",
-      "example": "会社の集まりで新しいプロジェクトについて話した。",
-      "example_reading": "かいしゃのあつまりであたらしいぷろじぇくとについて話した。",
-      "example_meaning": "在公司的聚會上談論了新專案。"
+      "meaning": "聚會、集合",
+      "example": "今週末は友達との集まりがあります。",
+      "example_reading": "こんしゅうまつはともだちとのあつまりがあります。",
+      "example_meaning": "這個週末有和朋友的聚會。"
     },
     {
       "word": "当てる",
       "reading": "あてる",
-      "meaning": "貼上、猜中、擊中",
-      "example": "冷たいタオルを額に当てて、熱を冷ました。",
-      "example_reading": "つめたいタオルをひたいにあてて、ねつをさました。",
-      "example_meaning": "我把冷毛巾敷在額頭上，把熱退了。"
+      "meaning": "猜中、貼上、碰觸",
+      "example": "クイズの答えを当てて、賞品をもらった。",
+      "example_reading": "クイズのこたえをあてて、しょうひんをもらった。",
+      "example_meaning": "猜中了問答題的答案，得到了獎品。"
     },
     {
       "word": "跡",
       "reading": "あと",
-      "meaning": "痕跡、足跡、地點",
-      "example": "雪の上に動物の足跡があった。",
-      "example_reading": "ゆきのうえにどうぶつのあしあとがあった。",
-      "example_meaning": "雪上有動物的足跡。"
+      "meaning": "痕跡、足跡、遺跡",
+      "example": "事件の跡がまだ残っている。",
+      "example_reading": "じけんのあとがまだのこっている。",
+      "example_meaning": "事件的痕跡還留著。"
     },
     {
       "word": "あと",
       "reading": "あと",
-      "meaning": "之後、後面、剩餘",
-      "example": "ご飯を食べた後、散歩に行った。",
-      "example_reading": "ごはんをたべたあと、さんぽにいった。",
-      "example_meaning": "吃完飯後，去散步了。"
+      "meaning": "之後、剩下",
+      "example": "食事が終わったあとで、映画を見に行こう。",
+      "example_reading": "しょくじがおわったあとで、えいがをみにいこう。",
+      "example_meaning": "吃完飯後，我們去看電影吧。"
     },
     {
       "word": "穴",
       "reading": "あな",
-      "meaning": "洞、孔",
-      "example": "公園の地面に大きな穴が空いているよ。",
-      "example_reading": "こうえんのじめんにおおきなあながあいているよ。",
-      "example_meaning": "公園的地面上有個大洞喔。"
+      "meaning": "洞、洞穴",
+      "example": "地面に大きな穴が開いている。",
+      "example_reading": "じめんに おおきな あなが あいている。",
+      "example_meaning": "地面上有一個大洞。"
     },
     {
       "word": "浴びる",
       "reading": "あびる",
-      "meaning": "淋、沖、照（光）",
-      "example": "毎朝シャワーを浴びてから仕事に行くんだ。",
-      "example_reading": "まいあさシャワーをあびてからしごとにいくんだ。",
-      "example_meaning": "我每天早上洗完澡再去上班。"
+      "meaning": "淋、沖、照",
+      "example": "毎日シャワーを浴びる。",
+      "example_reading": "まいにち シャワーを あびる。",
+      "example_meaning": "每天沖澡。"
     },
     {
       "word": "油",
       "reading": "あぶら",
       "meaning": "油",
-      "example": "揚げ物をする時は、たくさん油を使うから大変だね。",
-      "example_reading": "あげものをするときは、たくさんあぶらをつかうからたいへんだね。",
-      "example_meaning": "炸東西的時候，要用很多油，真麻煩呢。"
+      "example": "料理に油を使う。",
+      "example_reading": "りょうりに あぶらを つかう。",
+      "example_meaning": "料理中使用油。"
     },
     {
       "word": "誤り",
       "reading": "あやまり",
       "meaning": "錯誤、過失",
-      "example": "その計算にはいくつか誤りがあるみたいだよ。",
-      "example_reading": "そのけいさんにはいくつかあやまりがあるみたいだよ。",
-      "example_meaning": "那個計算好像有幾個錯誤。"
+      "example": "彼の報告にはいくつかの誤りがあった。",
+      "example_reading": "かれの ほうこくには いくつかの あやまりが あった。",
+      "example_meaning": "他的報告中有一些錯誤。"
     },
     {
       "word": "粗",
       "reading": "あら",
-      "meaning": "缺點、粗糙",
-      "example": "この製品は値段は安いけど、ちょっと粗が多いな。",
-      "example_reading": "このせいひんはねだんはやすいけど、ちょっとあらがおおいな。",
-      "example_meaning": "這個產品雖然便宜，但缺點有點多呢。"
+      "meaning": "粗糙之處、缺點",
+      "example": "この計画にはまだ粗が多い。",
+      "example_reading": "この けいかくには まだ あらが おおい。",
+      "example_meaning": "這個計畫還有很多粗糙之處/缺點。"
     },
     {
       "word": "嵐",
       "reading": "あらし",
       "meaning": "暴風雨、風暴",
-      "example": "昨日の夜はすごい嵐で、一晩中眠れなかったよ。",
-      "example_reading": "きのうのよるはすごいあらしで、ひとばんじゅうねむれなかったよ。",
-      "example_meaning": "昨晚風暴好大，我一整晚都沒睡好。"
+      "example": "昨夜は強い嵐だった。",
+      "example_reading": "さくやは つよい あらしだった。",
+      "example_meaning": "昨晚是一場強烈的暴風雨。"
     },
     {
       "word": "新た",
       "reading": "あらた",
       "meaning": "新的、重新",
-      "example": "４月から新たな気持ちで、この仕事を頑張ります。",
-      "example_reading": "しがつからあらたなきもちで、このしごとをがんばります。",
-      "example_meaning": "我會從四月起以全新的心情努力工作。"
+      "example": "来月から新たな仕事が始まる。",
+      "example_reading": "らいげつから あらたな しごとが はじまる。",
+      "example_meaning": "從下個月開始新的工作。"
     },
     {
       "word": "あらゆる",
       "reading": "あらゆる",
       "meaning": "所有、一切的",
-      "example": "彼はあらゆる困難を乗り越えて、夢を叶えたんだ。",
-      "example_reading": "かれはあらゆるこんなんをのりこえて、ゆめをかなえたんだ。",
-      "example_meaning": "他克服了所有困難，實現了夢想。"
+      "example": "あらゆる可能性を考えるべきだ。",
+      "example_reading": "あらゆる かのうせいを かんがえるべきだ。",
+      "example_meaning": "應該考慮所有可能性。"
     },
     {
       "word": "表す",
       "reading": "あらわす",
-      "meaning": "表示、表現",
-      "example": "自分の気持ちを言葉で表すのは、難しい時もあるよね。",
-      "example_reading": "じぶんのきもちをことばであらわすのは、むずかしいときもあるよね。",
-      "example_meaning": "有時候用言語表達自己的心情是很困難的呢。"
+      "meaning": "表示、表現、呈現",
+      "example": "彼の笑顔は喜びを表している。",
+      "example_reading": "かれの えがおは よろこびを あらわしている。",
+      "example_meaning": "他的笑容表現出喜悅。"
     },
     {
       "word": "現す",
       "reading": "あらわす",
-      "meaning": "顯現、出現",
-      "example": "長い間隠れていた真実が、ついに姿を現した。",
-      "example_reading": "ながいあいだかくれていたしんじつが、ついにすがたをあらわした。",
-      "example_meaning": "長期以來被隱藏的真相，終於現身了。"
+      "meaning": "出現、展現、露面",
+      "example": "やっと姿を現した。",
+      "example_reading": "やっと すがたを あらわした。",
+      "example_meaning": "終於現身了。"
     },
     {
       "word": "現れ",
       "reading": "あらわれ",
-      "meaning": "出現、表現、徵兆",
-      "example": "彼の行動は、責任感の現れです。",
-      "example_reading": "かれのこうどうは、せきにんかんのあらわれです。",
-      "example_meaning": "他的行動是責任感的表現。"
+      "meaning": "表現、徵兆、結果",
+      "example": "彼の笑顔は、安心している心の現れだ。",
+      "example_reading": "かれのえがおは、あんしんしているこころのあらわれだ。",
+      "example_meaning": "他的笑容是他安心之心的表現。"
     },
     {
       "word": "現れる",
       "reading": "あらわれる",
       "meaning": "出現、顯現",
-      "example": "彼は約束の時間に現れなかった。",
-      "example_reading": "かれはやくそくのじかんにあらわれなかった。",
-      "example_meaning": "他沒有在約定時間出現。"
+      "example": "突然、目の前に猫が現れた。",
+      "example_reading": "とつぜん、めのまえにねこがあらわれた。",
+      "example_meaning": "突然，一隻貓出現在我眼前。"
     },
     {
       "word": "ありがとう",
@@ -342,63 +342,863 @@
       "meaning": "謝謝",
       "example": "手伝ってくれて、本当にありがとう。",
       "example_reading": "てつだってくれて、ほんとうにありがとう。",
-      "example_meaning": "謝謝你幫忙，真的非常感謝。"
+      "example_meaning": "謝謝你幫我，真的非常感謝。"
     },
     {
       "word": "有る",
       "reading": "ある",
-      "meaning": "有、存在",
-      "example": "冷蔵庫に牛乳がまだある？",
-      "example_reading": "れいぞうこにぎゅうにゅうがまだある？",
-      "example_meaning": "冰箱裡還有牛奶嗎？"
+      "meaning": "有、存在（用於非生物）",
+      "example": "机の上に本が三冊ある。",
+      "example_reading": "つくえのうえにほんがさんさつある。",
+      "example_meaning": "桌上有三本書。"
     },
     {
       "word": "或",
       "reading": "ある",
-      "meaning": "某個、某種",
-      "example": "ある朝、私は変な夢を見た。",
-      "example_reading": "あるあさ、わたしはへんなゆめをみた。",
-      "example_meaning": "某天早上，我做了一個奇怪的夢。"
+      "meaning": "某個、有些",
+      "example": "ある日、突然良いアイデアが浮かんだ。",
+      "example_reading": "あるひ、とつぜんいいアイデアがうかんだ。",
+      "example_meaning": "有一天，突然浮現了一個好主意。"
     },
     {
       "word": "あるいは",
       "reading": "あるいは",
-      "meaning": "或者、或是",
-      "example": "電車で行くか、あるいはバスで行くか、まだ決めていません。",
-      "example_reading": "でんしゃでいくか、あるいはバスでいくか、まだきめていません。",
-      "example_meaning": "我還沒決定是要搭電車去，還是搭公車去。"
+      "meaning": "或者、也許",
+      "example": "電車で行くか、あるいはバスで行くか迷っている。",
+      "example_reading": "でんしゃでいくか、あるいはバスでいくかまよっている。",
+      "example_meaning": "我在猶豫是搭電車去，還是搭巴士去。"
     },
     {
       "word": "アルバム",
       "reading": "アルバム",
       "meaning": "相簿、專輯",
-      "example": "昔の家族写真をアルバムに整理しました。",
-      "example_reading": "むかしのかぞくしゃしんをアルバムにせいりしました。",
+      "example": "昔の家族写真をアルバムに整理した。",
+      "example_reading": "むかしのかぞくしゃしんをアルバムにせいりした。",
       "example_meaning": "我把以前的家庭照片整理到相簿裡了。"
     },
     {
       "word": "泡",
       "reading": "あわ",
-      "meaning": "泡沫、水泡",
-      "example": "石鹸で手を洗ったら、泡がたくさん出た。",
-      "example_reading": "せっけんでてをあらったら、あわがたくさんでた。",
-      "example_meaning": "用肥皂洗手後，起了很多泡沫。"
+      "meaning": "泡沫、氣泡",
+      "example": "ビールを注いだら、きれいな泡が立った。",
+      "example_reading": "ビールをそそいだら、きれいなあわがたった。",
+      "example_meaning": "倒啤酒後，產生了漂亮的泡沫。"
     },
     {
       "word": "合わせる",
       "reading": "あわせる",
-      "meaning": "組合、配合、對齊",
+      "meaning": "合、配合、使一致",
       "example": "みんなで力を合わせて、このプロジェクトを成功させよう。",
       "example_reading": "みんなでちからをあわせて、このプロジェクトをせいこうさせよう。",
-      "example_meaning": "大家齊心協力，讓這個企劃成功吧。"
+      "example_meaning": "大家齊心協力，讓這個專案成功吧。"
     },
     {
       "word": "哀れ",
       "reading": "あわれ",
-      "meaning": "可憐、悲哀",
-      "example": "雨の中、捨てられた子犬の姿が哀れだった。",
-      "example_reading": "あめのなか、すてられたこいぬのすがたがあわれだった。",
-      "example_meaning": "在雨中，被遺棄的小狗的樣子很可憐。"
+      "meaning": "可憐、悲慘",
+      "example": "昔の物語には、哀れな結末を迎える主人公が多い。",
+      "example_reading": "むかしのものがたりには、あわれなけつまつをむかえるしゅじんこうがおおい。",
+      "example_meaning": "在以前的故事中，許多主角都迎來悲慘的結局。"
+    },
+    {
+      "word": "案",
+      "reading": "あん",
+      "meaning": "方案、建議、想法",
+      "example": "新しいプロジェクトの案を考えましょう。",
+      "example_reading": "あたらしいプロジェクトのあんをかんがえましょう。",
+      "example_meaning": "我們來思考新企劃的方案吧。"
+    },
+    {
+      "word": "暗記",
+      "reading": "あんき",
+      "meaning": "背誦、記住",
+      "example": "この単語は暗記するしかないですね。",
+      "example_reading": "このたんごはあんきするしかないですね。",
+      "example_meaning": "這個單字只能背下來了呢。"
+    },
+    {
+      "word": "安定",
+      "reading": "あんてい",
+      "meaning": "穩定",
+      "example": "彼の仕事は安定しているので、安心です。",
+      "example_reading": "かれのしごとはあんていしているので、あんしんです。",
+      "example_meaning": "他的工作很穩定，所以很放心。"
+    },
+    {
+      "word": "案内",
+      "reading": "あんない",
+      "meaning": "帶路、導覽、指引",
+      "example": "駅までの道を案内してください。",
+      "example_reading": "えきまでの道をあんないしてください。",
+      "example_meaning": "請為我指引到車站的路。"
+    },
+    {
+      "word": "あんなに",
+      "reading": "あんなに",
+      "meaning": "那樣地、那般地（強調程度）",
+      "example": "あんなにたくさんの料理、一人で食べられる？",
+      "example_reading": "あんなにたくさんのりょうり、ひとりでたべられる？",
+      "example_meaning": "那麼多的料理，一個人吃得完嗎？"
+    },
+    {
+      "word": "あんまり",
+      "reading": "あんまり",
+      "meaning": "不太…、不怎麼…（通常用於否定）",
+      "example": "昨日はあんまり寝られませんでした。",
+      "example_reading": "きのうはあんまりねられませんでした。",
+      "example_meaning": "昨天不太睡得著。"
+    },
+    {
+      "word": "胃",
+      "reading": "い",
+      "meaning": "胃",
+      "example": "食べすぎで胃が痛いです。",
+      "example_reading": "たべすぎでいがいたいです。",
+      "example_meaning": "吃太多了，胃很痛。"
+    },
+    {
+      "word": "いい",
+      "reading": "いい",
+      "meaning": "好的、可以的",
+      "example": "そのアイデアはいいですね。",
+      "example_reading": "そのアイデアはいいですね。",
+      "example_meaning": "那個點子很好呢。"
+    },
+    {
+      "word": "よい",
+      "reading": "よい",
+      "meaning": "好的、可以的（書面或較正式）",
+      "example": "これはとてもよい本です。",
+      "example_reading": "これはとてもよいほんです。",
+      "example_meaning": "這是一本非常好的書。"
+    },
+    {
+      "word": "いえ",
+      "reading": "いえ",
+      "meaning": "不、不是（いいえ的口語縮略）",
+      "example": "「これ、いらない？」「いえ、いりません。」",
+      "example_reading": "「これ、いらない？」「いえ、いりません。」",
+      "example_meaning": "「這個，不需要嗎？」「不，我不需要。」"
+    },
+    {
+      "word": "委員",
+      "reading": "いいん",
+      "meaning": "委員、成員",
+      "example": "彼はクラスの委員長になった。",
+      "example_reading": "かれは クラスの いいんちょうに なった。",
+      "example_meaning": "他成為了班級委員長。"
+    },
+    {
+      "word": "言う",
+      "reading": "ゆう",
+      "meaning": "說、講",
+      "example": "先生が何か言っています。",
+      "example_reading": "せんせいが なにか いっています。",
+      "example_meaning": "老師正在說什麼。"
+    },
+    {
+      "word": "意外",
+      "reading": "いがい",
+      "meaning": "意外、出乎意料",
+      "example": "彼の日本語は意外と上手ですね。",
+      "example_reading": "かれの にほんごは いがいと じょうずですね。",
+      "example_meaning": "他的日語意外地好呢。"
+    },
+    {
+      "word": "行き",
+      "reading": "いき",
+      "meaning": "去、前往；旅途",
+      "example": "京都への行きはどうでしたか？",
+      "example_reading": "きょうとへの いきは どうでしたか？",
+      "example_meaning": "去京都的旅途怎麼樣？"
+    },
+    {
+      "word": "息",
+      "reading": "いき",
+      "meaning": "呼吸、氣息",
+      "example": "走ったので息が苦しいです。",
+      "example_reading": "はしったので いきが くるしいです。",
+      "example_meaning": "因為跑步，呼吸很急促。"
+    },
+    {
+      "word": "勢い",
+      "reading": "いきおい",
+      "meaning": "氣勢、勢頭",
+      "example": "子供たちはすごい勢いで走り出した。",
+      "example_reading": "こどもたちは すごい いきおいで はしりだした。",
+      "example_meaning": "孩子們以驚人的氣勢跑了出去。"
+    },
+    {
+      "word": "生き物",
+      "reading": "いきもの",
+      "meaning": "生物、活物",
+      "example": "地球にはたくさんの生き物がいます。",
+      "example_reading": "ちきゅうには たくさんの いきものが います。",
+      "example_meaning": "地球上有很多生物。"
+    },
+    {
+      "word": "幾つ",
+      "reading": "いくつ",
+      "meaning": "幾個；幾歲",
+      "example": "りんごはいくつ必要ですか？",
+      "example_reading": "りんごは いくつ ひつようですか？",
+      "example_meaning": "你需要幾個蘋果？"
+    },
+    {
+      "word": "幾ら",
+      "reading": "いくら",
+      "meaning": "多少錢；多少 (數量)",
+      "example": "このTシャツはいくらですか？",
+      "example_reading": "この Tシャツは いくらですか？",
+      "example_meaning": "這件T恤多少錢？"
+    },
+    {
+      "word": "いけない",
+      "reading": "いけない",
+      "meaning": "不行、不可以；糟糕了",
+      "example": "ここでタバコを吸ってはいけません。",
+      "example_reading": "ここで タバコを すっては いけません。",
+      "example_meaning": "在這裡不能抽菸。"
+    },
+    {
+      "word": "医師",
+      "reading": "いし",
+      "meaning": "醫生",
+      "example": "彼は優秀な医師として有名です。",
+      "example_reading": "かれはゆうしゅうないしとしてゆうめいです。",
+      "example_meaning": "他是位出色的醫生，非常有名。"
+    },
+    {
+      "word": "意思",
+      "reading": "いし",
+      "meaning": "意思、意圖",
+      "example": "あなたの意思を尊重します。",
+      "example_reading": "あなたのいしをそんちょうします。",
+      "example_meaning": "我會尊重你的意思。"
+    },
+    {
+      "word": "意志",
+      "reading": "いし",
+      "meaning": "意志、決心",
+      "example": "彼は強い意志を持って目標を達成した。",
+      "example_reading": "かれはつよいいしをもってもくひょうをたっせいした。",
+      "example_meaning": "他帶著堅強的意志達成了目標。"
+    },
+    {
+      "word": "維持",
+      "reading": "いじ",
+      "meaning": "維持、保持",
+      "example": "健康を維持するために毎日運動しています。",
+      "example_reading": "けんこうをいじするためにまいにちうんどうしています。",
+      "example_meaning": "為了維持健康，我每天都運動。"
+    },
+    {
+      "word": "意識",
+      "reading": "いしき",
+      "meaning": "意識、知覺",
+      "example": "彼女は意識不明の重体です。",
+      "example_reading": "かのじょはいしきふめいのじゅうたいです。",
+      "example_meaning": "她重傷昏迷不醒。"
+    },
+    {
+      "word": "異常",
+      "reading": "いじょう",
+      "meaning": "異常、不正常",
+      "example": "今朝から胃に異常を感じます。",
+      "example_reading": "けさからいにいじょうをかんじます。",
+      "example_meaning": "從今天早上起，我覺得胃部有些異常。"
+    },
+    {
+      "word": "椅子",
+      "reading": "いす",
+      "meaning": "椅子",
+      "example": "その椅子に座ってもいいですか。",
+      "example_reading": "そのいすにすわってもいいですか。",
+      "example_meaning": "我可以坐在那把椅子上嗎？"
+    },
+    {
+      "word": "泉",
+      "reading": "いずみ",
+      "meaning": "泉水",
+      "example": "公園には美しい泉があります。",
+      "example_reading": "こうえんにはうつくしいいずみがあります。",
+      "example_meaning": "公園裡有一座美麗的泉水。"
+    },
+    {
+      "word": "いずれ",
+      "reading": "いずれ",
+      "meaning": "總有一天、不久、遲早",
+      "example": "いずれまたお会いしましょう。",
+      "example_reading": "いずれまたおあいしましょう。",
+      "example_meaning": "我們總有一天會再見面的。"
+    },
+    {
+      "word": "以前",
+      "reading": "いぜん",
+      "meaning": "以前、從前",
+      "example": "以前はここにレストランがありました。",
+      "example_reading": "いぜんはここにはれすとらんがありました。",
+      "example_meaning": "以前這裡有間餐廳。"
+    },
+    {
+      "word": "板",
+      "reading": "いた",
+      "meaning": "板子；木板",
+      "example": "テーブルが壊れたから、新しい板が必要だ。",
+      "example_reading": "テーブルがこわれたから、あたらしいいたがひつようだ。",
+      "example_meaning": "餐桌壞了，所以需要新的木板。"
+    },
+    {
+      "word": "偉大",
+      "reading": "いだい",
+      "meaning": "偉大",
+      "example": "彼は日本の歴史に残る偉大な人物です。",
+      "example_reading": "かれはにほんのれきしにのこるいだいなじんぶつです。",
+      "example_meaning": "他是日本歷史上留名的偉大人物。"
+    },
+    {
+      "word": "抱く",
+      "reading": "いだく",
+      "meaning": "抱著；懷抱（夢想、感情等）",
+      "example": "夢を抱いて、一生懸命頑張っています。",
+      "example_reading": "ゆめをいだいて、いっしょうけんめいがんばっています。",
+      "example_meaning": "懷抱著夢想，我正努力奮鬥著。"
+    },
+    {
+      "word": "いたずら",
+      "reading": "いたずら",
+      "meaning": "惡作劇；淘氣",
+      "example": "子どもが壁にいたずら書きをした。",
+      "example_reading": "こどもがかべにいたずらがきをした。",
+      "example_meaning": "小孩子在牆上亂塗鴉（惡作劇塗寫）。"
+    },
+    {
+      "word": "いただきます",
+      "reading": "いただきます",
+      "meaning": "我開動了（飯前用語）",
+      "example": "みんなで「いただきます」と言って、ご飯を食べ始めた。",
+      "example_reading": "みんなで「いただきます」といって、ごはんをたべはじめた。",
+      "example_meaning": "大家說了聲「我開動了」，就開始吃飯。"
+    },
+    {
+      "word": "頂く",
+      "reading": "いただく",
+      "meaning": "得到（謙讓語）；吃喝（謙讓語）",
+      "example": "先生から貴重なアドバイスをいただきました。",
+      "example_reading": "せんせいからきちょうなアドバイスをいただきました。",
+      "example_meaning": "我從老師那裡得到了寶貴的建議。"
+    },
+    {
+      "word": "痛み",
+      "reading": "いたみ",
+      "meaning": "疼痛",
+      "example": "頭の痛みがひどくて、薬を飲んだ。",
+      "example_reading": "あたまのいたみがひどくて、くすりをのんだ。",
+      "example_meaning": "頭痛得很厲害，我吃了藥。"
+    },
+    {
+      "word": "至る",
+      "reading": "いたる",
+      "meaning": "達到；到達；以至",
+      "example": "彼の努力が成功に至った。",
+      "example_reading": "かれのどりょくがせいこうにいたった。",
+      "example_meaning": "他的努力最終帶來了成功。"
+    },
+    {
+      "word": "いち",
+      "reading": "いち",
+      "meaning": "一（數字）",
+      "example": "彼はクラスでいちばん背が高い。",
+      "example_reading": "かれはクラスでいちばんせがたかい。",
+      "example_meaning": "他是班上最高的（第一高）。"
+    },
+    {
+      "word": "位置",
+      "reading": "いち",
+      "meaning": "位置；地點",
+      "example": "地図で現在の位置を確認してください。",
+      "example_reading": "ちずでげんざいのいちをかくにんしてください。",
+      "example_meaning": "請在地圖上確認目前的位置。"
+    },
+    {
+      "word": "一時",
+      "reading": "いちじ",
+      "meaning": "一時、暫時",
+      "example": "電車は一時停止しました。",
+      "example_reading": "でんしゃは いちじ ていし しました。",
+      "example_meaning": "電車暫時停止了。"
+    },
+    {
+      "word": "一度に",
+      "reading": "いちどに",
+      "meaning": "一次地、同時地",
+      "example": "この部屋は、一度に五人までしか入れません。",
+      "example_reading": "この へやは、いちどに ごにんまでしか はいれません。",
+      "example_meaning": "這個房間一次最多只能進五個人。"
+    },
+    {
+      "word": "市場",
+      "reading": "いちば",
+      "meaning": "市場",
+      "example": "週末はよく市場へ買い物に行きます。",
+      "example_reading": "しゅうまつは よく いちばへ かいものに いきます。",
+      "example_meaning": "週末我常去市場買東西。"
+    },
+    {
+      "word": "一番",
+      "reading": "いちばん",
+      "meaning": "最、第一",
+      "example": "富士山は日本で一番高い山です。",
+      "example_reading": "ふじさんは にほんで いちばん たかい やまです。",
+      "example_meaning": "富士山是日本最高的山。"
+    },
+    {
+      "word": "いつか",
+      "reading": "いつか",
+      "meaning": "總有一天、不知何時",
+      "example": "いつか世界一周旅行に行きたいです。",
+      "example_reading": "いつか せかい いっしゅう りょこうに いきたいです。",
+      "example_meaning": "我總有一天想去環遊世界。"
+    },
+    {
+      "word": "一家",
+      "reading": "いっか",
+      "meaning": "一家人、整個家庭",
+      "example": "彼らは一家で海外に移住しました。",
+      "example_reading": "かれらは いっかで かいがい にじゅう しました。",
+      "example_meaning": "他們一家人移居海外了。"
+    },
+    {
+      "word": "一種",
+      "reading": "いっしゅ",
+      "meaning": "一種",
+      "example": "これは一種の特別な技術です。",
+      "example_reading": "これは いっしゅの とくべつな ぎじゅつです。",
+      "example_meaning": "這是一種特殊的技術。"
+    },
+    {
+      "word": "一瞬",
+      "reading": "いっしゅん",
+      "meaning": "一瞬間",
+      "example": "彼の顔が一瞬で青ざめた。",
+      "example_reading": "かれの かおが いっしゅんで あおざめた。",
+      "example_meaning": "他的臉一瞬間變白了。"
+    },
+    {
+      "word": "一生",
+      "reading": "いっしょう",
+      "meaning": "一生、終生",
+      "example": "彼女は一生懸命に夢を追いかけています。",
+      "example_reading": "かのじょは いっしょうけんめいに ゆめを おいかけています。",
+      "example_meaning": "她一生都在努力追求夢想。"
+    },
+    {
+      "word": "一層",
+      "reading": "いっそう",
+      "meaning": "更加、更進一步",
+      "example": "彼の話を聞いて、彼女への信頼が一層深まった。",
+      "example_reading": "かれの はなしを きいて、かのじょへの しんらいが いっそう ふかまった。",
+      "example_meaning": "聽了他的話，我對她的信任更加深了。"
+    },
+    {
+      "word": "一体",
+      "reading": "いったい",
+      "meaning": "究竟、到底",
+      "example": "彼は一体何を考えているんだろう？",
+      "example_reading": "かれは いったい なにを かんがえているんだろう？",
+      "example_meaning": "他到底在想什麼呢？"
+    },
+    {
+      "word": "一致",
+      "reading": "いっち",
+      "meaning": "一致、符合",
+      "example": "みんなの意見が一致した。",
+      "example_reading": "みんなの いけんが いっちした。",
+      "example_meaning": "大家意見一致。"
+    },
+    {
+      "word": "いつでも",
+      "reading": "いつでも",
+      "meaning": "隨時、任何時候",
+      "example": "困ったらいつでも私に相談してね。",
+      "example_reading": "こまったら いつでも わたしに そうだんしてね。",
+      "example_meaning": "遇到困難隨時都可以找我商量喔。"
+    },
+    {
+      "word": "一般",
+      "reading": "いっぱん",
+      "meaning": "一般、普遍",
+      "example": "一般的に、日本の夏はとても暑いです。",
+      "example_reading": "いっぱんてきに、にほんの なつは とても あついです。",
+      "example_meaning": "一般來說，日本的夏天非常熱。"
+    },
+    {
+      "word": "一方",
+      "reading": "いっぽう",
+      "meaning": "另一方面、一方",
+      "example": "兄は背が高い一方、弟は背が低い。",
+      "example_reading": "あには せが たかい いっぽう、おとうとは せが ひくい。",
+      "example_meaning": "哥哥很高，另一方面弟弟卻很矮。"
+    },
+    {
+      "word": "いつまでも",
+      "reading": "いつまでも",
+      "meaning": "永遠、一直",
+      "example": "いつまでもこの幸せが続くといいな。",
+      "example_reading": "いつまでも この しあわせが つづくと いいな。",
+      "example_meaning": "希望這份幸福能一直持續下去。"
+    },
+    {
+      "word": "いつも",
+      "reading": "いつも",
+      "meaning": "總是、經常",
+      "example": "彼はいつも元気ですね。",
+      "example_reading": "かれは いつも げんきですね。",
+      "example_meaning": "他總是很有精神呢。"
+    },
+    {
+      "word": "移動",
+      "reading": "いどう",
+      "meaning": "移動",
+      "example": "荷物を隣の部屋に移動してください。",
+      "example_reading": "にもつを となりの へやに いどうして ください。",
+      "example_meaning": "請把行李移動到隔壁房間。"
+    },
+    {
+      "word": "従兄弟",
+      "reading": "いとこ",
+      "meaning": "表（堂）兄弟姐妹",
+      "example": "今週末はいとこの結婚式に行く予定です。",
+      "example_reading": "こんしゅうまつは いとこの けっこんしきに いく よていです。",
+      "example_meaning": "這個週末我打算去堂（表）兄弟姐妹的婚禮。"
+    },
+    {
+      "word": "稲",
+      "reading": "いね",
+      "meaning": "稻、稻子",
+      "example": "秋になると、田んぼの稲が黄金色に変わります。",
+      "example_reading": "あきに なると、たんぼの いねが こがねいろに かわります。",
+      "example_meaning": "一到秋天，田裡的稻子就會變成金黃色。"
+    },
+    {
+      "word": "居眠り",
+      "reading": "いねむり",
+      "meaning": "打瞌睡",
+      "example": "電車の中でつい居眠りをしてしまった。",
+      "example_reading": "でんしゃのなかで つい いねむりを してしまった。",
+      "example_meaning": "我在電車上不小心打瞌睡了。"
+    },
+    {
+      "word": "命",
+      "reading": "いのち",
+      "meaning": "生命",
+      "example": "命は大切にしなければならない。",
+      "example_reading": "いのちは たいせつに しなければならない。",
+      "example_meaning": "生命必須被好好珍惜。"
+    },
+    {
+      "word": "違反",
+      "reading": "いはん",
+      "meaning": "違反",
+      "example": "交通ルールに違反すると罰金を取られます。",
+      "example_reading": "こうつうルールに いはんすると ばっきんを とられます。",
+      "example_meaning": "如果違反交通規則會被罰款。"
+    },
+    {
+      "word": "衣服",
+      "reading": "いふく",
+      "meaning": "衣服、服裝",
+      "example": "季節の変わり目なので、衣服の準備が必要です。",
+      "example_reading": "きせつの かわりめなので、いふくの じゅんびが ひつようです。",
+      "example_meaning": "因為是季節交替，所以需要準備衣服。"
+    },
+    {
+      "word": "居間",
+      "reading": "いま",
+      "meaning": "客廳、起居室",
+      "example": "家族で居間に集まってテレビを見ます。",
+      "example_reading": "かぞくで いまに あつまって テレビを みます。",
+      "example_meaning": "全家人聚集在客廳看電視。"
+    },
+    {
+      "word": "今に",
+      "reading": "いまに",
+      "meaning": "不久、早晚（將會發生）",
+      "example": "そんなに頑張っていたら、今に成功するよ。",
+      "example_reading": "そんなに がんばっていたら、いまに せいこうするよ。",
+      "example_meaning": "如果你這麼努力，遲早會成功的喔。"
+    },
+    {
+      "word": "今にも",
+      "reading": "いまにも",
+      "meaning": "馬上就要、眼看就要（發生）",
+      "example": "空が真っ暗で、今にも雨が降りそうだ。",
+      "example_reading": "そらが まっくろで、いまにも あめが ふりそうだ。",
+      "example_meaning": "天空一片漆黑，眼看就要下雨了。"
+    },
+    {
+      "word": "以来",
+      "reading": "いらい",
+      "meaning": "以來",
+      "example": "卒業して以来、彼とは会っていません。",
+      "example_reading": "そつぎょうして いらい、かれとは あっていません。",
+      "example_meaning": "畢業以來，我再也沒見過他。"
+    },
+    {
+      "word": "依頼",
+      "reading": "いらい",
+      "meaning": "請求、委託",
+      "example": "友達に引っ越しを手伝うよう依頼した。",
+      "example_reading": "ともだちに ひっこしを てつだうよう いらいした。",
+      "example_meaning": "我拜託朋友幫忙搬家。"
+    },
+    {
+      "word": "いらいら",
+      "reading": "いらいら",
+      "meaning": "煩躁、焦躁",
+      "example": "電車が遅れていて、いらいらする。",
+      "example_reading": "でんしゃが おくれていて、いらいらする。",
+      "example_meaning": "電車誤點了，真令人煩躁。"
+    },
+    {
+      "word": "いらっしゃい",
+      "reading": "いらっしゃい",
+      "meaning": "歡迎光臨 (非正式)",
+      "example": "「いらっしゃい！」と店員が明るく声をかけた。",
+      "example_reading": "「いらっしゃい！」と てんいんが あかるく こえをかけた。",
+      "example_meaning": "店員開朗地說：「歡迎光臨！」"
+    },
+    {
+      "word": "医療",
+      "reading": "いりょう",
+      "meaning": "醫療",
+      "example": "この病院は最新の医療技術を使っています。",
+      "example_reading": "この びょういんは さいしんの いりょうぎじゅつを つかっています。",
+      "example_meaning": "這家醫院使用最新的醫療技術。"
+    },
+    {
+      "word": "岩",
+      "reading": "いわ",
+      "meaning": "岩石",
+      "example": "海岸には大きな岩がたくさんある。",
+      "example_reading": "かいがんには おおきな いわが たくさん ある。",
+      "example_meaning": "海岸上有很多大岩石。"
+    },
+    {
+      "word": "祝い",
+      "reading": "いわい",
+      "meaning": "慶祝、祝賀",
+      "example": "友達の結婚祝いにプレゼントを贈った。",
+      "example_reading": "ともだちの けっこんいわいに プレゼントを おくった。",
+      "example_meaning": "我送了禮物給朋友作為結婚祝賀。"
+    },
+    {
+      "word": "祝う",
+      "reading": "いわう",
+      "meaning": "慶祝、祝賀 (動詞)",
+      "example": "みんなで彼の誕生日を祝った。",
+      "example_reading": "みんなで かれの たんじょうびを いわった。",
+      "example_meaning": "大家一起慶祝了他的生日。"
+    },
+    {
+      "word": "言わば",
+      "reading": "いわば",
+      "meaning": "說起來、可以說是",
+      "example": "彼は言わばこの分野の第一人者だ。",
+      "example_reading": "かれは いわば この ぶんやの だいいちにんしゃだ。",
+      "example_meaning": "他可以說是這個領域的第一人。"
+    },
+    {
+      "word": "いわゆる",
+      "reading": "いわゆる",
+      "meaning": "所謂的",
+      "example": "いわゆる「インスタ映え」するカフェに行ってみたい。",
+      "example_reading": "いわゆる「インスタばえ」する カフェに いってみたい。",
+      "example_meaning": "我想去所謂「很適合拍照上傳IG」的咖啡廳。"
+    },
+    {
+      "word": "インク",
+      "reading": "インク",
+      "meaning": "墨水",
+      "example": "プリンターのインクが切れそうだ。",
+      "example_reading": "プリンターの インクが きれそうだ。",
+      "example_meaning": "印表機的墨水好像快用完了。"
+    },
+    {
+      "word": "印刷",
+      "reading": "いんさつ",
+      "meaning": "印刷",
+      "example": "この書類をカラーで印刷してください。",
+      "example_reading": "この しょるいを カラーで いんさつして ください。",
+      "example_meaning": "請把這份文件彩色列印。"
+    },
+    {
+      "word": "印象",
+      "reading": "いんしょう",
+      "meaning": "印象",
+      "example": "彼は初対面でとてもいい印象を与えた。",
+      "example_reading": "かれは しょたいめんで とても いい いんしょうを あたえた。",
+      "example_meaning": "他第一次見面就給人很好的印象。"
+    },
+    {
+      "word": "引退",
+      "reading": "いんたい",
+      "meaning": "退休、引退",
+      "example": "彼は去年、プロ野球選手を引退しました。",
+      "example_reading": "かれは きょねん、プロやきゅうせんしゅを いんたいしました。",
+      "example_meaning": "他去年從職業棒球選手的職位上退休了。"
+    },
+    {
+      "word": "引用",
+      "reading": "いんよう",
+      "meaning": "引用",
+      "example": "論文に書いた内容は、専門家の意見を引用しています。",
+      "example_reading": "ろんぶんに かいた ないようは、せんもんかの いけんを いんようしています。",
+      "example_meaning": "論文中寫的內容引用了專家的意見。"
+    },
+    {
+      "word": "ウイスキー",
+      "reading": "ウイスキー",
+      "meaning": "威士忌",
+      "example": "彼は毎晩、寝る前にウイスキーを少し飲みます。",
+      "example_reading": "かれは まいばん、ねるまえに ウイスキーを すこし のみます。",
+      "example_meaning": "他每晚睡前會喝一點威士忌。"
+    },
+    {
+      "word": "上",
+      "reading": "うわ",
+      "meaning": "表面、外面",
+      "example": "彼は上辺だけ優しく見えますが、本当はそうではありません。",
+      "example_reading": "かれは うわべ だけ やさしく みえますが、ほんとうは そうでは ありません。",
+      "example_meaning": "他看起來只有表面溫柔，但事實並非如此。"
+    },
+    {
+      "word": "魚",
+      "reading": "うお",
+      "meaning": "魚（多用於複合詞或文學）",
+      "example": "人魚は、半分が人間で半分が魚（うお）の生き物です。",
+      "example_reading": "にんぎょは、はんぶんが にんげんで はんぶんが うおの いきものです。",
+      "example_meaning": "人魚是一種一半是人一半是魚的生物。"
+    },
+    {
+      "word": "うがい",
+      "reading": "うがい",
+      "meaning": "漱口",
+      "example": "風邪を予防するために、外出から帰ったら必ずうがいをします。",
+      "example_reading": "かぜを よぼうするために、がいしゅつから かえったら かならず うがいを します。",
+      "example_meaning": "為了預防感冒，從外面回來後一定會漱口。"
+    },
+    {
+      "word": "伺う",
+      "reading": "うかがう",
+      "meaning": "拜訪（謙讓語）、請教（謙讓語）",
+      "example": "明日、先生のご自宅へ伺ってもよろしいでしょうか。",
+      "example_reading": "あす、せんせいの ごじたくへ うかがっても よろしいでしょうか。",
+      "example_meaning": "明天我可以去拜訪老師的家嗎？"
+    },
+    {
+      "word": "受け取る",
+      "reading": "うけとる",
+      "meaning": "接收、領取、理解",
+      "example": "荷物は宅配業者から直接受け取りました。",
+      "example_reading": "にもつは たくはいぎょうしゃから ちょくせつ うけとりました。",
+      "example_meaning": "我直接從宅配業者那裡收到了包裹。"
+    },
+    {
+      "word": "動かす",
+      "reading": "うごかす",
+      "meaning": "移動、開動、打動",
+      "example": "この重いテーブルを一人で動かすのは難しいです。",
+      "example_reading": "この おもい テーブルを ひとりで うごかすのは むずかしいです。",
+      "example_meaning": "一個人搬動這張很重的桌子很困難。"
+    },
+    {
+      "word": "兎",
+      "reading": "うさぎ",
+      "meaning": "兔子",
+      "example": "子供の頃、ペットとしてうさぎを飼っていました。",
+      "example_reading": "こどもの ころ、ペットとして うさぎを かっていました。",
+      "example_meaning": "小時候，我養過兔子當寵物。"
+    },
+    {
+      "word": "牛",
+      "reading": "うし",
+      "meaning": "牛",
+      "example": "牛は草を食べます。",
+      "example_reading": "うしはくさをたべます。",
+      "example_meaning": "牛吃草。"
+    },
+    {
+      "word": "失う",
+      "reading": "うしなう",
+      "meaning": "失去",
+      "example": "彼は事故で家族を失った。",
+      "example_reading": "かれはじこでかぞくをうしなった。",
+      "example_meaning": "他在事故中失去了家人。"
+    },
+    {
+      "word": "後",
+      "reading": "うしろ",
+      "meaning": "後面、背後",
+      "example": "彼の後ろに誰かいるよ。",
+      "example_reading": "かれのうしろにだれかいるよ。",
+      "example_meaning": "他後面有人喔。"
+    },
+    {
+      "word": "嘘",
+      "reading": "うそ",
+      "meaning": "謊言",
+      "example": "嘘をつくのは良くない。",
+      "example_reading": "うそをつくのはよくない。",
+      "example_meaning": "說謊是不好的。"
+    },
+    {
+      "word": "疑う",
+      "reading": "うたがう",
+      "meaning": "懷疑",
+      "example": "彼の話は少し疑わしい。",
+      "example_reading": "かれのはなしはすこしうたがわしい。",
+      "example_meaning": "他的話有點可疑。"
+    },
+    {
+      "word": "内",
+      "reading": "うち",
+      "meaning": "裡面、家裡、內部",
+      "example": "うちでゆっくりしましょう。",
+      "example_reading": "うちでゆっくりしましょう。",
+      "example_meaning": "在家裡好好休息吧。"
+    },
+    {
+      "word": "宇宙",
+      "reading": "うちゅう",
+      "meaning": "宇宙、太空",
+      "example": "宇宙旅行は夢です。",
+      "example_reading": "うちゅうりょこうはゆめです。",
+      "example_meaning": "宇宙旅行是我的夢想。"
+    },
+    {
+      "word": "撃つ",
+      "reading": "うつ",
+      "meaning": "射擊、打擊",
+      "example": "警官が犯人に向けて銃を撃った。",
+      "example_reading": "けいかんがはんにんにむけてじゅうをうった。",
+      "example_meaning": "警察向犯人開了槍。"
+    },
+    {
+      "word": "移す",
+      "reading": "うつす",
+      "meaning": "移動、傳染、轉移",
+      "example": "席を窓際に移してください。",
+      "example_reading": "せきをまどぎわにうつしてください。",
+      "example_meaning": "請把座位移到窗邊。"
+    },
+    {
+      "word": "訴える",
+      "reading": "うったえる",
+      "meaning": "控告、申訴、表達",
+      "example": "会社を不当解雇で訴える。",
+      "example_reading": "かいしゃをふとうかいこでうったえる。",
+      "example_meaning": "因為不當解僱而控告公司。"
     }
   ],
   "grammar": [
@@ -570,121 +1370,121 @@
       "type": "vocabulary",
       "question": "「あっ」の意味はどれですか。",
       "options": [
-        "啊！(表示驚訝、發現等)",
-        "哎呀！(表示疼痛)",
-        "嗯！(表示同意)",
-        "喂！(表示呼喚)"
+        "困ったときの表現",
+        "驚きや気づきを表す声",
+        "痛みを感じた時の声",
+        "喜びを表す言葉"
       ],
-      "answer": 0,
-      "explanation": "「あっ」是一個感嘆詞，用於表示驚訝、發現或突然意識到某事。"
+      "answer": 1,
+      "explanation": "表示驚訝、恍然大悟或突然想起時發出的聲音。"
     },
     {
       "type": "vocabulary",
       "question": "「挨拶」の意味はどれですか。",
       "options": [
-        "介紹、說明",
-        "交談、聊天",
-        "感謝、道謝",
-        "問候、寒暄"
+        "会議の予定",
+        "連絡の方法",
+        "物事の交渉",
+        "人と交わす言葉や動作"
       ],
       "answer": 3,
-      "explanation": "「挨拶」指與人見面或分離時的問候語或行為。"
+      "explanation": "指與人見面或告別時所說的問候語或打招呼的行為。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「合図」の意味はどれですか。",
+      "options": [
+        "相手に何かを知らせるための印や動作",
+        "待ち合わせの場所",
+        "秘密の会話",
+        "緊急時の連絡"
+      ],
+      "answer": 0,
+      "explanation": "指用於告知對方某事的信號、手勢或暗號。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「愛する」の意味はどれですか。",
+      "options": [
+        "尊敬の念を抱く",
+        "深い愛情を抱く",
+        "感謝の気持ちを持つ",
+        "親切にする"
+      ],
+      "answer": 1,
+      "explanation": "表示對某人或某物抱有深厚的感情、珍視。"
     },
     {
       "type": "vocabulary",
       "question": "「相手」の意味はどれですか。",
       "options": [
-        "對方、夥伴",
-        "戀人、情人",
-        "朋友、友人",
-        "客人、顧客"
+        "関わり合いを持つ人",
+        "一緒に仕事をする人",
+        "知っている人",
+        "親しい友人"
       ],
       "answer": 0,
-      "explanation": "「相手」指對手、對象或一起做某事的人。"
+      "explanation": "指與自己面對面、交談或共同做某事的人。"
     },
     {
       "type": "vocabulary",
       "question": "「あいにく」の意味はどれですか。",
       "options": [
-        "不巧、偏偏",
-        "果然、正如預期",
-        "意外、出乎意料",
-        "當然、理所當然"
+        "都合が悪くて期待に沿えない様子",
+        "めったにないこと",
+        "予想に反して",
+        "たまたま起こること"
       ],
       "answer": 0,
-      "explanation": "「あいにく」是一個副詞，表示事情不湊巧、不順利。"
+      "explanation": "表示事情不湊巧、不合時宜，帶有可惜的語氣。"
     },
     {
       "type": "vocabulary",
       "question": "「明かり」の意味はどれですか。",
       "options": [
-        "光線；燈光",
-        "影子；陰影",
-        "色彩；顏色",
-        "火焰；火光"
+        "部屋の温度",
+        "物を照らす光",
+        "空間の広さ",
+        "電気の熱"
       ],
-      "answer": 0,
-      "explanation": "「明かり」指照明的光源，如燈光或自然光。"
-    },
-    {
-      "type": "vocabulary",
-      "question": "「明らか」の意味はどれですか。",
-      "options": [
-        "模糊的；不清楚的",
-        "複雜的；難懂的",
-        "明顯的；清楚的",
-        "簡單的；容易的"
-      ],
-      "answer": 2,
-      "explanation": "「明らか」是一個形容動詞，表示事物清晰可見或道理顯而易見。"
+      "answer": 1,
+      "explanation": "指使物體明亮的光線或燈光。"
     },
     {
       "type": "vocabulary",
       "question": "「諦める」の意味はどれですか。",
       "options": [
-        "完成",
-        "放棄",
-        "開始",
-        "挑戰"
+        "困難に立ち向かう",
+        "達成を断念する",
+        "努力を続ける",
+        "新しいことを始める"
       ],
       "answer": 1,
-      "explanation": "「諦める」是一個動詞，表示放棄原來的想法或目標。"
-    },
-    {
-      "type": "vocabulary",
-      "question": "「飽きる」の意味はどれですか。",
-      "options": [
-        "喜歡；著迷",
-        "疲憊；勞累",
-        "厭倦；吃膩",
-        "開心；高興"
-      ],
-      "answer": 2,
-      "explanation": "「飽きる」是一個動詞，表示對某事失去興趣或因吃太多而感到膩。"
-    },
-    {
-      "type": "vocabulary",
-      "question": "「悪魔」の意味はどれですか。",
-      "options": [
-        "惡魔",
-        "神明",
-        "天使",
-        "英雄"
-      ],
-      "answer": 0,
-      "explanation": "「悪魔」指邪惡的魔鬼或妖魔。"
+      "explanation": "指不再抱持希望，放棄某事。"
     },
     {
       "type": "vocabulary",
       "question": "「預ける」の意味はどれですか。",
       "options": [
-        "保管、保存",
-        "借出、借給",
-        "寄放、託付",
-        "領取、取出"
+        "物を人に渡す",
+        "物を一時的に他人に任せる",
+        "物を自分で保管する",
+        "物を人から借りる"
+      ],
+      "answer": 1,
+      "explanation": "指將某物託付給他人保管或處理。"
+    },
+    {
+      "type": "vocabulary",
+      "question": "「あちこち」の意味はどれですか。",
+      "options": [
+        "遠く離れた場所",
+        "知らない場所",
+        "複数の場所や方向",
+        "一つの場所"
       ],
       "answer": 2,
-      "explanation": "「預ける」是一個動詞，表示將物品或責任交給他人保管或處理。"
+      "explanation": "指許多不同的地方，這裡和那裡。"
     }
   ]
 }
