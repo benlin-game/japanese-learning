@@ -197,6 +197,7 @@ const state = {
   correct: 0,
   incorrect: 0,
   quizAnswered: false,
+  vocabOptions: null,
 };
 
 async function loadLevel(level) {
@@ -419,18 +420,29 @@ function renderQuiz() {
   if (state.category === 'kanji') {
     document.getElementById('quiz-question').textContent = `「${card.kanji}」${card.meaning}`;
   } else if (state.category === 'vocabulary') {
-    document.getElementById('quiz-question').textContent = `「${card.word}」（${card.reading}）の意味はどれですか。`;
+    const qEl = document.getElementById('quiz-question');
+    qEl.innerHTML = `（${card.reading}）の意味はどれですか。&nbsp;<button id="reveal-kanji-btn" data-word="${card.word}" onclick="revealKanji(this)" class="text-xs text-indigo-400 underline hover:text-indigo-600 font-normal">查看漢字</button>`;
   } else {
     document.getElementById('quiz-question').textContent = card.question || card.word || card.pattern || card.kanji;
   }
 
   let options, correct;
+  state.vocabOptions = null;
   if (state.category === 'practice') {
     options = card.options;
     correct = card.answer;
   } else if (state.category === 'vocabulary') {
-    options = buildOptions(card.meaning, state.cards.map(c => c.meaning), card);
-    correct = options.indexOf(card.meaning);
+    const correctOpt = {meaning: card.meaning, word: card.word, reading: card.reading};
+    const seen = new Set([card.meaning]);
+    const distractors = state.cards
+      .filter(c => c !== card && !seen.has(c.meaning) && seen.add(c.meaning))
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 3)
+      .map(c => ({meaning: c.meaning, word: c.word, reading: c.reading}));
+    const allOpts = [correctOpt, ...distractors].sort(() => Math.random() - 0.5);
+    state.vocabOptions = allOpts;
+    options = allOpts.map(o => o.meaning);
+    correct = allOpts.findIndex(o => o === correctOpt);
   } else if (state.category === 'grammar') {
     options = buildOptions(card.meaning, state.cards.map(c => c.meaning), card);
     correct = options.indexOf(card.meaning);
@@ -459,6 +471,14 @@ function buildOptions(correct, pool, card) {
   return all;
 }
 
+function revealKanji(btn) {
+  const word = btn.dataset.word;
+  const span = document.createElement('span');
+  span.textContent = word;
+  span.className = 'text-indigo-600 font-bold';
+  btn.replaceWith(span);
+}
+
 function answerQuiz(chosen, correct, card, options, btn, container) {
   if (state.quizAnswered) return;
   state.quizAnswered = true;
@@ -478,6 +498,14 @@ function answerQuiz(chosen, correct, card, options, btn, container) {
       b.classList.add('bg-red-50', 'text-red-600', 'shake');
     }
   });
+  if (state.category === 'vocabulary' && state.vocabOptions) {
+    btns.forEach((b, i) => {
+      const opt = state.vocabOptions[i];
+      if (opt) {
+        b.innerHTML = `${opt.meaning}<br><span class="text-xs font-normal opacity-70">${opt.word}（${opt.reading}）</span>`;
+      }
+    });
+  }
 
   const fb = document.getElementById('quiz-feedback');
   fb.classList.remove('hidden', 'bg-green-50', 'bg-red-50', 'text-green-700', 'text-red-600', 'border-green-200', 'border-red-200');
