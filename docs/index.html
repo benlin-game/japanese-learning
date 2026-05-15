@@ -132,6 +132,7 @@
           <div class="bg-white rounded-xl px-4 py-2 mt-2 text-sm text-gray-600 max-w-xs" id="card-example-box">
             <p id="card-example">—</p>
             <p class="text-xs text-gray-400 mt-1" id="card-example-meaning">—</p>
+            <button onclick="speakExample(); event.stopPropagation();" class="text-lg hover:scale-110 active:scale-95 transition-transform mt-1" title="播放例句發音">🔊</button>
           </div>
           <p class="text-xs text-indigo-300 mt-4 hidden" id="card-notes"></p>
         </div>
@@ -510,6 +511,18 @@ function speakCard() {
     grammar: card.example || card.pattern,
     kanji: card.kanji,
     practice: card.question,
+  }[state.category] || '';
+  speak(text);
+}
+
+function speakExample() {
+  const card = state.cards[state.idx];
+  if (!card) return;
+  const text = {
+    vocabulary: card.example,
+    grammar: card.example,
+    kanji: (card.examples || []).join('　'),
+    practice: card.options?.[card.answer] || '',
   }[state.category] || '';
   speak(text);
 }
