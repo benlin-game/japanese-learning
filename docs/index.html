@@ -138,7 +138,8 @@
     </div>
 
     <!-- Know / Don't Know Buttons -->
-    <div class="flex gap-4 mt-4" id="flash-btns">
+    <div class="flex gap-3 mt-4" id="flash-btns">
+      <button onclick="previousCard()" id="flash-prev-btn" class="px-4 py-3 rounded-2xl border-2 border-gray-200 text-gray-400 font-semibold hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed transition-all">← 上一張</button>
       <button onclick="markCard(false)" class="flex-1 py-3 rounded-2xl border-2 border-red-200 text-red-500 font-semibold hover:bg-red-50 active:bg-red-100 transition-all">
         ✗ 不知道
       </button>
@@ -155,7 +156,10 @@
       <p class="text-lg font-bold text-gray-800 mb-5 leading-snug" id="quiz-question">—</p>
       <div class="grid grid-cols-2 gap-3" id="quiz-options"></div>
       <div id="quiz-feedback" class="hidden mt-4 p-4 rounded-xl text-sm leading-relaxed"></div>
-      <button onclick="nextQuiz()" id="quiz-next-btn" class="hidden mt-4 w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition-all">下一題 →</button>
+      <div class="mt-4 flex gap-3">
+        <button onclick="previousQuiz()" id="quiz-prev-btn" class="py-3 px-4 rounded-xl border-2 border-gray-200 text-gray-500 font-semibold hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed transition-all">← 上一題</button>
+        <button onclick="nextQuiz()" id="quiz-next-btn" class="hidden flex-1 py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition-all">下一題 →</button>
+      </div>
     </div>
   </div>
 
@@ -198,6 +202,7 @@ const state = {
   incorrect: 0,
   quizAnswered: false,
   vocabOptions: null,
+  answeredIdx: new Set(),
 };
 
 async function loadLevel(level) {
@@ -229,6 +234,7 @@ function startSession() {
   state.correct = 0;
   state.incorrect = 0;
   state.flipped = false;
+  state.answeredIdx = new Set();
   document.getElementById('result-section').classList.add('hidden');
   updateProgress();
   if (state.mode === 'flashcard') {
@@ -293,6 +299,7 @@ function shuffle() {
   state.correct = 0;
   state.incorrect = 0;
   state.flipped = false;
+  state.answeredIdx = new Set();
   document.getElementById('result-section').classList.add('hidden');
   if (state.mode === 'flashcard') {
     document.getElementById('flashcard-section').classList.remove('hidden');
@@ -380,6 +387,7 @@ function renderFlashcard() {
 
   document.getElementById('flip-card').classList.remove('hidden');
   document.getElementById('flash-btns').classList.remove('hidden');
+  document.getElementById('flash-prev-btn').disabled = state.idx === 0;
 }
 
 function flipCard() {
@@ -388,13 +396,24 @@ function flipCard() {
 }
 
 function markCard(known) {
-  if (known) state.correct++; else state.incorrect++;
-  updateScoreDisplay();
+  if (!state.answeredIdx.has(state.idx)) {
+    if (known) state.correct++; else state.incorrect++;
+    state.answeredIdx.add(state.idx);
+    updateScoreDisplay();
+  }
   state.idx++;
   if (state.idx >= state.cards.length) {
     showResult();
     return;
   }
+  updateProgress();
+  renderFlashcard();
+}
+
+function previousCard() {
+  if (state.idx <= 0) return;
+  state.idx--;
+  state.flipped = false;
   updateProgress();
   renderFlashcard();
 }
@@ -406,7 +425,8 @@ function renderQuiz() {
   state.quizAnswered = false;
 
   document.getElementById('quiz-feedback').classList.add('hidden');
-  document.getElementById('quiz-next-btn').classList.add('hidden');
+  document.getElementById('quiz-next-btn').classList.toggle('hidden', !state.answeredIdx.has(state.idx));
+  document.getElementById('quiz-prev-btn').disabled = state.idx === 0;
 
   const typeMap = { vocabulary: '詞彙', grammar: '文法', kanji: '漢字', practice: 'JLPT練習' };
   document.getElementById('quiz-type-label').textContent = typeMap[state.category] || '';
@@ -484,8 +504,11 @@ function answerQuiz(chosen, correct, card, options, btn, container) {
   state.quizAnswered = true;
 
   const isCorrect = chosen === correct;
-  if (isCorrect) state.correct++; else state.incorrect++;
-  updateScoreDisplay();
+  if (!state.answeredIdx.has(state.idx)) {
+    if (isCorrect) state.correct++; else state.incorrect++;
+    state.answeredIdx.add(state.idx);
+    updateScoreDisplay();
+  }
 
   const btns = container.querySelectorAll('button');
   btns.forEach((b, i) => {
@@ -535,6 +558,13 @@ function nextQuiz() {
     showResult();
     return;
   }
+  updateProgress();
+  renderQuiz();
+}
+
+function previousQuiz() {
+  if (state.idx <= 0) return;
+  state.idx--;
   updateProgress();
   renderQuiz();
 }
