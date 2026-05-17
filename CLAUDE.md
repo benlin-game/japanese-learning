@@ -12,6 +12,7 @@
 - 純 HTML + Vanilla JS + Tailwind CSS CDN（無框架、無 build step）
 - 資料：靜態 JSON，用 `fetch()` 載入（必須跑 HTTP server，不能直接開 file://）
 - TTS：瀏覽器內建 Web Speech API（`speechSynthesis`，lang = `ja-JP`）
+- 複習清單：存於 `localStorage`，key 格式 `jlpt_review_{level}_{category}`
 - 部署：GitHub Pages，serve 自 `/docs` 資料夾
 
 ---
@@ -29,6 +30,7 @@ japanese-learning/
 │       └── n1.json
 ├── expand_vocab.py         # 擴充單字（Bluskyo 資料集 + Gemini API）
 ├── expand_grammar_kanji.py # 擴充文法 / 漢字 / JLPT 練習題（Gemini API）
+├── expand_adverb.py        # 擴充副詞（Gemini API）
 ├── gemini_key.txt          # Gemini API Key（已加入 .gitignore，絕不 commit）
 └── .gitignore
 ```
@@ -54,10 +56,22 @@ japanese-learning/
   "practice": [
     { "type": "vocabulary", "question": "...", "options": ["A","B","C","D"],
       "answer": 0, "explanation": "..." }
+  ],
+  "adverb": [
+    { "word": "たいへん", "reading": "たいへん", "meaning": "非常、很",
+      "example": "...", "example_meaning": "...", "notes": "..." }
   ]
 }
 ```
-各等級目標數量：文法 20+、漢字 20+、練習 20、單字 300
+
+各等級題庫數量：
+| 類別 | 目標 | Session 抽取數 |
+|------|------|----------------|
+| 單字 | 300 | 50 |
+| 文法 | 20+ | 全部（≤50）|
+| 漢字 | 20+ | 全部（≤50）|
+| JLPT練習 | 20 | 全部（≤50）|
+| 副詞 | 100+ | 25 |
 
 ---
 
@@ -68,7 +82,7 @@ japanese-learning/
 const state = {
   level, category, mode, data, cards, idx,
   flipped, correct, incorrect, quizAnswered,
-  vocabOptions,   // 單字測驗的選項物件（含 word/reading/meaning）
+  vocabOptions,   // 單字/副詞測驗的選項物件（含 word/reading/meaning）
   answeredIdx,    // Set：已計分的題目 index，防止來回重複計分
 };
 ```
@@ -77,16 +91,30 @@ const state = {
 | 功能 | 說明 |
 |------|------|
 | 等級切換 | N5～N1，切換自動重開 session |
-| 類別切換 | 單字 / 文法 / 漢字 / JLPT練習 |
+| 類別切換 | 單字 / 文法 / 漢字 / JLPT練習 / 副詞 |
 | 模式切換 | 字卡（翻牌）/ 測驗（四選一）|
-| 隨機洗牌 | 每次 session 從 pool 隨機抽 50 題 |
+| 隨機洗牌 | 每次 session 從 pool 隨機抽題（副詞25，其他50）|
 | 上一張／上一題 | 可返回，`answeredIdx` 防止重複計分 |
-| 語音播放 | 🔊 按鈕，Web Speech API，lang=ja-JP |
+| 語音播放 | 字卡正面 🔊、字卡背面例句 🔊、測驗題目 🔊，Web Speech API |
+| 複習清單 | 字卡「不知道」加入清單，「知道」移除；📌 複習按鈕一鍵複習 |
 
-### 單字測驗特別邏輯
-- 題目只顯示讀音（假名），附「查看漢字」按鈕點擊才展開
-- 答題後四個選項都補上漢字（讀音）
-- 選項建構用 `vocabOptions`（物件陣列）追蹤 word/reading
+### 語音播放邏輯
+| 位置 | 單字/副詞 | 文法 | 漢字 | 練習 |
+|------|-----------|------|------|------|
+| 字卡正面 | word | example / pattern | kanji | question |
+| 字卡背面例句 | example | example | examples join | options[answer] |
+| 測驗題目 | reading | pattern | kanji | question |
+
+### 單字／副詞測驗邏輯
+- 題目只顯示讀音（假名），附「查看漢字／查看原字」按鈕點擊才展開
+- 答題後四個選項都補上對應的字 + 讀音
+- 選項建構用 `vocabOptions`（物件陣列）追蹤 word/reading/meaning
+
+### 複習清單邏輯
+- key：`jlpt_review_{level}_{category}`（各等級 × 分類獨立）
+- card identifier：`card.word || card.pattern || card.kanji || card.question`
+- 字卡模式才顯示 📌 複習按鈕（測驗模式隱藏）
+- `startReview()` 從 localStorage 撈出 id，過濾當前 pool，重開 session
 
 ### 漢字測驗
 - 題目：顯示漢字 + 中文意思
@@ -99,25 +127,29 @@ const state = {
 
 ## 擴充題庫腳本
 
+### 共用設定
+- **API Key**：所有腳本從 `gemini_key.txt` 讀取，不 hardcode（避免 GitHub secret scan 撤銷）
+- **模型**：`gemini-2.5-flash`
+
 ### expand_vocab.py
-- 下載 Bluskyo/JLPT_Vocabulary 單字資料集
-- 用 Gemini API 補中文意思 + 例句
+- 下載 Bluskyo/JLPT_Vocabulary 單字資料集，用 Gemini 補中文意思 + 例句
 - 設定：`WORDS_PER_LEVEL = 300`，`BATCH_SIZE = 10`
 - 只更新 `vocabulary` 和 `practice` 欄位
 
 ### expand_grammar_kanji.py
-- 用 Gemini API 生成文法 / 漢字 / JLPT 練習題
+- 用 Gemini 生成文法 / 漢字 / JLPT 練習題
 - 設定：`GRAMMAR_COUNT = 20`，`KANJI_COUNT = 20`，`PRACTICE_COUNT = 20`
-- 已達標的類別自動跳過（不重複生成）
+- 已達標的類別自動跳過
 
-### Gemini API Key
-- 放在 `gemini_key.txt`（已 gitignore）
-- 腳本內直接 hardcode key 字串（從 txt 讀取）
-- 當前使用模型：`gemini-2.5-flash`
+### expand_adverb.py
+- 用 Gemini 生成各等級 JLPT 副詞
+- 設定：`ADVERB_COUNT = 100`（每等級目標數量）
+- 已達標自動跳過；實際生成數量約 125~165（Gemini 回傳略多）
 
 ---
 
 ## 常見問題
 - **沒聲音**：Windows 需安裝日語 TTS 語音包（設定 → 語音 → 新增語言 → 日本語）
 - **fetch 失敗**：不能直接開 `index.html`，必須用 `python -m http.server 8080`
-- **API key 過期**：換新 key 貼進 `gemini_key.txt` 並同步更新腳本內的字串
+- **API key 過期**：只需換新 key 貼進 `gemini_key.txt`，腳本會自動讀取，不需改程式碼
+- **複習清單不見了**：存在 localStorage，清除瀏覽器資料會一併清除
