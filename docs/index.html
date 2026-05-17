@@ -303,7 +303,6 @@ function selectMode(mode) {
     fBtn.classList.remove('bg-indigo-600', 'text-white');
     fBtn.classList.add('text-gray-500');
   }
-  document.getElementById('review-btn').classList.toggle('hidden', mode !== 'flashcard');
   startSession();
 }
 
@@ -559,11 +558,17 @@ function startReview() {
   state.flipped = false;
   state.answeredIdx = new Set();
   document.getElementById('result-section').classList.add('hidden');
-  document.getElementById('quiz-section').classList.add('hidden');
-  document.getElementById('flashcard-section').classList.remove('hidden');
   updateProgress();
   updateScoreDisplay();
-  renderFlashcard();
+  if (state.mode === 'flashcard') {
+    document.getElementById('quiz-section').classList.add('hidden');
+    document.getElementById('flashcard-section').classList.remove('hidden');
+    renderFlashcard();
+  } else {
+    document.getElementById('flashcard-section').classList.add('hidden');
+    document.getElementById('quiz-section').classList.remove('hidden');
+    renderQuiz();
+  }
 }
 
 function speak(text) {
@@ -640,6 +645,7 @@ function answerQuiz(chosen, correct, card, options, btn, container) {
   state.quizAnswered = true;
 
   const isCorrect = chosen === correct;
+  toggleReview(card, !isCorrect);
   if (!state.answeredIdx.has(state.idx)) {
     if (isCorrect) state.correct++; else state.incorrect++;
     state.answeredIdx.add(state.idx);
