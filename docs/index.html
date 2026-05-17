@@ -96,9 +96,14 @@
         <button onclick="selectMode('flashcard')" id="mode-flash" class="mode-btn px-3 py-1 rounded-full text-xs font-medium bg-indigo-600 text-white transition-all">🃏 單字卡</button>
         <button onclick="selectMode('quiz')" id="mode-quiz" class="mode-btn px-3 py-1 rounded-full text-xs font-medium text-gray-500 hover:text-gray-700 transition-all">🎯 測驗</button>
       </div>
-      <button onclick="shuffle()" class="ml-auto text-xs text-indigo-500 hover:text-indigo-700 flex items-center gap-1">
-        🔀 <span>隨機</span>
-      </button>
+      <div class="ml-auto flex items-center gap-3">
+        <button onclick="startReview()" id="review-btn" class="text-xs text-orange-500 hover:text-orange-700 flex items-center gap-1 opacity-40">
+          📌 複習 <span id="review-count" class="bg-orange-100 text-orange-600 rounded-full px-1.5 font-bold">0</span>
+        </button>
+        <button onclick="shuffle()" class="text-xs text-indigo-500 hover:text-indigo-700 flex items-center gap-1">
+          🔀 <span>隨機</span>
+        </button>
+      </div>
     </div>
   </div>
 
@@ -222,6 +227,7 @@ async function loadLevel(level) {
 
 async function init() {
   await loadLevel(state.level);
+  updateReviewBadge();
   startSession();
 }
 
@@ -265,6 +271,7 @@ async function selectLevel(level) {
     b.classList.toggle('text-gray-600', !active);
   });
   await loadLevel(level);
+  updateReviewBadge();
   startSession();
 }
 
@@ -276,6 +283,7 @@ function selectCategory(cat) {
     b.classList.toggle('tab-active', active);
     b.classList.toggle('text-gray-500', !active);
   });
+  updateReviewBadge();
   startSession();
 }
 
@@ -295,11 +303,16 @@ function selectMode(mode) {
     fBtn.classList.remove('bg-indigo-600', 'text-white');
     fBtn.classList.add('text-gray-500');
   }
+  document.getElementById('review-btn').classList.toggle('hidden', mode !== 'flashcard');
   startSession();
 }
 
 function shuffle() {
-  state.cards = [...getCards()].sort(() => Math.random() - 0.5);
+  const all = getCards();
+  const sessionSize = state.category === 'adverb' ? 25 : 50;
+  state.cards = all.length > sessionSize
+    ? [...all].sort(() => Math.random() - 0.5).slice(0, sessionSize)
+    : [...all].sort(() => Math.random() - 0.5);
   state.idx = 0;
   state.correct = 0;
   state.incorrect = 0;
@@ -407,6 +420,8 @@ function flipCard() {
 }
 
 function markCard(known) {
+  const card = state.cards[state.idx];
+  toggleReview(card, !known);
   if (!state.answeredIdx.has(state.idx)) {
     if (known) state.correct++; else state.incorrect++;
     state.answeredIdx.add(state.idx);
@@ -501,6 +516,54 @@ function buildOptions(correct, pool, card) {
     .slice(0, 3);
   const all = [correct, ...distractors].sort(() => Math.random() - 0.5);
   return all;
+}
+
+// ---- REVIEW LIST (localStorage) ----
+function getCardId(card) {
+  return card.word || card.pattern || card.kanji || card.question || '';
+}
+
+function getReviewKey() {
+  return `jlpt_review_${state.level}_${state.category}`;
+}
+
+function getReviewList() {
+  return JSON.parse(localStorage.getItem(getReviewKey()) || '[]');
+}
+
+function toggleReview(card, add) {
+  const id = getCardId(card);
+  const list = getReviewList();
+  const updated = add
+    ? list.includes(id) ? list : [...list, id]
+    : list.filter(i => i !== id);
+  localStorage.setItem(getReviewKey(), JSON.stringify(updated));
+  updateReviewBadge();
+}
+
+function updateReviewBadge() {
+  const count = getReviewList().length;
+  document.getElementById('review-count').textContent = count;
+  document.getElementById('review-btn').classList.toggle('opacity-40', count === 0);
+}
+
+function startReview() {
+  const list = getReviewList();
+  if (list.length === 0) return;
+  const reviewCards = getCards().filter(c => list.includes(getCardId(c)));
+  if (reviewCards.length === 0) return;
+  state.cards = [...reviewCards].sort(() => Math.random() - 0.5);
+  state.idx = 0;
+  state.correct = 0;
+  state.incorrect = 0;
+  state.flipped = false;
+  state.answeredIdx = new Set();
+  document.getElementById('result-section').classList.add('hidden');
+  document.getElementById('quiz-section').classList.add('hidden');
+  document.getElementById('flashcard-section').classList.remove('hidden');
+  updateProgress();
+  updateScoreDisplay();
+  renderFlashcard();
 }
 
 function speak(text) {
