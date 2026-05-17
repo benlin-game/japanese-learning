@@ -12,7 +12,7 @@ import google.generativeai as genai
 sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
 
 GEMINI_API_KEY = (Path(__file__).parent / "gemini_key.txt").read_text(encoding="utf-8").strip()
-ADVERB_COUNT = 25
+ADVERB_COUNT = 100
 SLEEP = 2.0
 DATA_DIR = Path(__file__).parent / "docs" / "data"
 

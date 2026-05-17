@@ -231,8 +231,9 @@ function getCards() {
 
 function startSession() {
   const all = getCards();
-  state.cards = all.length > 50
-    ? [...all].sort(() => Math.random() - 0.5).slice(0, 50)
+  const sessionSize = state.category === 'adverb' ? 25 : 50;
+  state.cards = all.length > sessionSize
+    ? [...all].sort(() => Math.random() - 0.5).slice(0, sessionSize)
     : [...all].sort(() => Math.random() - 0.5);
   state.idx = 0;
   state.correct = 0;

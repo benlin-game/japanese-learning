@@ -3138,6 +3138,806 @@
       "example": "彼は子供の時からずっと日本に住んでいます。",
       "example_meaning": "他從小時候起就一直住在日本。",
       "notes": "表示時間或空間的持續性。"
+    },
+    {
+      "word": "今日",
+      "reading": "きょう",
+      "meaning": "今天",
+      "example": "今日はいい天気ですね。",
+      "example_meaning": "今天天氣很好呢。",
+      "notes": "指稱當天，常用作時間副詞。"
+    },
+    {
+      "word": "明日",
+      "reading": "あした",
+      "meaning": "明天",
+      "example": "明日、学校へ行きます。",
+      "example_meaning": "我明天要去學校。",
+      "notes": "指稱隔天，常用作時間副詞。"
+    },
+    {
+      "word": "昨日",
+      "reading": "きのう",
+      "meaning": "昨天",
+      "example": "昨日は雨でした。",
+      "example_meaning": "昨天是雨天。",
+      "notes": "指稱前一天，常用作時間副詞。"
+    },
+    {
+      "word": "今",
+      "reading": "いま",
+      "meaning": "現在",
+      "example": "今、何時ですか。",
+      "example_meaning": "現在幾點？",
+      "notes": "表示當前時刻，常用作時間副詞。"
+    },
+    {
+      "word": "今晩",
+      "reading": "こんばん",
+      "meaning": "今晚",
+      "example": "今晩、テレビを見ます。",
+      "example_meaning": "今晚我要看電視。",
+      "notes": "指稱當天的夜晚，常用作時間副詞。"
+    },
+    {
+      "word": "今朝",
+      "reading": "けさ",
+      "meaning": "今早",
+      "example": "今朝、コーヒーを飲みました。",
+      "example_meaning": "我今早喝了咖啡。",
+      "notes": "指稱當天的早上，常用作時間副詞。"
+    },
+    {
+      "word": "毎朝",
+      "reading": "まいあさ",
+      "meaning": "每天早上",
+      "example": "毎朝、パンを食べます。",
+      "example_meaning": "我每天早上吃麵包。",
+      "notes": "表示習慣性的行為，指每天的早上。"
+    },
+    {
+      "word": "毎日",
+      "reading": "まいにち",
+      "meaning": "每天",
+      "example": "毎日、日本語を勉強します。",
+      "example_meaning": "我每天學習日語。",
+      "notes": "表示習慣性的行為，指每一天。"
+    },
+    {
+      "word": "毎晩",
+      "reading": "まいばん",
+      "meaning": "每晚",
+      "example": "毎晩、本を読みます。",
+      "example_meaning": "我每晚讀書。",
+      "notes": "表示習慣性的行為，指每天的夜晚。"
+    },
+    {
+      "word": "毎週",
+      "reading": "まいしゅう",
+      "meaning": "每週",
+      "example": "毎週、テニスをします。",
+      "example_meaning": "我每週打網球。",
+      "notes": "表示習慣性的行為，指每一週。"
+    },
+    {
+      "word": "毎月",
+      "reading": "まいつき",
+      "meaning": "每月",
+      "example": "毎月、映画を見ます。",
+      "example_meaning": "我每月看電影。",
+      "notes": "表示習慣性的行為，指每個月。"
+    },
+    {
+      "word": "毎年",
+      "reading": "まいとし",
+      "meaning": "每年",
+      "example": "毎年、旅行に行きます。",
+      "example_meaning": "我每年去旅行。",
+      "notes": "表示習慣性的行為，指每一年。"
+    },
+    {
+      "word": "さっき",
+      "reading": "さっき",
+      "meaning": "剛才",
+      "example": "さっき、友達が来ました。",
+      "example_meaning": "剛才朋友來了。",
+      "notes": "指距離現在不久的過去時間。"
+    },
+    {
+      "word": "今度",
+      "reading": "こんど",
+      "meaning": "下次/這次",
+      "example": "今度、一緒にご飯を食べませんか。",
+      "example_meaning": "下次要不要一起吃飯？",
+      "notes": "可指「下次」或「這次」，依上下文而定。"
+    },
+    {
+      "word": "初めに",
+      "reading": "はじめに",
+      "meaning": "首先/開頭",
+      "example": "初めに、自己紹介をします。",
+      "example_meaning": "首先，我會自我介紹。",
+      "notes": "表示動作或事件的起始順序。"
+    },
+    {
+      "word": "最後に",
+      "reading": "さいごに",
+      "meaning": "最後",
+      "example": "最後に、質問がありますか。",
+      "example_meaning": "最後，有什麼問題嗎？",
+      "notes": "表示動作或事件的結束順序。"
+    },
+    {
+      "word": "たいてい",
+      "reading": "たいてい",
+      "meaning": "通常/大概",
+      "example": "週末はたいてい家にいます。",
+      "example_meaning": "週末我通常都在家。",
+      "notes": "表示大多數情況如此。"
+    },
+    {
+      "word": "ほとんど",
+      "reading": "ほとんど",
+      "meaning": "幾乎/大部分",
+      "example": "宿題はほとんど終わりました。",
+      "example_meaning": "功課幾乎都做完了。",
+      "notes": "表示接近全部或非常接近。"
+    },
+    {
+      "word": "めったに～ない",
+      "reading": "めったに～ない",
+      "meaning": "很少/幾乎不",
+      "example": "私はめったにお酒を飲みません。",
+      "example_meaning": "我很少喝酒。",
+      "notes": "必須與否定形式搭配使用，表示頻率極低。"
+    },
+    {
+      "word": "だいたい",
+      "reading": "だいたい",
+      "meaning": "大致上/大約",
+      "example": "仕事はだいたい終わりました。",
+      "example_meaning": "工作大致上做完了。",
+      "notes": "表示大致的狀況或數量。"
+    },
+    {
+      "word": "ずいぶん",
+      "reading": "ずいぶん",
+      "meaning": "相當地/非常",
+      "example": "日本語がずいぶん上手になりましたね。",
+      "example_meaning": "你的日語變得相當好了呢。",
+      "notes": "表示程度非常高，比「とても」稍口語。"
+    },
+    {
+      "word": "必ず",
+      "reading": "かならず",
+      "meaning": "一定/務必",
+      "example": "明日、必ず来てください。",
+      "example_meaning": "明天務必請來。",
+      "notes": "表示說話者的強烈意志或預測必然會發生。"
+    },
+    {
+      "word": "ぜひ",
+      "reading": "ぜひ",
+      "meaning": "務必",
+      "example": "ぜひ日本へ行きたいです。",
+      "example_meaning": "我務必想去日本。",
+      "notes": "表示說話者的強烈願望或請求。"
+    },
+    {
+      "word": "どうぞ",
+      "reading": "どうぞ",
+      "meaning": "請",
+      "example": "どうぞ、お入りください。",
+      "example_meaning": "請進。",
+      "notes": "禮貌性地催促或許可對方進行某動作。"
+    },
+    {
+      "word": "よろしく",
+      "reading": "よろしく",
+      "meaning": "請多關照/拜託了",
+      "example": "今後ともよろしくお願いします。",
+      "example_meaning": "今後也請多關照。",
+      "notes": "表示拜託對方照顧或幫助，常獨立使用或搭配使用。"
+    },
+    {
+      "word": "実は",
+      "reading": "じつは",
+      "meaning": "其實",
+      "example": "実は、昨日誕生日でした。",
+      "example_meaning": "其實，昨天是我的生日。",
+      "notes": "引導出真實情況或出乎意料的內容。"
+    },
+    {
+      "word": "特に",
+      "reading": "とくに",
+      "meaning": "特別是",
+      "example": "私は特に果物が好きです。",
+      "example_meaning": "我特別喜歡水果。",
+      "notes": "表示在同類事物中特別突出或與眾不同。"
+    },
+    {
+      "word": "別に",
+      "reading": "べつに",
+      "meaning": "沒什麼/特別地",
+      "example": "別に用事はありません。",
+      "example_meaning": "我沒有什麼特別的事。",
+      "notes": "常與否定語氣搭配，表示「不怎麼...」、「沒有特別...」。"
+    },
+    {
+      "word": "急に",
+      "reading": "きゅうに",
+      "meaning": "突然",
+      "example": "急に雨が降ってきました。",
+      "example_meaning": "突然下起雨來了。",
+      "notes": "表示事情發生得很快且沒有預兆。"
+    },
+    {
+      "word": "だんだん",
+      "reading": "だんだん",
+      "meaning": "漸漸地",
+      "example": "日本語がだんだん分かってきました。",
+      "example_meaning": "日語漸漸地懂了。",
+      "notes": "表示事物或狀態緩慢地變化。"
+    },
+    {
+      "word": "どんどん",
+      "reading": "どんどん",
+      "meaning": "越來越/不斷地",
+      "example": "遠慮しないで、どんどん食べてください。",
+      "example_meaning": "請不要客氣，儘管吃。",
+      "notes": "表示事物或動作快速、持續地進行。"
+    },
+    {
+      "word": "まっすぐ",
+      "reading": "まっすぐ",
+      "meaning": "筆直地/直接地",
+      "example": "この道をまっすぐ行ってください。",
+      "example_meaning": "請沿著這條路直走。",
+      "notes": "表示方向的「直行」或動作的「直接」。"
+    },
+    {
+      "word": "綺麗に",
+      "reading": "きれいに",
+      "meaning": "乾淨地/漂亮地",
+      "example": "部屋をきれいに掃除しました。",
+      "example_meaning": "我把房間打掃得很乾淨。",
+      "notes": "為「な形容詞」加上「に」形成的副詞，修飾動詞。"
+    },
+    {
+      "word": "静かに",
+      "reading": "しずかに",
+      "meaning": "安靜地",
+      "example": "図書館では静かにしてください。",
+      "example_meaning": "在圖書館裡請保持安靜。",
+      "notes": "為「な形容詞」加上「に」形成的副詞，修飾動詞。"
+    },
+    {
+      "word": "元気に",
+      "reading": "げんきに",
+      "meaning": "有精神地",
+      "example": "子供たちは元気に遊んでいます。",
+      "example_meaning": "孩子們精神飽滿地玩耍著。",
+      "notes": "為「な形容詞」加上「に」形成的副詞，修飾動詞。"
+    },
+    {
+      "word": "上手に",
+      "reading": "じょうずに",
+      "meaning": "熟練地/擅長地",
+      "example": "彼は絵を上手に描きます。",
+      "example_meaning": "他很會畫畫。",
+      "notes": "為「な形容詞」加上「に」形成的副詞，修飾動詞。"
+    },
+    {
+      "word": "下手に",
+      "reading": "へたに",
+      "meaning": "笨拙地/不擅長地",
+      "example": "私は歌が下手に歌います。",
+      "example_meaning": "我唱歌唱得很難聽。",
+      "notes": "為「な形容詞」加上「に」形成的副詞，修飾動詞。"
+    },
+    {
+      "word": "丁寧に",
+      "reading": "ていねいに",
+      "meaning": "仔細地/有禮貌地",
+      "example": "お客様に丁寧に説明します。",
+      "example_meaning": "我會仔細地向客人說明。",
+      "notes": "為「な形容詞」加上「に」形成的副詞，修飾動詞。"
+    },
+    {
+      "word": "真面目に",
+      "reading": "まじめに",
+      "meaning": "認真地",
+      "example": "彼はいつも真面目に勉強します。",
+      "example_meaning": "他總是認真地學習。",
+      "notes": "為「な形容詞」加上「に」形成的副詞，修飾動詞。"
+    },
+    {
+      "word": "普通に",
+      "reading": "ふつうに",
+      "meaning": "普通地/一般地",
+      "example": "普通にご飯を食べます。",
+      "example_meaning": "我一般地吃飯。",
+      "notes": "為「な形容詞」加上「に」形成的副詞，修飾動詞。"
+    },
+    {
+      "word": "真剣に",
+      "reading": "しんけんに",
+      "meaning": "認真地",
+      "example": "真剣に考えています。",
+      "example_meaning": "我正在認真思考。",
+      "notes": "為「な形容詞」加上「に」形成的副詞，修飾動詞。"
+    },
+    {
+      "word": "ちゃんと",
+      "reading": "ちゃんと",
+      "meaning": "好好地/確實地",
+      "example": "宿題をちゃんとしましたか。",
+      "example_meaning": "你好好地做功課了嗎？",
+      "notes": "表示事情做到位、確實無誤。"
+    },
+    {
+      "word": "しっかり",
+      "reading": "しっかり",
+      "meaning": "牢固地/好好地",
+      "example": "荷物をしっかり持って。",
+      "example_meaning": "好好地拿著行李。",
+      "notes": "表示事物堅固或動作確實、穩妥。"
+    },
+    {
+      "word": "そっと",
+      "reading": "そっと",
+      "meaning": "輕輕地/悄悄地",
+      "example": "ドアをそっと開けました。",
+      "example_meaning": "我輕輕地打開了門。",
+      "notes": "表示動作小心翼翼、不發出聲音。"
+    },
+    {
+      "word": "こっそり",
+      "reading": "こっそり",
+      "meaning": "偷偷地",
+      "example": "こっそりお菓子を食べました。",
+      "example_meaning": "我偷偷地吃了點心。",
+      "notes": "表示在不被他人察覺的情況下進行某事。"
+    },
+    {
+      "word": "そっくり",
+      "reading": "そっくり",
+      "meaning": "一模一樣",
+      "example": "彼はお父さんにそっくりです。",
+      "example_meaning": "他和他爸爸長得一模一樣。",
+      "notes": "表示兩者之間外觀或性質完全相同。"
+    },
+    {
+      "word": "ぴかぴか",
+      "reading": "ぴかぴか",
+      "meaning": "閃閃發光",
+      "example": "車がぴかぴかに光っています。",
+      "example_meaning": "車子閃閃發光。",
+      "notes": "擬聲語，形容光亮、閃耀的狀態。"
+    },
+    {
+      "word": "わくわく",
+      "reading": "わくわく",
+      "meaning": "興奮雀躍",
+      "example": "明日の旅行がわくわくします。",
+      "example_meaning": "我對明天的旅行感到興奮雀躍。",
+      "notes": "擬聲語，形容期待而感到興奮的心情。"
+    },
+    {
+      "word": "ごろごろ",
+      "reading": "ごろごろ",
+      "meaning": "懶散地/滾動",
+      "example": "週末は家でごろごろしていました。",
+      "example_meaning": "週末我在家裡懶洋洋地度過。",
+      "notes": "擬聲語，形容懶散躺著的狀態，或物體滾動的聲音/狀態。"
+    },
+    {
+      "word": "ぐんぐん",
+      "reading": "ぐんぐん",
+      "meaning": "快速地成長/不斷地",
+      "example": "子供はぐんぐん大きくなります。",
+      "example_meaning": "孩子們快速地成長。",
+      "notes": "擬態語，形容快速、有力的成長或進展。"
+    },
+    {
+      "word": "すやすや",
+      "reading": "すやすや",
+      "meaning": "香甜地睡",
+      "example": "赤ちゃんがすやすや眠っています。",
+      "example_meaning": "嬰兒香甜地睡著了。",
+      "notes": "擬聲語，形容嬰兒或小孩安穩、熟睡的樣子。"
+    },
+    {
+      "word": "にこにこ",
+      "reading": "にこにこ",
+      "meaning": "笑咪咪地",
+      "example": "彼女はいつもにこにこしています。",
+      "example_meaning": "她總是笑咪咪的。",
+      "notes": "擬聲語，形容面帶微笑的樣子。"
+    },
+    {
+      "word": "ぺらぺら",
+      "reading": "ぺらぺら",
+      "meaning": "流利地",
+      "example": "彼は英語がぺらぺらです。",
+      "example_meaning": "他的英語說得很流利。",
+      "notes": "擬聲語，形容說話流利，也可用來形容薄而輕的物體。"
+    },
+    {
+      "word": "ちらっと",
+      "reading": "ちらっと",
+      "meaning": "瞥一眼/稍微",
+      "example": "ちらっと時計を見ました。",
+      "example_meaning": "我瞥了一眼時鐘。",
+      "notes": "形容短暫地、不經意地看一眼或露一下面。"
+    },
+    {
+      "word": "とんとん",
+      "reading": "とんとん",
+      "meaning": "順利地",
+      "example": "話がとんとん拍子に進みました。",
+      "example_meaning": "談話順利地進行了。",
+      "notes": "擬聲語，形容進展順利，或輕輕敲擊的聲音。"
+    },
+    {
+      "word": "いっぺんに",
+      "reading": "いっぺんに",
+      "meaning": "一下子/同時",
+      "example": "いっぺんに食べないでください。",
+      "example_meaning": "請不要一下子吃完。",
+      "notes": "表示在短時間內或一次性完成所有事情。"
+    },
+    {
+      "word": "最初から",
+      "reading": "さいしょから",
+      "meaning": "從一開始",
+      "example": "私は最初から知っていました。",
+      "example_meaning": "我從一開始就知道。",
+      "notes": "強調事情的起點。"
+    },
+    {
+      "word": "今から",
+      "reading": "いまから",
+      "meaning": "從現在起",
+      "example": "今から勉強します。",
+      "example_meaning": "我從現在開始學習。",
+      "notes": "表示動作或狀態從當前時刻開始。"
+    },
+    {
+      "word": "一度",
+      "reading": "いちど",
+      "meaning": "一次",
+      "example": "日本へ一度行ったことがあります。",
+      "example_meaning": "我去了日本一次。",
+      "notes": "表示某動作發生的次數。"
+    },
+    {
+      "word": "二度",
+      "reading": "にど",
+      "meaning": "兩次",
+      "example": "この映画を二度見ました。",
+      "example_meaning": "這部電影我看過兩次。",
+      "notes": "表示某動作發生的次數。"
+    },
+    {
+      "word": "三度",
+      "reading": "さんど",
+      "meaning": "三次",
+      "example": "私は彼女に三度会いました。",
+      "example_meaning": "我和她見過三次面。",
+      "notes": "表示某動作發生的次數。"
+    },
+    {
+      "word": "何度",
+      "reading": "なんど",
+      "meaning": "幾次",
+      "example": "日本へ何度行きましたか。",
+      "example_meaning": "你去過日本幾次？",
+      "notes": "疑問詞，詢問動作發生的次數。"
+    },
+    {
+      "word": "全部",
+      "reading": "ぜんぶ",
+      "meaning": "全部",
+      "example": "ケーキを全部食べました。",
+      "example_meaning": "我把蛋糕全部吃光了。",
+      "notes": "表示所有部分或數量都包括在內。"
+    },
+    {
+      "word": "みんな",
+      "reading": "みんな",
+      "meaning": "全部/大家",
+      "example": "みんなで歌いましょう。",
+      "example_meaning": "大家一起唱歌吧。",
+      "notes": "既可指全部的人，也可指全部的事物。"
+    },
+    {
+      "word": "それぞれ",
+      "reading": "それぞれ",
+      "meaning": "各自",
+      "example": "みんなそれぞれ意見があります。",
+      "example_meaning": "大家各自有各自的意見。",
+      "notes": "表示個體之間獨立地進行某事或擁有某物。"
+    },
+    {
+      "word": "どこでも",
+      "reading": "どこでも",
+      "meaning": "無論哪裡",
+      "example": "どこでも寝られます。",
+      "example_meaning": "我在哪裡都能睡。",
+      "notes": "表示無論何處都可以或沒有限制。"
+    },
+    {
+      "word": "どこか",
+      "reading": "どこか",
+      "meaning": "某處",
+      "example": "どこか行きたいところがありますか。",
+      "example_meaning": "有沒有想去的地方？",
+      "notes": "表示不確定的地點。"
+    },
+    {
+      "word": "どこへも～ない",
+      "reading": "どこへも～ない",
+      "meaning": "哪裡都不",
+      "example": "今日はどこへも行きません。",
+      "example_meaning": "今天我哪裡都不去。",
+      "notes": "必須與否定形式搭配使用，表示不前往任何地點。"
+    },
+    {
+      "word": "どこから",
+      "reading": "どこから",
+      "meaning": "從哪裡",
+      "example": "あなたはどこから来ましたか。",
+      "example_meaning": "你是從哪裡來的？",
+      "notes": "疑問詞，詢問來源地點。"
+    },
+    {
+      "word": "ここ",
+      "reading": "ここ",
+      "meaning": "這裡 (靠近說話者)",
+      "example": "ここに座ってください。",
+      "example_meaning": "請坐這裡。",
+      "notes": "指示離說話者近的地點。"
+    },
+    {
+      "word": "そこ",
+      "reading": "そこ",
+      "meaning": "那裡 (靠近聽話者)",
+      "example": "そこに荷物があります。",
+      "example_meaning": "那裡有行李。",
+      "notes": "指示離聽話者近的地點。"
+    },
+    {
+      "word": "あそこ",
+      "reading": "あそこ",
+      "meaning": "那裡 (離雙方都遠)",
+      "example": "あそこにコンビニがあります。",
+      "example_meaning": "那裡有便利商店。",
+      "notes": "指示離說話者和聽話者都遠的地點。"
+    },
+    {
+      "word": "どこ",
+      "reading": "どこ",
+      "meaning": "哪裡",
+      "example": "トイレはどこですか。",
+      "example_meaning": "廁所在哪裡？",
+      "notes": "疑問詞，詢問地點。"
+    },
+    {
+      "word": "上",
+      "reading": "うえ",
+      "meaning": "上面",
+      "example": "机の上に本があります。",
+      "example_meaning": "桌子上面有書。",
+      "notes": "表示方位，修飾名詞時需加「の」。"
+    },
+    {
+      "word": "下",
+      "reading": "した",
+      "meaning": "下面",
+      "example": "机の下に猫がいます。",
+      "example_meaning": "桌子下面有貓。",
+      "notes": "表示方位，修飾名詞時需加「の」。"
+    },
+    {
+      "word": "前",
+      "reading": "まえ",
+      "meaning": "前面",
+      "example": "駅の前に公園があります。",
+      "example_meaning": "車站前面有公園。",
+      "notes": "表示方位，修飾名詞時需加「の」。"
+    },
+    {
+      "word": "後ろ",
+      "reading": "うしろ",
+      "meaning": "後面",
+      "example": "車と後ろに自転車があります。",
+      "example_meaning": "車子後面有腳踏車。",
+      "notes": "表示方位，修飾名詞時需加「の」。"
+    },
+    {
+      "word": "右",
+      "reading": "みぎ",
+      "meaning": "右邊",
+      "example": "右に曲がってください。",
+      "example_meaning": "請向右轉。",
+      "notes": "表示方位，修飾動詞時用「に」。"
+    },
+    {
+      "word": "左",
+      "reading": "ひだり",
+      "meaning": "左邊",
+      "example": "左にあります。",
+      "example_meaning": "在左邊。",
+      "notes": "表示方位，修飾動詞時用「に」。"
+    },
+    {
+      "word": "中",
+      "reading": "なか",
+      "meaning": "裡面",
+      "example": "箱の中にりんごがあります。",
+      "example_meaning": "箱子裡面有蘋果。",
+      "notes": "表示方位，修飾名詞時需加「の」。"
+    },
+    {
+      "word": "外",
+      "reading": "そと",
+      "meaning": "外面",
+      "example": "外は寒いです。",
+      "example_meaning": "外面很冷。",
+      "notes": "表示方位，修飾名詞時需加「の」。"
+    },
+    {
+      "word": "隣",
+      "reading": "となり",
+      "meaning": "旁邊",
+      "example": "隣にスーパーがあります。",
+      "example_meaning": "旁邊有超市。",
+      "notes": "表示方位，指相鄰的旁邊。"
+    },
+    {
+      "word": "近く",
+      "reading": "ちかく",
+      "meaning": "附近",
+      "example": "学校の近くに住んでいます。",
+      "example_meaning": "我住在學校附近。",
+      "notes": "表示方位，指離某地不遠的地方。"
+    },
+    {
+      "word": "遠く",
+      "reading": "とおく",
+      "meaning": "遠處",
+      "example": "遠くに山が見えます。",
+      "example_meaning": "可以從遠處看到山。",
+      "notes": "表示方位，指離某地遠的地方。"
+    },
+    {
+      "word": "向こう",
+      "reading": "むこう",
+      "meaning": "對面/那邊",
+      "example": "道の向こうにパン屋があります。",
+      "example_meaning": "馬路對面有麵包店。",
+      "notes": "表示方位，指隔著某物體的另一側。"
+    },
+    {
+      "word": "あちこち",
+      "reading": "あちこち",
+      "meaning": "到處",
+      "example": "あちこち旅行しました。",
+      "example_meaning": "我到處旅行了。",
+      "notes": "表示許多不同的地方。"
+    },
+    {
+      "word": "こちら",
+      "reading": "こちら",
+      "meaning": "這邊 (禮貌)",
+      "example": "こちらへどうぞ。",
+      "example_meaning": "請到這邊來。",
+      "notes": "「ここ」的禮貌說法，指示方向。"
+    },
+    {
+      "word": "そちら",
+      "reading": "そちら",
+      "meaning": "那邊 (禮貌)",
+      "example": "そちらは山田さんですか。",
+      "example_meaning": "那邊是山田先生嗎？",
+      "notes": "「そこ」的禮貌說法，指示方向或指稱對方。"
+    },
+    {
+      "word": "あちら",
+      "reading": "あちら",
+      "meaning": "那邊 (禮貌)",
+      "example": "あちらのお客様です。",
+      "example_meaning": "是那邊的客人。",
+      "notes": "「あそこ」的禮貌說法，指示方向或指稱遠方的人事物。"
+    },
+    {
+      "word": "どちら",
+      "reading": "どちら",
+      "meaning": "哪邊 (禮貌)",
+      "example": "どちらの国から来ましたか。",
+      "example_meaning": "你是從哪個國家來的？",
+      "notes": "「どこ」的禮貌說法，疑問詞，詢問方向或選擇。"
+    },
+    {
+      "word": "なぜ",
+      "reading": "なぜ",
+      "meaning": "為什麼",
+      "example": "なぜ遅刻しましたか。",
+      "example_meaning": "為什麼遲到了？",
+      "notes": "疑問詞，詢問原因，語氣較書面。"
+    },
+    {
+      "word": "どうして",
+      "reading": "どうして",
+      "meaning": "為什麼",
+      "example": "どうして来なかったんですか。",
+      "example_meaning": "為什麼沒來呢？",
+      "notes": "疑問詞，詢問原因，語氣較口語。"
+    },
+    {
+      "word": "どうやって",
+      "reading": "どうやって",
+      "meaning": "如何/怎樣",
+      "example": "どうやって駅に行きますか。",
+      "example_meaning": "怎麼去車站？",
+      "notes": "疑問詞，詢問方法或手段。"
+    },
+    {
+      "word": "どのくらい",
+      "reading": "どのくらい",
+      "meaning": "多少/多長",
+      "example": "日本語をどのくらい勉強しましたか。",
+      "example_meaning": "你學習日語多久了？",
+      "notes": "疑問詞，詢問數量、時間長度或程度。"
+    },
+    {
+      "word": "いくら",
+      "reading": "いくら",
+      "meaning": "多少錢",
+      "example": "このリンゴはいくらですか。",
+      "example_meaning": "這個蘋果多少錢？",
+      "notes": "疑問詞，詢問價錢。"
+    },
+    {
+      "word": "どんなに",
+      "reading": "どんなに",
+      "meaning": "多麼",
+      "example": "どんなに忙しくても、休みは必要です。",
+      "example_meaning": "無論多麼忙，休息都是必要的。",
+      "notes": "表示程度之高，常用於感嘆或讓步句。"
+    },
+    {
+      "word": "もしかしたら",
+      "reading": "もしかしたら",
+      "meaning": "或許/說不定",
+      "example": "もしかしたら、明日雨が降るかもしれません。",
+      "example_meaning": "或許明天會下雨。",
+      "notes": "表示可能性，常與「かもしれません」搭配使用。"
+    },
+    {
+      "word": "やはり",
+      "reading": "やはり",
+      "meaning": "果然/還是",
+      "example": "やはり雨が降ってきましたね。",
+      "example_meaning": "果然還是下雨了呢。",
+      "notes": "表示與預想或預測一致，或經過考慮後仍是如此。"
+    },
+    {
+      "word": "それから",
+      "reading": "それから",
+      "meaning": "然後/之後",
+      "example": "ご飯を食べて、それからテレビを見ました。",
+      "example_meaning": "我吃了飯，然後看了電視。",
+      "notes": "連接詞性質的副詞，表示時間順序的「之後」。"
+    },
+    {
+      "word": "そして",
+      "reading": "そして",
+      "meaning": "然後/而且",
+      "example": "彼女は美しくて、そして優しいです。",
+      "example_meaning": "她既美麗，而且也很溫柔。",
+      "notes": "連接詞性質的副詞，表示並列或順序。"
     }
   ]
 }
