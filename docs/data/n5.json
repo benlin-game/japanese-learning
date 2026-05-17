@@ -2937,5 +2937,207 @@
       "answer": 1,
       "explanation": "根據句意，昨天是星期日，那麼後天就是星期二。「あさって (明後日)」是指「後天」。"
     }
+  ],
+  "adverb": [
+    {
+      "word": "いつも",
+      "reading": "いつも",
+      "meaning": "總是",
+      "example": "私はいつも朝ごはんを食べます。",
+      "example_meaning": "我總是吃早餐。",
+      "notes": "表示動作或狀態的頻率為「總是」。"
+    },
+    {
+      "word": "よく",
+      "reading": "よく",
+      "meaning": "常常；很 (好地)",
+      "example": "彼はよく本を読みます。",
+      "example_meaning": "他常常看書。",
+      "notes": "表示頻率「常常」或程度「很好地」。"
+    },
+    {
+      "word": "ときどき",
+      "reading": "ときどき",
+      "meaning": "有時候",
+      "example": "私はときどき公園を散歩します。",
+      "example_meaning": "我偶爾會在公園散步。",
+      "notes": "表示動作或狀態的頻率為「有時候」。"
+    },
+    {
+      "word": "あまり",
+      "reading": "あまり",
+      "meaning": "不太… (與否定詞連用)",
+      "example": "私はあまりテレビを見ません。",
+      "example_meaning": "我不太看電視。",
+      "notes": "必須與否定詞「〜ません」或「〜くないです」等連用。"
+    },
+    {
+      "word": "ぜんぜん",
+      "reading": "ぜんぜん",
+      "meaning": "完全不… (與否定詞連用)",
+      "example": "私は日本語がぜんぜん分かりません。",
+      "example_meaning": "我完全不懂日語。",
+      "notes": "必須與否定詞連用，強調完全不進行或不理解。"
+    },
+    {
+      "word": "もう",
+      "reading": "もう",
+      "meaning": "已經",
+      "example": "もうご飯を食べましたか。",
+      "example_meaning": "你已經吃飯了嗎？",
+      "notes": "表示動作已經完成或時間已到。"
+    },
+    {
+      "word": "まだ",
+      "reading": "まだ",
+      "meaning": "仍然；還沒",
+      "example": "彼はまだ学生です。",
+      "example_meaning": "他仍然是學生。",
+      "notes": "表示動作仍在持續或尚未發生。"
+    },
+    {
+      "word": "これから",
+      "reading": "これから",
+      "meaning": "從現在起；接下來",
+      "example": "これから映画を見ます。",
+      "example_meaning": "接下來我要看電影。",
+      "notes": "表示動作將在現在之後開始進行。"
+    },
+    {
+      "word": "すぐ",
+      "reading": "すぐ",
+      "meaning": "立刻；馬上",
+      "example": "彼はすぐに来ます。",
+      "example_meaning": "他會馬上過來。",
+      "notes": "表示動作將在短時間內迅速發生。"
+    },
+    {
+      "word": "あとで",
+      "reading": "あとで",
+      "meaning": "稍後；之後",
+      "example": "私はあとで電話をかけます。",
+      "example_meaning": "我之後會打電話。",
+      "notes": "表示動作將在將來某個時間點發生。"
+    },
+    {
+      "word": "とても",
+      "reading": "とても",
+      "meaning": "非常",
+      "example": "この本はとてもおもしろいです。",
+      "example_meaning": "這本書非常有趣。",
+      "notes": "用來加強形容詞或形容動詞的程度。"
+    },
+    {
+      "word": "すごく",
+      "reading": "すごく",
+      "meaning": "非常；超級 (口語)",
+      "example": "あのケーキはすごくおいしいです。",
+      "example_meaning": "那個蛋糕超級好吃。",
+      "notes": "是「とても」的口語說法，語氣比「とても」更強。"
+    },
+    {
+      "word": "たくさん",
+      "reading": "たくさん",
+      "meaning": "很多",
+      "example": "私はパンをたくさん食べました。",
+      "example_meaning": "我吃了很多麵包。",
+      "notes": "用來表示數量或程度很多。"
+    },
+    {
+      "word": "すこし",
+      "reading": "すこし",
+      "meaning": "一點點；少量",
+      "example": "私は日本語が少し話せます。",
+      "example_meaning": "我會說一點點日語。",
+      "notes": "用來表示數量或程度很少。"
+    },
+    {
+      "word": "ちょっと",
+      "reading": "ちょっと",
+      "meaning": "一點點；稍微；等一下",
+      "example": "ちょっと待ってください。",
+      "example_meaning": "請稍等一下。",
+      "notes": "是「すこし」的口語說法，也可以表示「等一下」。"
+    },
+    {
+      "word": "ゆっくり",
+      "reading": "ゆっくり",
+      "meaning": "慢慢地",
+      "example": "彼はゆっくり歩きます。",
+      "example_meaning": "他慢慢地走路。",
+      "notes": "表示動作進行的速度緩慢。"
+    },
+    {
+      "word": "はやく",
+      "reading": "はやく",
+      "meaning": "快速地；早一點",
+      "example": "早く来てください。",
+      "example_meaning": "請快點來/早點來。",
+      "notes": "表示動作進行的速度快或時間早。"
+    },
+    {
+      "word": "いっしょに",
+      "reading": "いっしょに",
+      "meaning": "一起",
+      "example": "私たちは一緒に勉強します。",
+      "example_meaning": "我們一起學習。",
+      "notes": "表示多個人共同進行某動作。"
+    },
+    {
+      "word": "たぶん",
+      "reading": "たぶん",
+      "meaning": "大概；或許",
+      "example": "たぶん彼は来ません。",
+      "example_meaning": "他大概不會來。",
+      "notes": "表示對某事物的可能性判斷，但不確定。"
+    },
+    {
+      "word": "きっと",
+      "reading": "きっと",
+      "meaning": "一定；肯定",
+      "example": "彼はきっと成功します。",
+      "example_meaning": "他一定會成功。",
+      "notes": "表示對某事物的可能性有很高的確信。"
+    },
+    {
+      "word": "また",
+      "reading": "また",
+      "meaning": "又；再；再次",
+      "example": "また明日会いましょう。",
+      "example_meaning": "明天再見吧。",
+      "notes": "表示動作或事件的重複。"
+    },
+    {
+      "word": "ちょうど",
+      "reading": "ちょうど",
+      "meaning": "剛好；正好",
+      "example": "今、ちょうど午後一時です。",
+      "example_meaning": "現在正好是下午一點。",
+      "notes": "表示時間、地點或數量等恰好符合。"
+    },
+    {
+      "word": "まず",
+      "reading": "まず",
+      "meaning": "首先",
+      "example": "まず、手を洗ってください。",
+      "example_meaning": "首先，請洗手。",
+      "notes": "表示在進行一系列動作時的第一步。"
+    },
+    {
+      "word": "もちろん",
+      "reading": "もちろん",
+      "meaning": "當然",
+      "example": "もちろん、行きます。",
+      "example_meaning": "當然，我會去。",
+      "notes": "表示對某事的肯定或無疑。"
+    },
+    {
+      "word": "ずっと",
+      "reading": "ずっと",
+      "meaning": "一直；始終",
+      "example": "彼は子供の時からずっと日本に住んでいます。",
+      "example_meaning": "他從小時候起就一直住在日本。",
+      "notes": "表示時間或空間的持續性。"
+    }
   ]
 }

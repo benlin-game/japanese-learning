@@ -15,7 +15,7 @@ import google.generativeai as genai
 sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
 
 # ── 設定區（修改這裡）────────────────────────────
-GEMINI_API_KEY = "AIzaSyClkT9tu6m5fiYdXKSNy2PHHWifqPJigqQ"
+GEMINI_API_KEY = (Path(__file__).parent / "gemini_key.txt").read_text(encoding="utf-8").strip()
 WORDS_PER_LEVEL = 300  # 每個等級產生幾個單字
 BATCH_SIZE = 10         # 每次 Gemini 呼叫處理幾個單字
 SLEEP_BETWEEN_CALLS = 1.5  # 秒，避免 rate limit

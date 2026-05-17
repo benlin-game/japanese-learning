@@ -12,7 +12,7 @@ import google.generativeai as genai
 sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
 
 # ── 設定 ────────────────────────────────────
-GEMINI_API_KEY = "AIzaSyBSavEaBgW1YYASASRkOi0eN1byU_90c-Y"
+GEMINI_API_KEY = (Path(__file__).parent / "gemini_key.txt").read_text(encoding="utf-8").strip()
 GRAMMAR_COUNT = 20
 KANJI_COUNT = 20
 PRACTICE_COUNT = 20

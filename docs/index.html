@@ -87,6 +87,7 @@
       <button onclick="selectCategory('grammar')" class="cat-tab whitespace-nowrap px-4 py-3 text-sm text-gray-500" data-cat="grammar">✏️ 文法</button>
       <button onclick="selectCategory('kanji')" class="cat-tab whitespace-nowrap px-4 py-3 text-sm text-gray-500" data-cat="kanji">漢 漢字</button>
       <button onclick="selectCategory('practice')" class="cat-tab whitespace-nowrap px-4 py-3 text-sm text-gray-500" data-cat="practice">📝 JLPT練習</button>
+      <button onclick="selectCategory('adverb')" class="cat-tab whitespace-nowrap px-4 py-3 text-sm text-gray-500" data-cat="adverb">副 副詞</button>
     </div>
     <!-- Mode Toggle -->
     <div class="px-4 py-3 flex items-center gap-3">
@@ -335,7 +336,7 @@ function updateScoreDisplay() {
 
 // ---- FLASHCARD ----
 function cardTypeLabel(cat) {
-  return { vocabulary: '單字', grammar: '文法句型', kanji: '漢字', practice: 'JLPT練習' }[cat] || '';
+  return { vocabulary: '單字', grammar: '文法句型', kanji: '漢字', practice: 'JLPT練習', adverb: '副詞' }[cat] || '';
 }
 
 function renderFlashcard() {
@@ -347,14 +348,20 @@ function renderFlashcard() {
   inner.classList.remove('flipped');
   document.getElementById('card-type-label').textContent = cardTypeLabel(state.category);
 
-  if (state.category === 'vocabulary') {
+  if (state.category === 'vocabulary' || state.category === 'adverb') {
     document.getElementById('card-front').textContent = card.word;
     document.getElementById('card-reading').textContent = card.reading;
     document.getElementById('card-meaning').textContent = card.meaning;
     document.getElementById('card-example').textContent = card.example || '';
     document.getElementById('card-example-meaning').textContent = card.example_meaning || '';
     document.getElementById('card-example-box').classList.remove('hidden');
-    document.getElementById('card-notes').classList.add('hidden');
+    const notesEl = document.getElementById('card-notes');
+    if (card.notes) {
+      notesEl.textContent = '📌 ' + card.notes;
+      notesEl.classList.remove('hidden');
+    } else {
+      notesEl.classList.add('hidden');
+    }
   } else if (state.category === 'grammar') {
     document.getElementById('card-front').textContent = card.pattern;
     document.getElementById('card-reading').textContent = '';
@@ -442,9 +449,10 @@ function renderQuiz() {
 
   if (state.category === 'kanji') {
     document.getElementById('quiz-question').textContent = `「${card.kanji}」${card.meaning}`;
-  } else if (state.category === 'vocabulary') {
+  } else if (state.category === 'vocabulary' || state.category === 'adverb') {
     const qEl = document.getElementById('quiz-question');
-    qEl.innerHTML = `（${card.reading}）の意味はどれですか。&nbsp;<button id="reveal-kanji-btn" data-word="${card.word}" onclick="revealKanji(this)" class="text-xs text-indigo-400 underline hover:text-indigo-600 font-normal">查看漢字</button>`;
+    const revealLabel = state.category === 'adverb' ? '查看原字' : '查看漢字';
+    qEl.innerHTML = `（${card.reading}）の意味はどれですか。&nbsp;<button id="reveal-kanji-btn" data-word="${card.word}" onclick="revealKanji(this)" class="text-xs text-indigo-400 underline hover:text-indigo-600 font-normal">${revealLabel}</button>`;
   } else {
     document.getElementById('quiz-question').textContent = card.question || card.word || card.pattern || card.kanji;
   }
@@ -454,7 +462,7 @@ function renderQuiz() {
   if (state.category === 'practice') {
     options = card.options;
     correct = card.answer;
-  } else if (state.category === 'vocabulary') {
+  } else if (state.category === 'vocabulary' || state.category === 'adverb') {
     const correctOpt = {meaning: card.meaning, word: card.word, reading: card.reading};
     const seen = new Set([card.meaning]);
     const distractors = state.cards
@@ -508,6 +516,7 @@ function speakCard() {
   if (!card) return;
   const text = {
     vocabulary: card.word,
+    adverb: card.word,
     grammar: card.example || card.pattern,
     kanji: card.kanji,
     practice: card.question,
@@ -520,6 +529,7 @@ function speakExample() {
   if (!card) return;
   const text = {
     vocabulary: card.example,
+    adverb: card.example,
     grammar: card.example,
     kanji: (card.examples || []).join('　'),
     practice: card.options?.[card.answer] || '',
@@ -532,6 +542,7 @@ function speakQuiz() {
   if (!card) return;
   const text = {
     vocabulary: card.reading || card.word,
+    adverb: card.reading || card.word,
     grammar: card.pattern,
     kanji: card.kanji,
     practice: card.question,
@@ -569,7 +580,7 @@ function answerQuiz(chosen, correct, card, options, btn, container) {
       b.classList.add('bg-red-50', 'text-red-600', 'shake');
     }
   });
-  if (state.category === 'vocabulary' && state.vocabOptions) {
+  if ((state.category === 'vocabulary' || state.category === 'adverb') && state.vocabOptions) {
     btns.forEach((b, i) => {
       const opt = state.vocabOptions[i];
       if (opt) {
