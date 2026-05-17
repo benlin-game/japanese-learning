@@ -601,6 +601,19 @@ function speakExample() {
   speak(text);
 }
 
+function speakFeedback() {
+  const card = state.cards[state.idx];
+  if (!card) return;
+  const text = {
+    vocabulary: card.example,
+    adverb: card.example,
+    grammar: card.example,
+    kanji: (card.examples || []).join('　'),
+    practice: card.options?.[card.answer] || '',
+  }[state.category] || '';
+  speak(text);
+}
+
 function speakQuiz() {
   const card = state.cards[state.idx];
   if (!card) return;
@@ -671,6 +684,7 @@ function answerQuiz(chosen, correct, card, options, btn, container) {
     fb.classList.add('bg-red-50', 'text-red-600', 'border', 'border-red-200');
     fb.innerHTML = `<b>✗ 答錯了</b>　正確答案：<b>${options[correct]}</b><br><span class="text-gray-500">${exampleLine}</span>`;
   }
+  fb.innerHTML += '<br><button onclick="speakFeedback()" class="mt-2 text-xl hover:scale-110 active:scale-95 transition-transform" title="播放例句發音">🔊</button>';
 
   document.getElementById('quiz-next-btn').classList.remove('hidden');
 }
