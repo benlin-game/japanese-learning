@@ -116,6 +116,10 @@
     <div class="w-full bg-gray-100 rounded-full h-2">
       <div id="progress-bar" class="progress-bar bg-indigo-500 h-2 rounded-full" style="width:0%"></div>
     </div>
+    <div id="exit-review-bar" class="hidden mt-2 flex items-center justify-between">
+      <span class="text-xs text-orange-500 font-semibold">📌 複習模式</span>
+      <button onclick="startSession()" class="text-xs text-orange-500 hover:text-orange-700 underline">返回一般練習 ×</button>
+    </div>
   </div>
 
   <!-- ==================== FLASHCARD MODE ==================== -->
@@ -141,6 +145,7 @@
             <button onclick="speakExample(); event.stopPropagation();" class="text-lg hover:scale-110 active:scale-95 transition-transform mt-1" title="播放例句發音">🔊</button>
           </div>
           <p class="text-xs text-indigo-300 mt-4 hidden" id="card-notes"></p>
+          <p class="text-xs text-gray-400 mt-2" id="card-stats"></p>
         </div>
       </div>
     </div>
@@ -247,6 +252,7 @@ function startSession() {
   state.flipped = false;
   state.answeredIdx = new Set();
   document.getElementById('result-section').classList.add('hidden');
+  document.getElementById('exit-review-bar').classList.add('hidden');
   updateProgress();
   if (state.mode === 'flashcard') {
     document.getElementById('flashcard-section').classList.remove('hidden');
@@ -408,6 +414,7 @@ function renderFlashcard() {
     document.getElementById('card-notes').classList.add('hidden');
   }
 
+  document.getElementById('card-stats').textContent = statsText(getCardStats(card));
   document.getElementById('flip-card').classList.remove('hidden');
   document.getElementById('flash-btns').classList.remove('hidden');
   document.getElementById('flash-prev-btn').disabled = state.idx === 0;
@@ -420,6 +427,7 @@ function flipCard() {
 
 function markCard(known) {
   const card = state.cards[state.idx];
+  recordCardResult(card, known);
   toggleReview(card, !known);
   if (!state.answeredIdx.has(state.idx)) {
     if (known) state.correct++; else state.incorrect++;
@@ -517,13 +525,39 @@ function buildOptions(correct, pool, card) {
   return all;
 }
 
+// ---- HISTORY (localStorage) ----
+function getHistoryKey(card) {
+  return `${state.level}::${state.category}::${getCardId(card)}`;
+}
+
+function getCardStats(card) {
+  const all = JSON.parse(localStorage.getItem('jlpt_history') || '{}');
+  return all[getHistoryKey(card)] || { c: 0, w: 0 };
+}
+
+function recordCardResult(card, correct) {
+  const all = JSON.parse(localStorage.getItem('jlpt_history') || '{}');
+  const key = getHistoryKey(card);
+  const s = all[key] || { c: 0, w: 0 };
+  if (correct) s.c++; else s.w++;
+  s.last = new Date().toISOString().slice(0, 10);
+  all[key] = s;
+  localStorage.setItem('jlpt_history', JSON.stringify(all));
+}
+
+function statsText(stats) {
+  const total = stats.c + stats.w;
+  if (total === 0) return '';
+  return `歷史：✓ ${stats.c} · ✗ ${stats.w}（${Math.round(stats.c / total * 100)}%）`;
+}
+
 // ---- REVIEW LIST (localStorage) ----
 function getCardId(card) {
   return card.word || card.pattern || card.kanji || card.question || '';
 }
 
 function getReviewKey() {
-  return `jlpt_review_${state.level}_${state.category}`;
+  return `jlpt_review_${state.mode}_${state.level}_${state.category}`;
 }
 
 function getReviewList() {
@@ -558,6 +592,7 @@ function startReview() {
   state.flipped = false;
   state.answeredIdx = new Set();
   document.getElementById('result-section').classList.add('hidden');
+  document.getElementById('exit-review-bar').classList.remove('hidden');
   updateProgress();
   updateScoreDisplay();
   if (state.mode === 'flashcard') {
@@ -645,6 +680,7 @@ function answerQuiz(chosen, correct, card, options, btn, container) {
   state.quizAnswered = true;
 
   const isCorrect = chosen === correct;
+  recordCardResult(card, isCorrect);
   toggleReview(card, !isCorrect);
   if (!state.answeredIdx.has(state.idx)) {
     if (isCorrect) state.correct++; else state.incorrect++;
@@ -690,6 +726,8 @@ function answerQuiz(chosen, correct, card, options, btn, container) {
     fb.classList.add('bg-red-50', 'text-red-600', 'border', 'border-red-200');
     fb.innerHTML = `<b>✗ 答錯了</b>　正確答案：<b>${options[correct]}</b><br><span class="text-gray-500">${exampleLine}</span>`;
   }
+  const st = statsText(getCardStats(card));
+  if (st) fb.innerHTML += `<br><span class="text-xs opacity-60">${st}</span>`;
   fb.innerHTML += '<br><button onclick="speakFeedback()" class="mt-2 text-xl hover:scale-110 active:scale-95 transition-transform" title="播放例句發音">🔊</button>';
 
   document.getElementById('quiz-next-btn').classList.remove('hidden');
